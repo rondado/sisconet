@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42480,7403102199" ReportOptions.Description.Text="" ReportOptions.LastChange="42480,7768846412" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa"/>
+    <item DataSet="frxDBItens" DataSetName="frxDBItens"/>
+    <item DataSet="frxDBPedido" DataSetName="frxDBPedido"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="309,92146" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxShapeView Name="Shape1" Left="0" Top="0" Width="718,1107" Height="34,01577"/>
+      <TfrxMemoView Name="Memo2" Left="11,33859" Top="7,55906" Width="699,21305" Height="26,45671" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="ORDERM DE SERVICO - DAV-OS"/>
+      <TfrxShapeView Name="Shape2" Left="0,22047" Top="33,7953" Width="718,1107" Height="56,69295"/>
+      <TfrxMemoView Name="Memo3" Left="3,77953" Top="37,7953" Width="706,77211" Height="49,13389" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="NÃO É DOCUMENTO FISCAL - NÃO É VÁLIDO COMO RECIBO E COMO GARANTIA DE MERCADORIA - NÃO COMPROVA PAGAMENTO"/>
+      <TfrxShapeView Name="Shape3" Left="0" Top="89,70872" Width="718,1107" Height="30,23624"/>
+      <TfrxShapeView Name="Shape4" Left="0" Top="120,28355" Width="718,1107" Height="26,45671"/>
+      <TfrxShapeView Name="Shape5" Left="0,22047" Top="146,85838" Width="718,1107" Height="30,23624"/>
+      <TfrxMemoView Name="Memo4" Left="3,77953" Top="96,26778" Width="306,14193" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Identificação do Estabelecimento Emitente"/>
+      <TfrxMemoView Name="frxDBEmpresaRAZAO_SOCIAL" Left="3,77953" Top="124,28355" Width="400,63018" Height="18,89765" DataField="RAZAO_SOCIAL" DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa" Text="[frxDBEmpresa.&#34;RAZAO_SOCIAL&#34;]"/>
+      <TfrxMemoView Name="frxDBEmpresaCNPJ_CPF" Left="419,52783" Top="124,28355" Width="166,29932" Height="18,89765" DataField="CNPJ_CPF" DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa" Text="[frxDBEmpresa.&#34;CNPJ_CPF&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="6,33859" Top="152,85838" Width="306,14193" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Identificação do Destinatário"/>
+      <TfrxShapeView Name="Shape6" Left="0,33859" Top="177,19697" Width="718,1107" Height="75,5906"/>
+      <TfrxShapeView Name="Shape7" Left="0" Top="253,55133" Width="718,1107" Height="30,23624"/>
+      <TfrxMemoView Name="frxDBPedidoCLIENTE" Left="7,55906" Top="185,19697" Width="449,76407" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="Cliente: [frxDBPedido.&#34;CLIENTE&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoCNPJCPF" Left="468,66172" Top="185,19697" Width="238,11039" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="CPF/CNPJ: [frxDBPedido.&#34;CNPJCPF&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoEND_ENTREGA" Left="7,55906" Top="204,65368" Width="355,27582" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="Endreço: [frxDBPedido.&#34;END_ENTREGA&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoNUM_END_ENTREGA" Left="370,39394" Top="204,65368" Width="287,24428" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="Nº: [frxDBPedido.&#34;NUM_END_ENTREGA&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoCOMPL_END_ENTREGA" Left="472,44125" Top="204,65368" Width="362,83488" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="Compl: [frxDBPedido.&#34;COMPL_END_ENTREGA&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoBAIRRO_END_ENTREGA" Left="7,55906" Top="224,33086" Width="325,03958" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="Bairro: [frxDBPedido.&#34;BAIRRO_END_ENTREGA&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoCID_END_ENTREGA" Left="340,1577" Top="224,55133" Width="325,03958" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="Cidade: [frxDBPedido.&#34;CID_END_ENTREGA&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoUF_END_ENTREGA" Left="502,67749" Top="224,55133" Width="253,22851" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="UF: [frxDBPedido.&#34;UF_END_ENTREGA&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoCEP_END_ENTREGA" Left="578,26809" Top="224,55133" Width="272,12616" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="CEP: [frxDBPedido.&#34;CEP_END_ENTREGA&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoNUMDAV" Left="7,55906" Top="260,78757" Width="211,65368" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="Doc. Nº: [frxDBPedido.&#34;NUMDAV&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoDATA_PEDIDO" Left="181,41744" Top="260,78757" Width="272,12616" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="Data: [frxDBPedido.&#34;DATA_PEDIDO&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoHORA_PEDIDO" Left="336,37817" Top="260,78757" Width="272,12616" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Text="Hora: [frxDBPedido.&#34;HORA_PEDIDO&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="589,84292" Top="260,78757" Width="120,94496" Height="22,67718" Text="COO: __________"/>
+      <TfrxMemoView Name="Memo7" Left="7,55906" Top="290,02381" Width="60,47248" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Código"/>
+      <TfrxMemoView Name="Memo8" Left="90,70872" Top="290,02381" Width="94,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Descrição"/>
+      <TfrxMemoView Name="Memo9" Left="374,17347" Top="290,02381" Width="41,57483" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Quant."/>
+      <TfrxMemoView Name="Memo10" Left="453,5436" Top="290,02381" Width="71,81107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Valor Unit."/>
+      <TfrxMemoView Name="Memo11" Left="548,03185" Top="290,02381" Width="75,5906" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Desconto"/>
+      <TfrxMemoView Name="Memo12" Left="634,96104" Top="290,02381" Width="71,81107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Valor Total"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="389,29159" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBItens" DataSetName="frxDBItens" RowCount="0">
+      <TfrxMemoView Name="frxDBItensIDPRODUTO" Left="7,55906" Top="0" Width="79,37013" Height="15,11812" DataField="IDPRODUTO" DataSet="frxDBItens" DataSetName="frxDBItens" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBItens.&#34;IDPRODUTO&#34;]"/>
+      <TfrxMemoView Name="frxDBItensDESCRICAO" Left="90,70872" Top="0" Width="272,12616" Height="18,89765" DataField="DESCRICAO" DataSet="frxDBItens" DataSetName="frxDBItens" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBItens.&#34;DESCRICAO&#34;]"/>
+      <TfrxMemoView Name="frxDBItensQUANTIDADE" Left="374,17347" Top="0" Width="79,37013" Height="18,89765" DataField="QUANTIDADE" DataSet="frxDBItens" DataSetName="frxDBItens" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBItens.&#34;QUANTIDADE&#34;]"/>
+      <TfrxMemoView Name="frxDBItensVALOR" Left="461,10266" Top="0" Width="79,37013" Height="18,89765" DataField="VALOR" DataSet="frxDBItens" DataSetName="frxDBItens" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBItens.&#34;VALOR&#34;]"/>
+      <TfrxMemoView Name="frxDBItensDESCONTO" Left="548,03185" Top="0" Width="79,37013" Height="18,89765" DataField="DESCONTO" DataSet="frxDBItens" DataSetName="frxDBItens" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBItens.&#34;DESCONTO&#34;]"/>
+      <TfrxMemoView Name="frxDBItensVALOR_TOTAL" Left="634,96104" Top="0" Width="79,37013" Height="18,89765" DataField="VALOR_TOTAL" DataSet="frxDBItens" DataSetName="frxDBItens" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBItens.&#34;VALOR_TOTAL&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="608,50433" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="642,5201" Top="0" Width="75,5906" Height="18,89765" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="113,3859" Left="0" Top="472,44125" Width="718,1107">
+      <TfrxMemoView Name="frxDBPedidoVALOR" Left="402,83488" Top="1,77953" Width="306,14193" Height="15,11812" DataSet="frxDBPedido" DataSetName="frxDBPedido" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Valor Produtos: [frxDBPedido.&#34;VALOR&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoDESCONTO" Left="438,05535" Top="20,23624" Width="272,12616" Height="15,11812" DataSet="frxDBPedido" DataSetName="frxDBPedido" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Desconto: [frxDBPedido.&#34;DESCONTO&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoACRESCIMO" Left="431,83488" Top="36,13389" Width="275,90569" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Acrescimo: [frxDBPedido.&#34;ACRESCIMO&#34;]"/>
+      <TfrxMemoView Name="frxDBPedidoVALOR_TOTAL" Left="426,05535" Top="54,5906" Width="283,46475" Height="18,89765" DataSet="frxDBPedido" DataSetName="frxDBPedido" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Valor Total: [frxDBPedido.&#34;VALOR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="7,55906" Top="83,14966" Width="702,99258" Height="26,45671" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="É vedada a autenticação deste documento"/>
+    </TfrxReportSummary>
+  </TfrxReportPage>
+</TfrxReport>

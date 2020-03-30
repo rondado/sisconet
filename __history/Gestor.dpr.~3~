@@ -1,0 +1,226 @@
+program Gestor;
+
+uses
+  midaslib,
+  Forms,
+  Windows,
+  Messages,
+  Dialogs,
+  SysUtils,
+  uFrmPadrao in 'uFrmPadrao.pas' {FrmPadrao},
+  uFrameBotaoVertical in 'uFrameBotaoVertical.pas' {FrameBotaoVertical: TFrame},
+  uFrmClientes in 'uFrmClientes.pas' {FrmClientes},
+  uFrmMenu in 'uFrmMenu.pas' {FrmMenu},
+  uFrmSelEndereco in 'uFrmSelEndereco.pas' {FrmSelEndereco},
+  uLibrary in 'Funcoes\uLibrary.pas',
+  uFrmProdutos in 'uFrmProdutos.pas' {FrmProdutos},
+  uFrmCadPadrao in 'uFrmCadPadrao.pas' {FrmCadPadrao},
+  uFrmCadClassPedido in 'uFrmCadClassPedido.pas' {FrmCadClassPedido},
+  uFrmCadFormaPag in 'uFrmCadFormaPag.pas' {FrmCadFormaPag},
+  uFrmAgendaCompromissos in 'uFrmAgendaCompromissos.pas' {FrmAgendaCompromissos},
+  uFrmCadastroCliente in 'uFrmCadastroCliente.pas' {FrmCadastroCliente},
+  uFrmContatosADC in 'uFrmContatosADC.pas' {FrmContatosADC},
+  uFrmCadFunc in 'uFrmCadFunc.pas' {FrmCadFunc},
+  uFrmCadGrupo in 'uFrmCadGrupo.pas' {FrmCadGrupo},
+  uFrmProdComposto in 'uFrmProdComposto.pas' {FrmProdComposto},
+  uFrmCadProdutos in 'uFrmCadProdutos.pas' {FrmCadProdutos},
+  uFrmCadContas in 'uFrmCadContas.pas' {FrmCadContas},
+  uFrmTabPreco in 'uFrmTabPreco.pas' {FrmTabPreco},
+  uFrmCadProdFornecedor in 'uFrmCadProdFornecedor.pas' {FrmCadProdFornecedor},
+  uFrmCadCheques in 'uFrmCadCheques.pas' {FrmCadCheques},
+  uFrmCheques in 'uFrmCheques.pas' {FrmCheques},
+  uFrmImforma in 'uFrmImforma.pas' {FrmImforma},
+  uFrmCaixaDiario in 'uFrmCaixaDiario.pas' {FrmCaixaDiario},
+  uFrameConfirmaCancela in 'uFrameConfirmaCancela.pas' {FrameConfirmaCancela: TFrame},
+  uFrmComprasConsulta in 'uFrmComprasConsulta.pas' {FrmComprasConsulta},
+  uFrmCadUsuarios in 'uFrmCadUsuarios.pas' {FrmCadUsuarios},
+  uFrmLoginUsuario in 'uFrmLoginUsuario.pas' {FrmLoginUsuario},
+  uFrmLancItensCompra in 'uFrmLancItensCompra.pas' {FrmLancItensCompra},
+  uFrmLancCompras in 'uFrmLancCompras.pas' {FrmLancCompras},
+  uFrmLancPedidos in 'uFrmLancPedidos.pas' {FrmLancPedidos},
+  uFrmLancItensPedido in 'uFrmLancItensPedido.pas' {FrmLancItensPedido},
+  uFrmPedidosConsulta in 'uFrmPedidosConsulta.pas' {FrmPedidosConsulta},
+  uFrmLancItensGrid in 'uFrmLancItensGrid.pas' {FrmLancItensGrid},
+  uFrameItensPedidoLaje in 'uFrameItensPedidoLaje.pas' {FrameItensPedidoLaje: TFrame},
+  uFrmAbreCaixa in 'uFrmAbreCaixa.pas' {FrmAbreCaixa},
+  uFrmMovCaixa in 'uFrmMovCaixa.pas' {FrmMovCaixa},
+  wscep in 'wscep.pas',
+  ICEP1 in 'Funcoes\ICEP1.pas',
+  uFrmBuscaEnd in 'uFrmBuscaEnd.pas' {FrmBuscaEnd},
+  uFrmSplash in 'uFrmSplash.pas' {FrmSplash},
+  uFrmFechamentoEstoque in 'uFrmFechamentoEstoque.pas' {FrmFechamentoEstoque},
+  uDmConexao in 'DM\uDmConexao.pas' {DmConexao: TDataModule},
+  uDmWorkCom in 'DM\uDmWorkCom.pas' {DmWorkCom: TDataModule},
+  uFrmLancComanda in 'uFrmLancComanda.pas' {FrmLancComanda},
+  uFuncoesPAFECF in 'Funcoes\uFuncoesPAFECF.pas',
+  libeay32 in 'Funcoes\libeay32.pas',
+  uFrmCadRegistro60 in 'uFrmCadRegistro60.pas' {FrmCadRegistro60},
+  uFrmCadOS in 'uFrmCadOS.pas' {FrmCadOS},
+  uFrmRelOS in 'uFrmRelOS.pas' {FrmRelOS},
+  uFrmConfiguracoes in 'uFrmConfiguracoes.pas' {FrmConfiguracoes},
+  MD5 in 'Funcoes\MD5.pas',
+  uDmAcBr in 'DM\uDmAcBr.pas' {DmAcBr: TDataModule},
+  uFrmCadTanques in 'uFrmCadTanques.pas' {FrmCadTanques},
+  uFrmCadBomba in 'uFrmCadBomba.pas' {FrmCadBomba},
+  uFrmCadBicos in 'uFrmCadBicos.pas' {FrmCadBicos},
+  uFrmConfigPosto in 'uFrmConfigPosto.pas' {FrmConfigPosto},
+  uFrmCadContabil in 'uFrmCadContabil.pas' {FrmCadContabil},
+  uMensagem in 'Funcoes\uMensagem.pas',
+  uFrmCadPDV in 'uFrmCadPDV.pas' {FrmCadPDV},
+  uFrmCadReg61 in 'uFrmCadReg61.pas' {FrmCadReg61},
+  uFrmCadCCusto in 'uFrmCadCCusto.pas' {FrmCadCCusto},
+  uFrmCadPlanoConta in 'uFrmCadPlanoConta.pas' {FrmCadPlanoConta},
+  uFrmTabNCM in 'uFrmTabNCM.pas' {FrmTabNCM},
+  uFrmMunicipio in 'uFrmMunicipio.pas' {FrmMunicipio},
+  uFrmSintegra in 'uFrmSintegra.pas' {FrmSintegra},
+  uDMClientes in 'DM\uDMClientes.pas' {DmClientes: TDataModule},
+  uFrmSEF2 in 'uFrmSEF2.pas' {FrmSEF2},
+  CharPrinter in 'Funcoes\CharPrinter.pas',
+  uFrmCadTransporta in 'uFrmCadTransporta.pas' {FrmCadTransporta},
+  uDmSPED in 'DM\uDmSPED.pas' {DmSPED: TDataModule},
+  uDmAuxiliar in 'DM\uDmAuxiliar.pas' {DmAuxiliar: TDataModule},
+  uDmPosto in 'DM\uDmPosto.pas' {DmPosto: TDataModule},
+  uFrmDescontinuidade in 'uFrmDescontinuidade.pas' {FrmDescontinuidade},
+  uFuncoesPosto in 'Funcoes\uFuncoesPosto.pas',
+  uFrmListaAbastec in 'uFrmListaAbastec.pas' {FrmListaAbastec},
+  uFrmObsNFe in 'uFrmObsNFe.pas' {FrmObsNFe},
+  uFrmConsPadrao in 'uFrmConsPadrao.pas' {FrmConsPadrao},
+  uAcompanhaVenda in 'uAcompanhaVenda.pas' {frmAcompanhaVenda},
+  uConsEmpenho in 'uConsEmpenho.pas' {frmConsempenho},
+  ufrmDetalhaCupom in 'ufrmDetalhaCupom.pas' {frmDetalhaCupom},
+  uFrmCadPerfil in 'uFrmCadPerfil.pas' {FrmCadPerfil},
+  uFrmLancPermissoes in 'uFrmLancPermissoes.pas' {FrmLancPermissoes},
+  uFrmRelComissao in 'uFrmRelComissao.pas' {FrmRelComissao},
+  uFrmRelContas in 'uFrmRelContas.pas' {FrmRelContas},
+  uFrmEtiquetas in 'uFrmEtiquetas.pas' {FrmEtiquetas},
+  uFrmMovFinanceiro in 'uFrmMovFinanceiro.pas' {FrmMovFinanceiro},
+  uFrmListaCompras in 'uFrmListaCompras.pas' {FrmListaCompras},
+  uFrmSelMovCaixa in 'uFrmSelMovCaixa.pas' {FrmSelMovCaixa},
+  uFrmRelGiroEstoque in 'uFrmRelGiroEstoque.pas' {FrmRelGiroEstoque},
+  uDmRelatorios in 'DM\uDmRelatorios.pas' {DmRelatorios: TDataModule},
+  uDmProdutos in 'DM\uDmProdutos.pas' {DmProdutos: TDataModule},
+  uFrmLivroLMC in 'uFrmLivroLMC.pas' {FrmLivroLMC},
+  uFrmLivroLMCProd in 'uFrmLivroLMCProd.pas' {FrmLivroLMCProd},
+  uFrmRelOrdServ in 'uFrmRelOrdServ.pas' {FrmRelOrdServ},
+  uFrmConsOrdServ in 'uFrmConsOrdServ.pas' {FrmConsOrdServ},
+  uFrmCadHorasOrdServ in 'uFrmCadHorasOrdServ.pas' {FrmCadHorasOrdServ},
+  uFrmProdutoTamanho in 'uFrmProdutoTamanho.pas' {FrmProdutoTamanho},
+  uFrmEstoqueLojas in 'uFrmEstoqueLojas.pas' {FrmEstoqueLoja},
+  uFrmProdutoCores in 'uFrmProdutoCores.pas' {FrmProdutoCores},
+  uFrameBotaoHorizontal in 'uFrameBotaoHorizontal.pas' {FrameBotaoHorizontal: TFrame},
+  uRelQuita44Col in 'uRelQuita44Col.pas' {FRelQuita44Col},
+  uFrmDadosCobranca in 'uFrmDadosCobranca.pas' {FrmDadosCobranca},
+  uFrmLeCodigo in 'uFrmLeCodigo.pas' {FrmLeCodigo},
+  uFrmCadBancos in 'uFrmCadBancos.pas' {FrmCadBancos},
+  uFrmGerarFaturas in 'uFrmGerarFaturas.pas' {FrmGerarFaturas},
+  uFrmRelatorios in 'uFrmRelatorios.pas' {FrmRelatorios},
+  uRotinas_EFD in 'uRotinas_EFD.pas',
+  uRotinas_PisCofins in 'uRotinas_PisCofins.pas',
+  uFrmSPED in 'uFrmSPED.pas' {FrmSPED},
+  uFrmCadVolume in 'uFrmCadVolume.pas' {FrmCadVolume},
+  u_relcxdiario in 'u_relcxdiario.pas' {frmcxdiarios},
+  uFrmContasnovo in 'uFrmContasnovo.pas' {FrmContasnovo},
+  uFrmContas in 'uFrmContas.pas' {FrmContas},
+  unRecibo in 'unRecibo.pas' {frmRecibo},
+  unImpro in 'unImpro.pas' {frmImpro},
+  uFrmPedidosagrupa in 'uFrmPedidosagrupa.pas' {FrmPedidosAgrupa},
+  uFrmCFOPPedido in 'uFrmCFOPPedido.pas' {FrmCFOPPedido},
+  uFrmAtuPre in 'uFrmAtuPre.pas' {FrmAtuPre},
+  uXML in 'uXML.pas' {frmxml},
+  uFrmGeraNFe in 'uFrmGeraNFe.pas' {FrmGeraNFe},
+  ufrmStatus in 'DM\ufrmStatus.pas' {frmStatus};
+
+{$R *.res}
+
+var
+pArquivo : TextFile;
+pNomeArq, pLinha : string;
+pDataSys : TDateTime;
+pDiasExpira : Double;
+
+begin
+  Hwnd := FindWindow('TApplication','Controle Comercial');
+  SetLength(sPathWindows, MAX_PATH);
+  lng := GetTempPath(MAX_PATH, PChar(sPathWindows));
+  SetLength(sPathWindows, lng);
+  pDataSys := date();
+  if Hwnd = 0 then
+  begin
+    pDiasExpira := 0;
+    pNumCli := 0;
+    pNumProd := 0;
+    frmSplash := TfrmSplash.Create(frmSplash);
+    frmSplash.Show;
+    frmSplash.Update;
+    Application.Initialize;
+//    Application.HelpFile := 'HELP.HLP';
+    Application.Title := 'Controle Comercial';
+  if pDiasExpira > 0 then
+    begin
+      pNomeArq := sPathWindows+'WC.vcn';
+      if not FileExists(pNomeArq) then
+      begin
+        pDataSys := SVData;
+        pDataSys := pDataSys + pDiasExpira;
+        AssignFile(pArquivo,pNomeArq);
+        Rewrite(pArquivo);
+        Writeln(pArquivo,datetostr(pDataSys));
+        CloseFile(pArquivo);
+      end
+      else
+      begin
+        AssignFile(pArquivo,pNomeArq);
+        Reset(pArquivo);
+        While not Eof(pArquivo) do
+        begin
+          ReadLn(pArquivo,pLinha);
+          pDataSys := StrToDate(pLinha);
+        end;
+        CloseFile(pArquivo);
+      end;
+      // verifica data
+      pDiasExpira := pDataSys - SVData;
+      if SVData > pDataSys then
+      begin
+        MessageDlg('Sisema Expirou. Entre em contato com o Suporte Técnico!!!', mtWarning, [mbOK], 0);
+        Application.Terminate;
+      end;
+      // exibe dias para expirar
+      MessageDlg('Versão de Demonstração.'+#13+#10+
+                 'Expira Em '+FloatToStr(pDiasExpira)+' Dias.', mtWarning, [mbOK], 0);
+    end;
+    Application.CreateForm(TDmConexao, DmConexao);
+  Application.CreateForm(TDmAuxiliar, DmAuxiliar);
+  Application.CreateForm(TDmWorkCom, DmWorkCom);
+  Application.CreateForm(TDmPosto, DmPosto);
+  Application.CreateForm(TDmClientes, DmClientes);
+  Application.CreateForm(TDmRelatorios, DmRelatorios);
+  Application.CreateForm(TDmProdutos, DmProdutos);
+  Application.CreateForm(TDmAcBr, DmAcBr);
+  Application.CreateForm(TDmSPED, DmSPED);
+  Application.CreateForm(TFrmMenu, FrmMenu);
+  Application.CreateForm(Tfrmcxdiarios, frmcxdiarios);
+  Application.CreateForm(TFrmContasnovo, FrmContasnovo);
+  Application.CreateForm(TfrmRecibo, frmRecibo);
+  Application.CreateForm(TfrmImpro, frmImpro);
+  Application.CreateForm(TFrmPedidosAgrupa, FrmPedidosAgrupa);
+  Application.CreateForm(TFrmCFOPPedido, FrmCFOPPedido);
+  Application.CreateForm(TFrmAtuPre, FrmAtuPre);
+  Application.CreateForm(TFrmGeraNFe, FrmGeraNFe);
+  Application.CreateForm(TfrmStatus, frmStatus);
+  //  Application.CreateForm(Tfrmxml, frmxml);
+  //  Application.CreateForm(TFrmContas, FrmContas);
+  Application.CreateForm(TFrmContas, FrmContas);
+  FrmSplash.Free;
+    Application.Run;
+  end
+  else
+  begin
+    MessageDlg('O aplicativo já esta aberto!!!', mtWarning, [mbOK], 0);
+    Application.Terminate;
+  end;
+
+
+end.
+
+

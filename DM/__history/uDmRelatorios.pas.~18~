@@ -1,0 +1,65 @@
+unit uDmRelatorios;
+
+interface
+
+uses
+  SysUtils, Classes, FMTBcd, DB, SqlExpr, Datasnap.DBClient, Datasnap.Provider,
+  frxClass, frxDBSet;
+
+type
+  TDmRelatorios = class(TDataModule)
+    QryEntrada: TSQLQuery;
+    QrySaidas: TSQLQuery;
+    QryComissoes: TSQLQuery;
+    DataComissao: TDataSource;
+    QryRelatorios: TSQLQuery;
+    DspRelatorios: TDataSetProvider;
+    CdsRelatorios: TClientDataSet;
+    frxGeral: TfrxReport;
+    frxDBGeral: TfrxDBDataset;
+    frxDBEmpresa: TfrxDBDataset;
+    frxDBItens: TfrxDBDataset;
+    CdsPeriodo: TClientDataSet;
+    CdsPeriododata_inicio: TDateField;
+    CdsPeriododata_final: TDateField;
+    frxDBPeriodo: TfrxDBDataset;
+    QryRelatAux: TSQLQuery;
+    DspRelatAux: TDataSetProvider;
+    CdsRelatAux: TClientDataSet;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure PassaPeriodoRelatorio(pDatai,pDataf:TdateTime);
+  end;
+
+var
+  DmRelatorios: TDmRelatorios;
+
+implementation
+
+Uses uLibrary,uDmConexao, uDmWorkCom;
+
+{$R *.dfm}
+
+{ TDmRelatorios }
+
+procedure TDmRelatorios.PassaPeriodoRelatorio(pDatai,pDataf:TdateTime);
+begin
+  with CdsPeriodo do
+  begin
+    if not Active then
+    begin
+       CreateDataSet;
+       EmptyDataSet;
+    end
+    else EmptyDataSet;
+    Append;
+    FieldByName('data_inicio').AsDateTime := pDatai;
+    FieldByName('data_final').AsDateTime := pDataf;
+    Post;
+  end;
+
+end;
+
+end.

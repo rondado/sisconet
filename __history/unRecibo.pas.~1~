@@ -1,0 +1,177 @@
+unit unRecibo;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, Buttons, QuickRpt, QRCtrls, jpeg, IniFiles;
+
+type
+  TfrmRecibo = class(TForm)
+    ScrollBox1: TScrollBox;
+    Label4: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    SpeedButton1: TSpeedButton;
+    LabeledEdit1: TLabeledEdit;
+    LabeledEdit2: TLabeledEdit;
+    LabeledEdit3: TLabeledEdit;
+    LabeledEdit4: TLabeledEdit;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    LabeledEdit5: TLabeledEdit;
+    LabeledEdit6: TLabeledEdit;
+    LabeledEdit7: TLabeledEdit;
+    LabeledEdit8: TLabeledEdit;
+    LabeledEdit9: TLabeledEdit;
+    QuickRep1: TQuickRep;
+    QRBand1: TQRBand;
+    QRShape13: TQRShape;
+    QRShape3: TQRShape;
+    QRShape5: TQRShape;
+    QRShape6: TQRShape;
+    QRShape4: TQRShape;
+    QRShape2: TQRShape;
+    QRShape1: TQRShape;
+    QRLabel1: TQRLabel;
+    lnrecibo: TQRLabel;
+    lvalor: TQRLabel;
+    lrecebi: TQRLabel;
+    Limportancia: TQRLabel;
+    lreferente: TQRLabel;
+    lcidade: TQRLabel;
+    lemitente: TQRLabel;
+    lassinatura: TQRLabel;
+    lendereco: TQRLabel;
+    lendereco1: TQRLabel;
+    QRImage1: TQRImage;
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure LabeledEdit5Exit(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure LabeledEdit2Exit(Sender: TObject);
+    procedure LabeledEdit1KeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+  vEmpresa, vEndereco, vBairro, vCidade, vFone, vFone2, vCNPJ, vCEP, vIE, vVias, vEspaco, vPorta: String;
+  vConvenio, vCliente: String;
+
+    { Public declarations }
+  end;
+
+var
+  frmRecibo: TfrmRecibo;
+
+implementation
+
+uses Extens, uDmWorkCom;
+
+{$R *.dfm}
+
+procedure TfrmRecibo.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Labelededit1.Text   := '';
+Labelededit2.Text   := '';
+Labelededit3.Text   := '';
+Labelededit4.Text   := '';
+Labelededit5.Text   := '';
+Labelededit6.Text   := '';
+vFone2              := '';
+vCEP                := '';
+vIE                 := '';
+FrmRecibo.memo1.Text:= '';
+FrmRecibo.memo2.Text:= '';
+
+end;
+
+procedure TfrmRecibo.FormCreate(Sender: TObject);
+var Arquivo: TIniFile;
+begin
+Labelededit7.Text   := DmWorkCom.CdsEmpresaFANTASIA.AsString;
+Labelededit9.Text   := DmWorkCom.CdsEmpresaENDERECO.AsString;
+Labelededit9.Text   := Labelededit9.Text + ', '+DmWorkCom.CdsEmpresaNUMERO.AsString;
+Labelededit9.Text   := Labelededit9.Text + ' - '+DmWorkCom.CdsEmpresaBAIRRO.AsString;
+Labelededit5.Text   := DmWorkCom.CdsEmpresaCIDADE.AsString;
+Labelededit9.Text   := Labelededit9.Text + '  FONE:' + DmWorkCom.CdsEmpresaTELEFONE.AsString;
+
+vFone2              := DmWorkCom.CdsEmpresaTELEFAX.AsString;
+Labelededit8.Text   := DmWorkCom.CdsEmpresaCNPJ_CPF.AsString;
+vCEP                := DmWorkCom.CdsEmpresaCEP.AsString;
+vIE                 := DmWorkCom.CdsEmpresaINSCRICAO_RG.AsString;
+QrImage1.Picture.LoadFromFile('GLogo.jpg');
+LabeledEdit6.Text :=formatdatetime('dd',Date)+ ' de ' + formatdatetime('mmmm',Date)+ ' de ' + formatdatetime('yyyy',Date);
+end;
+
+procedure TfrmRecibo.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+if key=#27 then
+close
+else
+ if key=#13 then begin
+  Key := #0;
+       Perform(WM_nextdlgctl,0,0)
+ end else if Key = #27 then
+   Perform(WM_nextdlgctl,1,0);
+
+
+end;
+
+procedure TfrmRecibo.LabeledEdit5Exit(Sender: TObject);
+begin
+        LabeledEdit6.Text :=formatdatetime('dd',Date)+
+        ' de ' + formatdatetime('mmmm',Date)+
+        ' de ' + formatdatetime('yyyy',Date);
+
+end;
+
+procedure TfrmRecibo.SpeedButton1Click(Sender: TObject);
+var Arquivo: TIniFile;
+begin
+Labelededit7.Text   := DmWorkCom.CdsEmpresaFANTASIA.AsString;
+Labelededit9.Text   := DmWorkCom.CdsEmpresaENDERECO.AsString;
+Labelededit9.Text   := Labelededit9.Text + ', '+DmWorkCom.CdsEmpresaNUMERO.AsString;
+Labelededit9.Text   := Labelededit9.Text + ' - '+DmWorkCom.CdsEmpresaBAIRRO.AsString;
+Labelededit5.Text   := DmWorkCom.CdsEmpresaCIDADE.AsString;
+Labelededit9.Text   := Labelededit9.Text + '  FONE:' + DmWorkCom.CdsEmpresaTELEFONE.AsString;
+
+vFone2              := DmWorkCom.CdsEmpresaTELEFAX.AsString;
+Labelededit8.Text   := DmWorkCom.CdsEmpresaCNPJ_CPF.AsString;
+vCEP                := DmWorkCom.CdsEmpresaCEP.AsString;
+vIE                 := DmWorkCom.CdsEmpresaINSCRICAO_RG.AsString;
+QrImage1.Picture.LoadFromFile('GLogo.jpg');
+LabeledEdit6.Text :=formatdatetime('dd',Date)+ ' de ' + formatdatetime('mmmm',Date)+ ' de ' + formatdatetime('yyyy',Date);
+
+
+        Lnrecibo.Caption := 'Nº ' + LabeledEdit1.Text;
+        Lvalor.Caption := 'VALOR R$ ' + LabeledEdit2.Text;
+        LRECEBI.Caption := 'Recebi (emos) de: ' + LabeledEdit3.Text;
+        Lendereco.Caption := 'Endereço: ' + LabeledEdit4.Text;
+        Limportancia.Caption := 'A importância de: (' + memo1.Text + ')';
+        Lreferente.Caption := 'Referente ' + memo2.Text;
+        LCidade.Caption := LabeledEdit5.Text + ', '+ LabeledEdit6.text;
+        Lemitente.Caption := 'Emitente: ' + LabeledEdit7.Text + '   CNPJ/CPF' + LabeledEdit8.Text;
+        LEndereco1.Caption := 'Endereço: ' + LabeledEdit9.Text;
+        Lassinatura.Caption := 'Assinatura ';
+        quickrep1.Preview;
+
+end;
+
+procedure TfrmRecibo.LabeledEdit2Exit(Sender: TObject);
+begin
+        Memo1.text := Extens.Extenso(strtofloat(labelededit2.Text));
+         labelededit2.Text:= format('%n', [strtofloat(labelededit2.Text)]);
+end;
+
+procedure TfrmRecibo.LabeledEdit1KeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+if key=(vk_escape) then
+close;
+
+end;
+
+end.

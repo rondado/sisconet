@@ -1,0 +1,11 @@
+LPT1
+LPT2
+/dev/ttyS0
+/dev/ttyS1
+/dev/ttyUSB0
+/dev/ttyUSB1
+/dev/USB_VOX_1
+\\localhost\Epson
+c:\temp\ecf.txt
+/tmp/ecf.txt
+USB_VOX_1

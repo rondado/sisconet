@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42487,4604959259" ReportOptions.Description.Text="" ReportOptions.LastChange="42741,9479737037" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada"/>
+    <item DataSet="frxLivro" DataSetName="frxDbLivro"/>
+    <item DataSet="frxLivroPag" DataSetName="frxDbLivroPag"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="801,26036" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxShapeView Name="Shape3" Left="0" Top="48,13389" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape2" Left="0,55906" Top="25,23624" Width="718,1107" Height="22,67718"/>
+      <TfrxLineView Name="Line1" Left="563,14997" Top="22,67718" Width="0" Height="26,45671" Color="0" Frame.Typ="1"/>
+      <TfrxShapeView Name="Shape4" Left="0" Top="70,81107" Width="718,1107" Height="22,67718"/>
+      <TfrxMemoView Name="Memo1" Left="24,45671" Top="29,23624" Width="510,23655" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="LIVRO DE MOVIMENTAÇÃO DE COMBUSTÍVEL (LMC)"/>
+      <TfrxMemoView Name="Memo2" Left="571,04762" Top="26,45671" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Folha nº:"/>
+      <TfrxLineView Name="Line2" Left="476,22078" Top="47,25201" Width="0" Height="22,67718" Color="0" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo3" Left="7,55906" Top="51,03154" Width="75,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="1) Produto:"/>
+      <TfrxMemoView Name="Memo4" Left="480,00031" Top="51,03154" Width="52,91342" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="2) Data:"/>
+      <TfrxShapeView Name="Shape5" Left="0" Top="92,60637" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape6" Left="0" Top="115,28355" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape7" Left="0" Top="137,96073" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape9" Left="0" Top="160,63791" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape10" Left="0" Top="183,31509" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape11" Left="0" Top="205,99227" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape1" Left="0" Top="294,1577" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape8" Left="0" Top="316,83488" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape12" Left="0" Top="339,51206" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape13" Left="0" Top="362,18924" Width="718,1107" Height="22,67718"/>
+      <TfrxMemoView Name="Memo5" Left="7,55906" Top="75,5906" Width="359,05535" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="3) Estoque de Abertura (Medição no inicio do dia)"/>
+      <TfrxLineView Name="Line3" Left="92,70872" Top="94,48825" Width="0" Height="41,57483" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line4" Left="188,9765" Top="94,48825" Width="0" Height="45,35436" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line5" Left="287,24428" Top="94,48825" Width="0" Height="45,35436" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line6" Left="377,953" Top="94,48825" Width="0" Height="45,35436" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line7" Left="476,22078" Top="94,48825" Width="0" Height="41,57483" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line8" Left="566,9295" Top="94,48825" Width="0" Height="510,23655" Color="0" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo6" Left="4" Top="94,48825" Width="30,23624" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo7" Left="98,26778" Top="94,48825" Width="30,23624" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo8" Left="192,75603" Top="94,48825" Width="30,23624" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo9" Left="291,02381" Top="94,48825" Width="30,23624" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo10" Left="385,51206" Top="94,48825" Width="30,23624" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo11" Left="483,77984" Top="94,48825" Width="30,23624" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo12" Left="573,48856" Top="94,48825" Width="136,06308" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="3.1) Estoque Abertura"/>
+      <TfrxShapeView Name="Shape14" Left="0" Top="229,55133" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape15" Left="0" Top="252,22851" Width="718,1107" Height="41,57483"/>
+      <TfrxShapeView Name="Shape16" Left="0" Top="385,51206" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape17" Left="0" Top="408,18924" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape18" Left="0" Top="430,86642" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape19" Left="0" Top="453,5436" Width="718,1107" Height="22,67718"/>
+      <TfrxLineView Name="Line9" Left="423,30736" Top="136,06308" Width="0" Height="340,1577" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line10" Left="75,5906" Top="294,80334" Width="0" Height="181,41744" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line11" Left="151,1812" Top="294,80334" Width="0" Height="181,41744" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line12" Left="287,24428" Top="294,80334" Width="0" Height="181,41744" Color="0" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo13" Left="7,55906" Top="141,62214" Width="298,58287" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="4) Volume recebido no dia (em litros)"/>
+      <TfrxMemoView Name="Memo14" Left="427,08689" Top="139,84261" Width="132,28355" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="4.1) Nº TQ Descarga"/>
+      <TfrxMemoView Name="Memo15" Left="574,48856" Top="140,62214" Width="136,06308" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="4.2) Volume Recebido"/>
+      <TfrxMemoView Name="Memo16" Left="7,55906" Top="162,51979" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Nota Fiscal nº:"/>
+      <TfrxMemoView Name="Memo17" Left="7,55906" Top="181,41744" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Nota Fiscal nº:"/>
+      <TfrxMemoView Name="Memo18" Left="7,55906" Top="207,87415" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Nota Fiscal nº:"/>
+      <TfrxMemoView Name="Memo19" Left="429,86642" Top="232,33086" Width="124,72449" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="4.3) Total Recebido"/>
+      <TfrxMemoView Name="Memo20" Left="427,08689" Top="257,00804" Width="132,28355" Height="34,01577" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="4.4) Vol. Disponível&#13;&#10;(3.1 + 4.3)"/>
+      <TfrxMemoView Name="Memo21" Left="7,55906" Top="298,58287" Width="56,69295" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="5.1) TQ"/>
+      <TfrxMemoView Name="Memo22" Left="83,14966" Top="298,58287" Width="56,69295" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="5.2) Bico"/>
+      <TfrxMemoView Name="Memo23" Left="154,96073" Top="298,58287" Width="117,16543" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="5.3) + Fechamento"/>
+      <TfrxMemoView Name="Memo24" Left="294,80334" Top="298,58287" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="5.4) Abertura"/>
+      <TfrxMemoView Name="Memo25" Left="430,86642" Top="298,58287" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="5.5) Aferições"/>
+      <TfrxMemoView Name="Memo26" Left="578,26809" Top="298,58287" Width="109,60637" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="5.6) Vendas Bico"/>
+      <TfrxShapeView Name="Shape20" Left="0" Top="476,22078" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape21" Left="0" Top="498,89796" Width="718,1107" Height="41,57483"/>
+      <TfrxShapeView Name="Shape22" Left="0" Top="540,47279" Width="718,1107" Height="41,57483"/>
+      <TfrxShapeView Name="Shape23" Left="0" Top="582,04762" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape24" Left="0" Top="604,7248" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape25" Left="0" Top="627,40198" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape26" Left="0" Top="649,7248" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape27" Left="0" Top="672,40198" Width="718,1107" Height="22,67718"/>
+      <TfrxShapeView Name="Shape28" Left="0" Top="695,07916" Width="718,1107" Height="22,67718"/>
+      <TfrxLineView Name="Line13" Left="340,1577" Top="476,22078" Width="0" Height="196,53556" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line14" Left="188,9765" Top="498,89796" Width="0" Height="83,14966" Color="0" Frame.Typ="1"/>
+      <TfrxShapeView Name="Shape29" Left="0" Top="718,1107" Width="718,1107" Height="41,57483"/>
+      <TfrxShapeView Name="Shape30" Left="0" Top="759,68553" Width="718,1107" Height="22,67718"/>
+      <TfrxMemoView Name="Memo27" Left="6,77953" Top="477,22078" Width="177,63791" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="10) Valor das vendas (R$)"/>
+      <TfrxMemoView Name="Memo28" Left="355,27582" Top="478,22078" Width="124,72449" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="5.7) Vendas no dia"/>
+      <TfrxMemoView Name="Memo29" Left="3,77953" Top="502,67749" Width="177,63791" Height="34,01577" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="10.1) Valor de vendas do dia&#13;&#10;(5.7 x PREÇO BOMBA)"/>
+      <TfrxMemoView Name="Memo30" Left="351,49629" Top="502,67749" Width="139,84261" Height="34,01577" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="6) Estoque Escritural&#13;&#10;(4.4 - 5.7)"/>
+      <TfrxMemoView Name="Memo31" Left="3,77953" Top="546,03185" Width="173,85838" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="10.2) Valor Acumulado Mês"/>
+      <TfrxMemoView Name="Memo32" Left="354,27582" Top="544,25232" Width="170,07885" Height="34,01577" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="7) Estoque de Fechamento&#13;&#10;(9.1)"/>
+      <TfrxMemoView Name="Memo33" Left="7,55906" Top="585,82715" Width="177,63791" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="11) Para uso do Revendedor"/>
+      <TfrxMemoView Name="Memo34" Left="7,55906" Top="608,50433" Width="117,16543" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="13) Observações"/>
+      <TfrxMemoView Name="Memo35" Left="7,55906" Top="676,53587" Width="173,85838" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Conciliação dos Estoques"/>
+      <TfrxMemoView Name="Memo36" Left="351,49629" Top="585,82715" Width="132,28355" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="8) Perdas + Ganhos"/>
+      <TfrxMemoView Name="Memo37" Left="351,49629" Top="604,7248" Width="181,41744" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="12) Destinado à fiscalização"/>
+      <TfrxMemoView Name="Memo38" Left="351,49629" Top="631,18151" Width="37,7953" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="ANP"/>
+      <TfrxMemoView Name="Memo39" Left="351,49629" Top="653,85869" Width="181,41744" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="OUTROS ORGÃOS FISCAIS"/>
+      <TfrxLineView Name="Line15" Left="113,3859" Top="695,43352" Width="0" Height="64,25201" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line16" Left="188,9765" Top="695,43352" Width="0" Height="64,25201" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line17" Left="264,5671" Top="695,43352" Width="0" Height="64,25201" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line18" Left="340,1577" Top="695,43352" Width="0" Height="64,25201" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line19" Left="491,3389" Top="695,43352" Width="0" Height="64,25201" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line20" Left="415,7483" Top="695,43352" Width="0" Height="64,25201" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line21" Left="566,9295" Top="695,43352" Width="0" Height="64,25201" Color="0" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo40" Left="3,77953" Top="721,89023" Width="102,04731" Height="34,01577" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="9) Fechamento&#13;&#10;Físico"/>
+      <TfrxMemoView Name="Memo41" Left="120,94496" Top="696,43352" Width="41,57483" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo42" Left="196,53556" Top="696,43352" Width="41,57483" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo43" Left="272,12616" Top="696,43352" Width="41,57483" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo44" Left="351,49629" Top="698,21305" Width="41,57483" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo45" Left="427,08689" Top="696,43352" Width="41,57483" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo46" Left="502,67749" Top="697,21305" Width="41,57483" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TQ)"/>
+      <TfrxMemoView Name="Memo47" Left="578,26809" Top="697,43352" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="TOTAL"/>
+      <TfrxMemoView Name="Memo48" Left="574,48856" Top="721,89023" Width="26,45671" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="9.1)"/>
+      <TfrxMemoView Name="Memo49" Left="3,77953" Top="761,68553" Width="706,77211" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="(*) ATENÇÃO 0 SE O RESULTADO FOR NEGATIVO, PODE ESTAR HAVENDO VAZAMENTO DE PRODUTO PARA O MEIO AMBIENTE"/>
+      <TfrxMemoView Name="frxDbLivroPagNUM_PAGINA" Left="635,74057" Top="26,45671" Width="79,37013" Height="18,89765" DataField="NUM_PAGINA" DataSet="frxLivroPag" DataSetName="frxDbLivroPag" Text="[frxDbLivroPag.&#34;NUM_PAGINA&#34;]"/>
+      <TfrxMemoView Name="frxDbLivroPagDESCRICAO" Left="90,70872" Top="51,13389" Width="377,953" Height="18,89765" DataField="DESCRICAO" DataSet="frxLivroPag" DataSetName="frxDbLivroPag" Text="[frxDbLivroPag.&#34;DESCRICAO&#34;]"/>
+      <TfrxMemoView Name="frxDbLivroPagDATA_PAGINA" Left="544,25232" Top="51,13389" Width="139,84261" Height="18,89765" DataField="DATA_PAGINA" DataSet="frxLivroPag" DataSetName="frxDbLivroPag" Text="[frxDbLivroPag.&#34;DATA_PAGINA&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaTQ1" Left="37,7953" Top="94,48825" Width="79,37013" Height="18,89765" DataField="TQ1" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;TQ1&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaESTTQ1" Left="7,55906" Top="117,16543" Width="79,37013" Height="18,89765" DataField="ESTTQ1" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;ESTTQ1&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaTQ2" Left="136,06308" Top="94,48825" Width="79,37013" Height="18,89765" DataField="TQ2" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;TQ2&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaESTTQ2" Left="102,04731" Top="117,16543" Width="79,37013" Height="18,89765" DataField="ESTTQ2" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;ESTTQ2&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaTQ3" Left="226,7718" Top="94,48825" Width="79,37013" Height="18,89765" DataField="TQ3" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;TQ3&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaESTTQ3" Left="200,31509" Top="117,16543" Width="79,37013" Height="18,89765" DataField="ESTTQ3" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;ESTTQ3&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaEST_TOTAL" Left="589,60668" Top="117,16543" Width="105,82684" Height="18,89765" DataField="EST_ENTRADAS" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;EST_ENTRADAS&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF1_NUM" Left="113,3859" Top="162,51979" Width="79,37013" Height="18,89765" DataField="VR_NF1_NUM" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF1_NUM&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF1_DATA" Left="238,11039" Top="162,51979" Width="79,37013" Height="18,89765" DataField="VR_NF1_DATA" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF1_DATA&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF1_TQ" Left="445,98454" Top="162,51979" Width="79,37013" Height="18,89765" DataField="VR_NF1_TQ" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF1_TQ&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF1_VOL" Left="600,94527" Top="162,51979" Width="79,37013" Height="18,89765" DataField="VR_NF1_VOL" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF1_VOL&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF2_NUM" Left="113,3859" Top="181,41744" Width="79,37013" Height="18,89765" DataField="VR_NF2_NUM" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF2_NUM&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF3_NUM" Left="113,3859" Top="207,87415" Width="79,37013" Height="18,89765" DataField="VR_NF3_NUM" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF3_NUM&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF2_DATA" Left="238,11039" Top="185,19697" Width="79,37013" Height="18,89765" DataField="VR_NF2_DATA" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF2_DATA&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF3_DATA" Left="238,11039" Top="207,87415" Width="79,37013" Height="18,89765" DataField="VR_NF3_DATA" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF3_DATA&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF2_TQ" Left="445,98454" Top="185,19697" Width="79,37013" Height="18,89765" DataField="VR_NF2_TQ" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF2_TQ&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF3_TQ" Left="445,98454" Top="207,87415" Width="79,37013" Height="18,89765" DataField="VR_NF3_TQ" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF3_TQ&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF2_VOL" Left="600,94527" Top="185,19697" Width="79,37013" Height="18,89765" DataField="VR_NF2_VOL" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF2_VOL&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_NF3_VOL" Left="600,94527" Top="207,87415" Width="79,37013" Height="18,89765" DataField="VR_NF3_VOL" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_NF3_VOL&#34;]"/>
+      <TfrxMemoView Name="Memo50" Left="7,55906" Top="264,5671" Width="241,88992" Height="18,89765" Text="5) Volumes Vendido no dia (em litros)"/>
+      <TfrxMemoView Name="frxDbEstEntradaVR_TOTAL_REC" Left="600,94527" Top="230,55133" Width="79,37013" Height="18,89765" DataField="VR_TOTAL_REC" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VR_TOTAL_REC&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaEST_TOTAL44" Left="600,94527" Top="264,5671" Width="79,37013" Height="18,89765" DataField="EST_TOTAL44" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;EST_TOTAL44&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_TQ1" Left="6,77953" Top="317,48052" Width="52,91342" Height="18,89765" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_TQ1&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_TQ2" Left="7,55906" Top="340,1577" Width="56,69295" Height="18,89765" DataField="VV_TQ2" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_TQ2&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_TQ3" Left="7,55906" Top="362,83488" Width="56,69295" Height="18,89765" DataField="VV_TQ3" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_TQ3&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_BC1" Left="102,04731" Top="317,48052" Width="15,11812" Height="18,89765" DataField="VV_BC1" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_BC1&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_BC2" Left="102,04731" Top="340,1577" Width="15,11812" Height="18,89765" DataField="VV_BC2" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_BC2&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_BC3" Left="102,04731" Top="362,83488" Width="15,11812" Height="18,89765" DataField="VV_BC3" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_BC3&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_FECHA1" Left="177,63791" Top="317,48052" Width="79,37013" Height="18,89765" DataField="VV_FECHA1" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_FECHA1&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_FECHA2" Left="177,63791" Top="340,1577" Width="79,37013" Height="18,89765" DataField="VV_FECHA2" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_FECHA2&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_FECHA3" Left="177,63791" Top="362,83488" Width="79,37013" Height="18,89765" DataField="VV_FECHA3" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_FECHA3&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_ABRE1" Left="309,92146" Top="317,48052" Width="79,37013" Height="18,89765" DataField="VV_ABRE1" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_ABRE1&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_ABRE2" Left="309,92146" Top="340,1577" Width="79,37013" Height="18,89765" DataField="VV_ABRE2" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_ABRE2&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_ABRE3" Left="309,92146" Top="362,83488" Width="79,37013" Height="18,89765" DataField="VV_ABRE3" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_ABRE3&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_AFER1" Left="457,32313" Top="317,48052" Width="79,37013" Height="18,89765" DataField="VV_AFER1" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_AFER1&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_AFER2" Left="457,32313" Top="340,1577" Width="79,37013" Height="18,89765" DataField="VV_AFER2" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_AFER2&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_AFER3" Left="457,32313" Top="362,83488" Width="79,37013" Height="18,89765" DataField="VV_AFER3" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_AFER3&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_VENDA1" Left="604,7248" Top="321,26005" Width="79,37013" Height="18,89765" DataField="VV_VENDA1" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_VENDA1&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_VENDA2" Left="604,7248" Top="343,93723" Width="79,37013" Height="18,89765" DataField="VV_VENDA2" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_VENDA2&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_VENDA3" Left="604,7248" Top="362,83488" Width="79,37013" Height="18,89765" DataField="VV_VENDA3" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_VENDA3&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVV_TOTAL" Left="604,7248" Top="480,00031" Width="79,37013" Height="18,89765" DataField="VV_TOTAL" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VV_TOTAL&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaVALOR_PROD" Left="211,65368" Top="478,00031" Width="79,37013" Height="18,89765" DataField="VALOR_PROD" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;VALOR_PROD&#34;]"/>
+      <TfrxMemoView Name="frxDbEstEntradaEST_ESCRITURAL" Left="604,7248" Top="510,23655" Width="79,37013" Height="18,89765" DataField="EST_ESCRITURAL" DataSet="frxDbEstEntrada" DataSetName="frxDbEstEntrada" Text="[frxDbEstEntrada.&#34;EST_ESCRITURAL&#34;]"/>
+    </TfrxReportTitle>
+  </TfrxReportPage>
+</TfrxReport>

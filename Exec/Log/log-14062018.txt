@@ -1,0 +1,13 @@
+14/06/2018 19:46:55 - WebService Distribuição de DFe:
+- Inativo ou Inoperante tente novamente.
+Erro Interno: 0
+Erro HTTP: 0
+O nome ou o endereço do servidor não pôde ser resolvido - URL:https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx - SOAPAction:http://www.portalfiscal.inf.br/nfe/wsdl/NFeDistribuicaoDFe/nfeDistDFeInteresse
+14/06/2018 21:07:06 - Nenhum arquivo de Schema encontrado na pasta: 
+C:\Sisconet18\exec\Schemas\
+14/06/2018 21:11:31 - WebService Distribuição de DFe:
+- Inativo ou Inoperante tente novamente.
+Erro Interno: 0
+Erro HTTP: 0
+O nome ou o endereço do servidor não pôde ser resolvido - URL:https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx - SOAPAction:http://www.portalfiscal.inf.br/nfe/wsdl/NFeDistribuicaoDFe/nfeDistDFeInteresse
+14/06/2018 21:12:29 - Nenhuma XML de NFe consultada!

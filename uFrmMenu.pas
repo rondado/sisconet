@@ -1,0 +1,1146 @@
+unit uFrmMenu;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Menus, ActnList, Buttons, ExtCtrls, ComCtrls, ImgList, StdCtrls,
+  ToolWin, jpeg, ShellAPI, System.Actions, System.UITypes, System.ImageList,
+  Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan, Vcl.ActnCtrls, Vcl.ActnMenus,
+  uMensagem, EAppProt, IdBaseComponent, IdMailBox, ufrmIBPT;
+
+type
+  TFrmMenu = class(TForm)
+    StatusBar1: TStatusBar;
+    ActionList1: TActionList;
+    ActClientes: TAction;
+    ActProdutos: TAction;
+    ActPedidos: TAction;
+    ActAgenda: TAction;
+    ActEncerrar: TAction;
+    ImageList1: TImageList;
+    ActContasRc: TAction;
+    ActContasPg: TAction;
+    ActCaixa: TAction;
+    ActEntradas: TAction;
+    Timer1: TTimer;
+    MainMenu1: TMainMenu;
+    Cadastro1: TMenuItem;
+    CadastrodeClientes1: TMenuItem;
+    CadastrodeProdutos1: TMenuItem;
+    CadastrodeFuncionarios1: TMenuItem;
+    CadastrodeContabilidade1: TMenuItem;
+    CadastrodePontosdeVenda1: TMenuItem;
+    PostodeCombustivel1: TMenuItem;
+    OpesdePosto1: TMenuItem;
+    CadastrodeCombustivel1: TMenuItem;
+    CadastrodeBomba1: TMenuItem;
+    CadastrodeTanque1: TMenuItem;
+    CentrodeCusto1: TMenuItem;
+    PlanosdeContas1: TMenuItem;
+    CadastrodeProdutos2: TMenuItem;
+    GruposeSubGrupos1: TMenuItem;
+    AtualizarTabeladePreos71: TMenuItem;
+    FechamentodeEstoque1: TMenuItem;
+    GravaFechamentoInicial1: TMenuItem;
+    Movimentao1: TMenuItem;
+    Cadastro2: TMenuItem;
+    CadastrarFormasdePagamento1: TMenuItem;
+    CadastrarClassificaodeSada1: TMenuItem;
+    PedidoseOramentos1: TMenuItem;
+    CompradeMercadorias1: TMenuItem;
+    EmissoSrieD11: TMenuItem;
+    Financeira1: TMenuItem;
+    ContasaPagar1: TMenuItem;
+    ContasaReceber1: TMenuItem;
+    MovimentodeCaixa1: TMenuItem;
+    ControledeCheques1: TMenuItem;
+    Servios1: TMenuItem;
+    OrdemdeServio1: TMenuItem;
+    Relatrios1: TMenuItem;
+    Utilitarios1: TMenuItem;
+    Geral1: TMenuItem;
+    Configurao1: TMenuItem;
+    AgendadeCompromisso1: TMenuItem;
+    CadastrodeReduesZ1: TMenuItem;
+    Sintegra1: TMenuItem;
+    SEF21: TMenuItem;
+    Usurios1: TMenuItem;
+    CadastrodeUsuarios1: TMenuItem;
+    rocadeUsuarios1: TMenuItem;
+    SobreoAplicativo1: TMenuItem;
+    Sair1: TMenuItem;
+    actCadUsuario: TAction;
+    actCadFunc: TAction;
+    pnlToolBar1: TPanel;
+    actAjustePreco: TAction;
+    btnActProdutos: TBitBtn;
+    btnAjustePreco: TBitBtn;
+    btnCadUsuario: TBitBtn;
+    btnCadFunc: TBitBtn;
+    btnActContasRc: TBitBtn;
+    btnActContasPg: TBitBtn;
+    btnActClientes: TBitBtn;
+    btnActPedidos: TBitBtn;
+    btnActEncerrar: TBitBtn;
+    btnActCaixa: TBitBtn;
+    CadastrodeComposies1: TMenuItem;
+    actCadComposicao: TAction;
+    CadastrodeFornecedores1: TMenuItem;
+    GeradorSPEDFiscaleConstrinuies1: TMenuItem;
+    Acompanhamentodevendas1: TMenuItem;
+    ActionManager1: TActionManager;
+    RelatoriosemGeral1: TMenuItem;
+    RelatoriodeVendaseComisses1: TMenuItem;
+    Etiquetasdepostagem1: TMenuItem;
+    Produtos1: TMenuItem;
+    GirodeProdutos1: TMenuItem;
+    ListadeCompras1: TMenuItem;
+    Financeiro1: TMenuItem;
+    Contaapagarereceber1: TMenuItem;
+    MovimentaodeCaixaDirio1: TMenuItem;
+    ResultadoFinanceirodoPerodo1: TMenuItem;
+    Scribes1: TMenuItem;
+    N1: TMenuItem;
+    LivrodemovimentaodecombustvelLMC2: TMenuItem;
+    ImgLogo: TImage;
+    ImportardadosV151: TMenuItem;
+    Cadastrodebancos1: TMenuItem;
+    Emissodeboletos1: TMenuItem;
+    ReciboManual1: TMenuItem;
+    abeladePreos1: TMenuItem;
+    ConsultaTabelaPreos1: TMenuItem;
+    SuporteAnyDesk1: TMenuItem;
+    SuporteAmmy1: TMenuItem;
+    EvAppProtect1: TEvAppProtect;
+    EmissodeNotaFiscal1: TMenuItem;
+    IdMailBox1: TIdMailBox;
+    IBPT1: TMenuItem;
+    procedure ActClientesExecute(Sender: TObject);
+    procedure ActAgendaExecute(Sender: TObject);
+    procedure ActEncerrarExecute(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure ActContasRcExecute(Sender: TObject);
+    procedure ActContasPgExecute(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure ActProdutosExecute(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
+    procedure Button9Click(Sender: TObject);
+    procedure Button10Click(Sender: TObject);
+    procedure Button11Click(Sender: TObject);
+    procedure Button12Click(Sender: TObject);
+    procedure Button13Click(Sender: TObject);
+    procedure Button14Click(Sender: TObject);
+    procedure Button15Click(Sender: TObject);
+    procedure Button16Click(Sender: TObject);
+    procedure Button20Click(Sender: TObject);
+    procedure Button18Click(Sender: TObject);
+    procedure Button19Click(Sender: TObject);
+    procedure Button26Click(Sender: TObject);
+    procedure Button28Click(Sender: TObject);
+    procedure Button29Click(Sender: TObject);
+    procedure Button30Click(Sender: TObject);
+    procedure Button31Click(Sender: TObject);
+    procedure Button33Click(Sender: TObject);
+    procedure Button34Click(Sender: TObject);
+    procedure CadastrodeClientes1Click(Sender: TObject);
+    procedure CadastrodeProdutos2Click(Sender: TObject);
+    procedure GruposeSubGrupos1Click(Sender: TObject);
+    procedure AtualizarTabeladePreos71Click(Sender: TObject);
+    procedure FechamentodeEstoque1Click(Sender: TObject);
+    procedure GravaFechamentoInicial1Click(Sender: TObject);
+    procedure CadastrodeFuncionarios1Click(Sender: TObject);
+    procedure CadastrodeContabilidade1Click(Sender: TObject);
+    procedure CadastrodePontosdeVenda1Click(Sender: TObject);
+    procedure CadastrodeTanque1Click(Sender: TObject);
+    procedure CadastrodeBomba1Click(Sender: TObject);
+    procedure CadastrodeCombustivel1Click(Sender: TObject);
+    procedure OpesdePosto1Click(Sender: TObject);
+    procedure CentrodeCusto1Click(Sender: TObject);
+    procedure PlanosdeContas1Click(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
+    procedure CadastrarClassificaodeSada1Click(Sender: TObject);
+    procedure CadastrarFormasdePagamento1Click(Sender: TObject);
+    procedure PedidoseOramentos1Click(Sender: TObject);
+    procedure CompradeMercadorias1Click(Sender: TObject);
+    procedure EmissoSrieD11Click(Sender: TObject);
+    procedure ContasaPagar1Click(Sender: TObject);
+    procedure ContasaReceber1Click(Sender: TObject);
+    procedure MovimentodeCaixa1Click(Sender: TObject);
+    procedure ControledeCheques1Click(Sender: TObject);
+    procedure OrdemdeServio1Click(Sender: TObject);
+    procedure Configurao1Click(Sender: TObject);
+    procedure AgendadeCompromisso1Click(Sender: TObject);
+    procedure CadastrodeReduesZ1Click(Sender: TObject);
+    procedure Sintegra1Click(Sender: TObject);
+    procedure SEF21Click(Sender: TObject);
+    procedure CadastrodeUsuarios1Click(Sender: TObject);
+    procedure rocadeUsuarios1Click(Sender: TObject);
+    procedure actCadUsuarioExecute(Sender: TObject);
+    procedure actCadFuncExecute(Sender: TObject);
+    procedure actAjustePrecoExecute(Sender: TObject);
+    procedure ActPedidosExecute(Sender: TObject);
+    procedure ActCaixaExecute(Sender: TObject);
+    procedure actCadComposicaoExecute(Sender: TObject);
+    procedure CadastrodeFornecedores1Click(Sender: TObject);
+    procedure GeradorSPEDFiscaleConstrinuies1Click(Sender: TObject);
+    procedure SobreoAplicativo1Click(Sender: TObject);
+    procedure Acompanhamentodevendas1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure RelatoriosemGeral1Click(Sender: TObject);
+    procedure RelatoriodeVendaseComisses1Click(Sender: TObject);
+    procedure Etiquetasdepostagem1Click(Sender: TObject);
+    procedure GirodeProdutos1Click(Sender: TObject);
+    procedure Contaapagarereceber1Click(Sender: TObject);
+    procedure MovimentaodeCaixaDirio1Click(Sender: TObject);
+    procedure ResultadoFinanceirodoPerodo1Click(Sender: TObject);
+    procedure Scribes1Click(Sender: TObject);
+    procedure LivrodemovimentaodecombustvelLMC2Click(Sender: TObject);
+    procedure ImportardadosV151Click(Sender: TObject);
+    procedure Cadastrodebancos1Click(Sender: TObject);
+    procedure Emissodeboletos1Click(Sender: TObject);
+    procedure ListadeCompras1Click(Sender: TObject);
+    procedure ReciboManual1Click(Sender: TObject);
+    procedure abeladePreos1Click(Sender: TObject);
+    procedure ConsultaTabelaPreos1Click(Sender: TObject);
+    procedure SuporteAnyDesk1Click(Sender: TObject);
+    procedure SuporteAmmy1Click(Sender: TObject);
+    procedure EmissodeNotaFiscal1Click(Sender: TObject);
+    procedure IBPT1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure CarregarConfiguracao;
+    procedure ShowHint (Sender: TObject);
+  end;
+
+var
+  FrmMenu: TFrmMenu;
+
+implementation
+
+uses uFrmAgendaCompromissos, uFrmGrupo, uFrmSubGrupo, uFrmConfiguracoes,
+  uFrmClientes, uFrmCadFunc, uFrmCadGrupo,uLibrary, uFrmCadPDV,
+  uFrmLancPedidos, uFrmCadClassPedido, uFrmCadFormaPag, uFrmCadContas,
+  uDmWorkCom, uFrmTabPreco, uFrmCadCheques, uFrmImforma, uFrmCaixaDiario,
+  uFrmLancItensPedido, uFrmPedidosConsulta, uFrmCadUsuarios, uDmProdutos,
+  uFrmLoginUsuario, uFrmProdutos, uFrmLancCompras, uFrmLancItensCompra,
+  uFrmComprasConsulta, uFrmLancItensGrid, uFrmFechamentoEstoque,
+  uFrmLancComanda, uFrmCadRegistro60, uFrmCadOS, uFrmCadTanques, uFrmCadBicos,
+  uFrmConfigPosto, uFrmCadBomba, uFrmCadContabil, uFrmCadReg61, uFrmCadCCusto,
+  uFrmCadPlanoConta, uFrmSintegra, uDMClientes, uFrmSEF2,
+  uAjustePreco, uAcompanhaVenda, uFrmCadastroCliente, uFrmSelEndereco,
+  uFrmContatosADC, uFrmProdComposto, uFrmMovCaixa, uFrmSPED, uFrmTabNCM,
+  uDmPosto, uFuncoesPosto, uFrmRelComissao, uFrmRelContas, uFrmEtiquetas,
+  uFrmMovFinanceiro, uFrmRelatorios, uFrmSelMovCaixa, uFrmRelGiroEstoque, uFRMcontasnovo, uXML, //fabricio criei o frmcontasnovo + uxml
+  uFrmLivroLMC, uFrmContas, uFrmCadBancos, uFrmGerarFaturas, uFrmListaCompras, unrecibo, uempenho, uConsEmpenho,
+  uFrmGeraNFe; //fabricio novo unrecibo uempenho
+
+{$R *.dfm}
+
+procedure TFrmMenu.actAjustePrecoExecute(Sender: TObject);
+begin
+  AbreForm(TFrmAjustePreco,FrmAjustePreco);
+end;
+
+procedure TFrmMenu.actCadComposicaoExecute(Sender: TObject);
+begin
+  AbreForm(TFrmProdComposto,FrmProdComposto);
+end;
+
+procedure TFrmMenu.actCadFuncExecute(Sender: TObject);
+begin
+  AbreForm(TFrmCadFunc,FrmCadFunc);
+end;
+
+procedure TFrmMenu.actCadUsuarioExecute(Sender: TObject);
+begin
+  AbreForm(TFrmCadUsuarios,FrmCadUsuarios);
+end;
+
+procedure TFrmMenu.ActCaixaExecute(Sender: TObject);
+begin
+  AbreForm(TFrmCaixaDiario,FrmCaixaDiario);
+end;
+
+procedure TFrmMenu.ActClientesExecute(Sender: TObject);
+begin
+  // verifica permissao
+  if Verifica_Permissao(sIDPerfil,'CadastrodeClientes1') then
+  begin
+    // cadastro de clientes
+    Application.CreateForm(TFrmClientes,FrmClientes);
+    try
+      FrmClientes.showmodal;
+    finally
+      FrmClientes.Destroy;
+    end;
+  end;
+
+end;
+
+//fabricio incluido a unit empenho - tabela de preços inicio
+procedure TFrmMenu.abeladePreos1Click(Sender: TObject);
+begin
+  Application.CreateForm(TFrmempenho,Frmempenho);
+  Frmempenho.showmodal;
+  Frmempenho.Destroy;
+
+end;
+//fabricio incluido a unit empenho - tabela de preços Fim
+procedure TFrmMenu.Acompanhamentodevendas1Click(Sender: TObject);
+begin
+  AbreForm(TfrmAcompanhaVenda,frmAcompanhaVenda);
+end;
+
+procedure TFrmMenu.ActAgendaExecute(Sender: TObject);
+begin
+  // Agenda de Compromissos
+  Application.CreateForm(TFrmAgendaCompromissos,FrmAgendaCompromissos);
+  FrmAgendaCompromissos.showmodal;
+  FrmAgendaCompromissos.Destroy;
+
+end;
+
+procedure TFrmMenu.ActEncerrarExecute(Sender: TObject);
+begin
+  Application.Terminate;
+
+end;
+
+procedure TFrmMenu.FormShow(Sender: TObject);
+begin
+  pNumCli := 0;
+  pNumProd := 0;
+  DmWorkCom.PAFECF.LeArquivoINI;
+  StatusBar1.Panels.Items[0].Text := DateToStr(SVData);
+  StatusBar1.Panels.Items[1].Text := 'IP: ' + RetornaIP;
+  StatusBar1.Panels.Items[4].Text := 'Gestor - Sistema comercial';
+end;
+
+procedure TFrmMenu.GeradorSPEDFiscaleConstrinuies1Click(Sender: TObject);
+begin
+  try
+    Application.CreateForm(TFrmSPED,FrmSPED);
+    FrmSPED.ShowModal;
+  finally
+    FreeAndNil(FrmSPED);
+  end;
+end;
+
+procedure TFrmMenu.GirodeProdutos1Click(Sender: TObject);
+begin
+  AbreForm(TFrmRelGiroEstoque,FrmRelGiroEstoque);
+
+end;
+
+procedure TFrmMenu.GravaFechamentoInicial1Click(Sender: TObject);
+var aux,mes,ano : String;
+begin
+  if DmProdutos.VerificaFechamentoInicial then
+  begin
+    MessageDlg('Fechamento inicial já efetuado!!!', mtWarning, [mbOK], 0);
+    Abort;
+  end;
+  if InputQuery('Fechamento Inicial','Mes/ano',aux) then
+  begin
+    if Length(aux) <> 7 then
+    begin
+      MessageDlg('O mês e ano deve ser informado no formato MM/AAAA. Verifique!!!', mtWarning, [mbOK], 0);
+      Abort;
+    end;
+    mes := copy(aux,1,2);
+    ano := copy(aux,4,4);
+    DmProdutos.GravaFechamentoInicial(mes,ano);
+    MessageDlg('Fechamento inicial efetuado com sucesso!!!', mtWarning, [mbOK], 0);
+  end;
+
+end;
+
+procedure TFrmMenu.GruposeSubGrupos1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadGrupo,FrmCadGrupo);
+end;
+
+procedure TFrmMenu.IBPT1Click(Sender: TObject);
+begin
+ AbreForm(TFrmIBPT,frmIBPT);
+end;
+
+procedure TFrmMenu.ImportardadosV151Click(Sender: TObject);
+var formMensagem: TFormMensagem;
+begin
+  if Confirmacao('Confirma a importação dos dados V15?') then
+  begin
+    try
+      formMensagem := TFormMensagem.Create('Aguarde... Importando os dados V15!',550,150,clWhite,clSilver);
+      formMensagem.mostrar;
+      Refresh;
+      DmProdutos.ProcessaImportacaoProdutosSISCOM;
+    finally
+      FormMensagem.destruir;
+      FreeAndNil(FormMensagem);
+      ShowMessage('Processo concluído com sucesso!');
+    end;
+  end;
+end;
+
+procedure TFrmMenu.ListadeCompras1Click(Sender: TObject);
+begin
+  AbreForm(TFrmListaCompras,FrmListaCompras);
+
+end;
+
+procedure TFrmMenu.LivrodemovimentaodecombustvelLMC2Click(Sender: TObject);
+begin
+  AbreForm(TFrmLivroLMC,FrmLivroLMC);
+end;
+
+procedure TFrmMenu.MovimentaodeCaixaDirio1Click(Sender: TObject);
+begin
+  AbreForm(TFrmSelMovCaixa,FrmSelMovCaixa);
+
+end;
+
+procedure TFrmMenu.MovimentodeCaixa1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCaixaDiario,FrmCaixaDiario);
+end;
+
+procedure TFrmMenu.OpesdePosto1Click(Sender: TObject);
+begin
+  AbreForm(TFrmConfigPosto,FrmConfigPosto);
+end;
+
+procedure TFrmMenu.OrdemdeServio1Click(Sender: TObject);
+begin
+  try
+    Application.CreateForm(TFrmClientes,FrmClientes);
+    Application.CreateForm(TFrmCadOS,FrmCadOS);
+    FrmCadOS.ShowModal;
+  finally
+    FrmCadOS.Free;
+    FrmClientes.Free;
+  end;
+
+end;
+
+procedure TFrmMenu.PedidoseOramentos1Click(Sender: TObject);
+begin
+  // Lancamento de Encomendas
+  Application.CreateForm(TFrmClientes,FrmClientes);
+  Application.CreateForm(TFrmCadClassPedido,FrmCadClassPedido);
+  Application.CreateForm(TFrmCadFormaPag,FrmCadFormaPag);
+  Application.CreateForm(TFrmPedidosConsulta,FrmPedidosConsulta);
+  Application.CreateForm(TfrmProdutos,FrmProdutos);
+  Application.CreateForm(TFrmLancPedidos,FrmLancPedidos);
+  try
+    FrmLancPedidos.ShowModal;
+  finally
+    FrmLancPedidos.Destroy;
+    FrmProdutos.Destroy;
+    FrmPedidosConsulta.Destroy;
+    FrmCadFormapag.Destroy;
+    FrmCadClassPedido.Destroy;
+    FrmClientes.Destroy;
+  end;
+
+end;
+
+procedure TFrmMenu.PlanosdeContas1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadPlanoConta,FrmCadPlanoConta);
+end;
+
+procedure TFrmMenu.ReciboManual1Click(Sender: TObject);
+begin
+     FrmRecibo.LabeledEdit1.Text:= '';
+     FrmRecibo.LabeledEdit2.Text:= '';
+     FrmRecibo.LabeledEdit3.Text:= '';
+     FrmRecibo.LabeledEdit4.Text:= '';
+     FrmRecibo.LabeledEdit5.Text:= '';
+     FrmRecibo.LabeledEdit6.Text:= '';
+     FrmRecibo.LabeledEdit7.Text:= '';
+     FrmRecibo.LabeledEdit8.Text:= '';
+     FrmRecibo.LabeledEdit9.Text:= '';
+     FrmRecibo.memo1.Text:= '';
+     FrmRecibo.memo2.Text:= '';
+     FrmRecibo.showmodal;
+end;
+
+procedure TFrmMenu.RelatoriodeVendaseComisses1Click(Sender: TObject);
+begin
+  AbreForm(TFrmRelComissao,FrmRelComissao);
+
+end;
+
+procedure TFrmMenu.RelatoriosemGeral1Click(Sender: TObject);
+begin
+  Application.CreateForm(TFrmRelatorios,FrmRelatorios);
+  try
+    FrmRelatorios.ShowModal;
+  finally
+    FreeAndNil(FrmRelatorios);
+  end
+
+end;
+
+procedure TFrmMenu.ResultadoFinanceirodoPerodo1Click(Sender: TObject);
+begin
+  AbreForm(TFrmMovFinanceiro,FrmMovFinanceiro);
+
+end;
+
+procedure TFrmMenu.rocadeUsuarios1Click(Sender: TObject);
+begin
+  Timer1.Enabled := true;
+end;
+
+procedure TFrmMenu.FechamentodeEstoque1Click(Sender: TObject);
+begin
+  AbreForm(TFrmFechamentoEstoque,FrmFechamentoEstoque);
+
+end;
+
+procedure TFrmMenu.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  // companytec
+  if DmPosto.Dados_ConfigPosto then
+  begin
+    if (DmPosto.CdsConfigPosto.FieldByName('TIPO_CBC').AsInteger=1) then
+    begin
+      if (DmPosto.CdsConfigPosto.fieldbyname('PORTA_CBC').AsInteger >0) then
+         FechaSerial
+      else // estou fazendo a conectação via IP.
+         FechaSocket;
+    end;
+  end
+  else MessageDlg('É necessário inserir as configurações de posto!!!', mtWarning, [mbOK], 0);
+
+end;
+
+procedure TFrmMenu.FormCreate(Sender: TObject);
+begin
+  Application.OnHint := ShowHint;
+  FrmMenu.WindowState := wsMaximized;
+  CarregarConfiguracao;
+
+end;
+
+procedure TFrmMenu.ActContasRcExecute(Sender: TObject);
+begin
+  try
+    Application.CreateForm(TFrmContasnovo,FrmContasnovo);
+    DmWorkCom.sTipoConta := 0;
+    FrmContasnovo.ShowModal;
+  finally
+    FrmContasnovo.Destroy;
+  end;
+
+end;
+
+procedure TFrmMenu.ActContasPgExecute(Sender: TObject);
+begin
+  try
+    Application.CreateForm(TFrmContas,FrmContas);
+    DmWorkCom.sTipoConta := 1;
+    FrmContas.ShowModal;
+  finally
+    FrmContas.Destroy;
+  end;
+
+end;
+
+procedure TFrmMenu.Timer1Timer(Sender: TObject);
+var aux : Integer;
+    formMensagem: TFormMensagem;
+begin
+  Timer1.Enabled := false;
+  // cadastra itens do aplicativo
+  if not DmClientes.Dados_UsuariosItens(sNomeApp) then
+  begin
+    DmClientes.Grava_ItemsMenu(MainMenu1);
+  end;
+  // verifica perfil
+  if not DmClientes.Dados_Perfil then
+  begin
+    DmClientes.Adiciona_PerfilPadrao;
+  end
+  else sIDPerfil := DmClientes.CdsUsuariosPerfilID.AsInteger;
+  // verifica permissões
+  if not DmClientes.Dados_Permissoes(sIDPerfil,sNomeApp) then
+  begin
+    // adciona permissoes
+    DmClientes.Insere_PermissoesPerfil(sIDPerfil);
+  end;
+  // verifica usuários
+  if not DmClientes.Dados_Usuarios then
+  begin
+    DmClientes.Adciona_UsuarioPadrao;
+  end;
+  // verifica tabela de UF
+  if not DmClientes.dados_uf then
+  begin
+    // gera tabela de estados
+    DmClientes.Gera_UF(['AM','AC','RR','RD','RN','RS','GO','MG','RJ','SP','ES','BA','CE','MT',
+                         'AP','MS','TO','SE','PE','MA','PI','PR','PA','DF','AL','PB','SC']);
+  end;
+  // verifica dados da empresa
+  sIDEmpresa := 1;
+//  if not DmWorkCom.Dados_Empresa(sIDEmpresa) then
+  if not DmWorkCom.Dados_Empresa then
+  begin
+    try
+      Application.CreateForm(TFrmConfiguracoes,FrmConfiguracoes);
+      // insere empresa padrão
+      DmWorkCom.CdsEmpresa.Append;
+      Grava_Dados(DmWorkCom.CdsEmpresa);
+      // insere configuração da empresa padrão
+      DmWorkCom.CdsConfig.Append;
+      Grava_Dados(DmWorkCom.CdsConfig);
+      FrmConfiguracoes.sControle := 0;
+      FrmConfiguracoes.ShowModal;
+    finally
+      FrmConfiguracoes.Destroy;
+      MessageDlg('O aplicativo será reiniciado!!!', mtWarning, [mbOK], 0);
+      Application.Terminate;
+    end;
+  end
+  else
+  begin
+    // login do usuario
+    Application.CreateForm(TFrmLoginUsuario,FrmLoginUsuario);
+    try
+      FrmLoginUsuario.sOK := false;
+      FrmLoginUsuario.ShowModal;
+      if not FrmLoginUsuario.sOK then
+         Application.Terminate
+      else
+      begin
+        StatusBar1.Panels.Items[2].Text := DmClientes.CdsUsuariosUSUARIO.AsString;
+        // verifica permissões
+        if not DmClientes.Dados_Permissoes(sIDPerfil,sNomeApp) then
+        begin
+          // adciona permissoes
+          DmClientes.Insere_PermissoesPerfil(sIDPerfil);
+        end;
+
+      end;
+    finally
+      FrmLoginUsuario.Destroy
+    end;
+    // carrega dados do sistema
+    DmWorkCom.Dados_Empresa(sIDEmpresa);
+    StatusBar1.Panels.Items[3].Text := DmWorkCom.CdsEmpresaRAZAO_SOCIAL.AsString;
+    DmWorkCom.CarregaDadosEmpresa;
+    // verifica agenda de compromissos
+    aux := RetornaCompromissosDias(sDiasAgenda);
+    if aux > 0 then
+    begin
+      MessageDlg('Há '+IntToStr(aux)+' compromissos agendados para os proximos '+IntToStr(sDiasAgenda)+' dias!', mtInformation, [mbOK], 0);
+    end;
+  end;
+
+end;
+
+procedure TFrmMenu.CadastrarClassificaodeSada1Click(Sender: TObject);
+begin
+  Application.CreateForm(TFrmCadClassPedido,FrmCadClassPedido);
+  try
+    FrmCadClassPedido.ShowModal;
+  finally
+    FrmCadClassPedido.Destroy;
+  end;
+
+end;
+
+procedure TFrmMenu.CadastrarFormasdePagamento1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadFormapag,FrmCadFormapag);
+end;
+
+procedure TFrmMenu.Cadastrodebancos1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadBancos,FrmCadBancos);
+
+end;
+
+procedure TFrmMenu.CadastrodeBomba1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadBomba,FrmCadBomba);
+end;
+
+procedure TFrmMenu.CadastrodeClientes1Click(Sender: TObject);
+begin
+  ActClientesExecute(Sender);
+end;
+
+procedure TFrmMenu.CadastrodeCombustivel1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadBicos,FrmCadBicos);
+end;
+
+procedure TFrmMenu.CadastrodeContabilidade1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadContabil,FrmCadContabil);
+end;
+
+procedure TFrmMenu.CadastrodeFornecedores1Click(Sender: TObject);
+begin
+  Application.CreateForm(TFrmClientes,FrmClientes);
+  try
+    FrmClientes.showmodal;
+  finally
+    FrmClientes.Destroy;
+  end;
+end;
+
+procedure TFrmMenu.CadastrodeFuncionarios1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadFunc,FrmCadFunc);
+end;
+
+procedure TFrmMenu.CadastrodePontosdeVenda1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadPDV,FrmCadPDV);
+end;
+
+procedure TFrmMenu.CadastrodeProdutos2Click(Sender: TObject);
+begin
+  AbreForm(TFrmProdutos,FrmProdutos);
+end;
+
+procedure TFrmMenu.CadastrodeReduesZ1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadRegistro60,FrmCadRegistro60);
+end;
+
+procedure TFrmMenu.CadastrodeTanque1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadTanques,FrmCadTanques);
+end;
+
+procedure TFrmMenu.CadastrodeUsuarios1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadUsuarios,FrmCadUsuarios);
+end;
+
+procedure TFrmMenu.CarregarConfiguracao;
+begin
+  // tela principal
+  if FileExists(ExtractFilePath(Application.ExeName)+'imagens\fundosys.jpg') then
+  begin
+    ImgLogo.Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'imagens\fundosys.jpg');
+    ImgLogo.Visible  := true;
+  end;
+
+end;
+
+procedure TFrmMenu.CentrodeCusto1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadCCusto,FrmCadCCusto);
+end;
+
+procedure TFrmMenu.CompradeMercadorias1Click(Sender: TObject);
+begin
+  // Lancamento de Compras de mercadorias
+  Application.CreateForm(TFrmLancCompras,FrmLancCompras);
+  Application.CreateForm(TFrmCadClassPedido,FrmCadClassPedido);
+  Application.CreateForm(TFrmCadFormaPag,FrmCadFormaPag);
+  Application.CreateForm(TFrmLancItensCompra,FrmLancItensCompra);
+  Application.CreateForm(TFrmComprasConsulta,FrmComprasConsulta);
+  Application.CreateForm(TfrmProdutos,FrmProdutos);
+  try
+    FrmLancCompras.ShowModal;
+  finally
+    FrmProdutos.Destroy;
+    FrmComprasConsulta.Destroy;
+    FrmLancItensCompra.Destroy;
+    FrmCadClassPedido.Destroy;
+    FrmCadFormaPag.Destroy;
+    FrmLancCompras.Destroy;
+  end;
+
+
+end;
+
+procedure TFrmMenu.Configurao1Click(Sender: TObject);
+begin
+  Application.CreateForm(TFrmConfiguracoes,FrmConfiguracoes);
+  try
+    FrmConfiguracoes.sControle := 0;
+    FrmConfiguracoes.ShowModal;
+  finally
+    FrmConfiguracoes.Destroy;
+    DmWorkCom.Dados_Empresa(sIDEmpresa);
+    CarregarConfiguracao;
+    StatusBar1.Panels.Items[3].Text := DmWorkCom.CdsEmpresaRAZAO_SOCIAL.AsString;
+    DmWorkCom.CarregaDadosEmpresa;
+  end;
+
+end;
+
+procedure TFrmMenu.ConsultaTabelaPreos1Click(Sender: TObject);
+begin
+  Application.CreateForm(TfrmConsempenho,frmConsempenho);
+  try
+    frmConsempenho.showmodal;
+  finally
+    frmConsempenho.Destroy;
+  end;
+
+end;
+
+procedure TFrmMenu.Contaapagarereceber1Click(Sender: TObject);
+begin
+  AbreForm(TFrmRelContas,FrmRelContas);
+
+end;
+
+procedure TFrmMenu.ContasaPagar1Click(Sender: TObject);
+begin
+  ActContasPgExecute(Sender);
+end;
+
+procedure TFrmMenu.ContasaReceber1Click(Sender: TObject);
+begin
+  ActContasRcExecute(Sender);
+end;
+
+procedure TFrmMenu.ControledeCheques1Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadCheques,FrmCadCheques);
+end;
+
+procedure TFrmMenu.Sair1Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TFrmMenu.Scribes1Click(Sender: TObject);
+begin
+  // chama o gerador de relatorio
+  if FileExists('c:\scribes\scribesR.exe')  then
+  begin
+    try
+      DmWorkCom.Dados_Config(sIDEmpresa);
+      Executa_Scribes(DmWorkCom.CdsConfigSCIP_SRV.AsString,
+                      DmWorkCom.CdsConfigSCPATH_REL.AsString,'','');
+    except
+      MessageDlg('Erro ao abrir relatorios. Chame o suporte técnico!!!', mtInformation, [mbOK], 0);
+    end;
+  end
+  else
+  begin
+    MessageDlg('Não foi localizado o aplicativo Scribes instalado nesse micro!!!', mtInformation, [mbOK], 0);
+  end;
+
+end;
+
+procedure TFrmMenu.SEF21Click(Sender: TObject);
+begin
+  AbreForm(TFrmSEF2,FrmSEF2);
+end;
+
+procedure TFrmMenu.ShowHint(Sender: TObject);
+begin
+  statusbar1.Panels.Items[4].Text := Application.hint;
+
+end;
+
+procedure TFrmMenu.Sintegra1Click(Sender: TObject);
+begin
+  AbreForm(TFrmSintegra,FrmSintegra);
+end;
+
+procedure TFrmMenu.SobreoAplicativo1Click(Sender: TObject);
+begin
+  AbreForm(TFrmImforma,FrmImforma);
+end;
+
+procedure TFrmMenu.SuporteAmmy1Click(Sender: TObject);
+var
+scaminhoany:string;
+begin
+ scaminhoany := 'AA_v3.exe';
+ ShellExecute(Handle,'open',pchar(scaminhoany),nil,nil,sw_show)
+
+end;
+
+procedure TFrmMenu.SuporteAnyDesk1Click(Sender: TObject);
+var
+scaminhoany:string;
+begin
+ scaminhoany := 'AnyDesk.exe';
+ ShellExecute(Handle,'open',pchar(scaminhoany),nil,nil,sw_show)
+
+end;
+
+procedure TFrmMenu.ActPedidosExecute(Sender: TObject);
+begin
+  // Lancamento de Encomendas
+  Application.CreateForm(TFrmClientes,FrmClientes);
+  Application.CreateForm(TFrmCadClassPedido,FrmCadClassPedido);
+  Application.CreateForm(TFrmCadFormaPag,FrmCadFormaPag);
+  Application.CreateForm(TFrmPedidosConsulta,FrmPedidosConsulta);
+  Application.CreateForm(TfrmProdutos,FrmProdutos);
+  Application.CreateForm(TFrmLancPedidos,FrmLancPedidos);
+  try
+    FrmLancPedidos.ShowModal;
+  finally
+    FrmLancPedidos.Destroy;
+    FrmProdutos.Destroy;
+    FrmPedidosConsulta.Destroy;
+    FrmCadFormapag.Destroy;
+    FrmCadClassPedido.Destroy;
+    FrmClientes.Destroy;
+  end;
+
+end;
+
+procedure TFrmMenu.ActProdutosExecute(Sender: TObject);
+begin
+  // verifica permissao
+  if Verifica_Permissao(sIDPerfil,'CadastrodeProdutos2') then
+  begin
+    AbreForm(TFrmProdutos,FrmProdutos);
+  end;
+
+end;
+
+
+procedure TFrmMenu.AgendadeCompromisso1Click(Sender: TObject);
+begin
+  ActAgendaExecute(Sender);
+end;
+
+procedure TFrmMenu.AtualizarTabeladePreos71Click(Sender: TObject);
+begin
+  AbreForm(TFrmTabPreco,FrmTabPreco);
+end;
+
+procedure TFrmMenu.Button1Click(Sender: TObject);
+begin
+  ActClientesExecute(Sender);
+
+end;
+
+
+procedure TFrmMenu.Button6Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadFunc,FrmCadFunc);
+
+end;
+
+procedure TFrmMenu.Button7Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadContabil,FrmCadContabil);
+
+end;
+
+procedure TFrmMenu.Button5Click(Sender: TObject);
+begin
+  // Lancamento de Encomendas
+  Application.CreateForm(TFrmClientes,FrmClientes);
+  Application.CreateForm(TFrmCadClassPedido,FrmCadClassPedido);
+  Application.CreateForm(TFrmCadFormaPag,FrmCadFormaPag);
+  Application.CreateForm(TFrmPedidosConsulta,FrmPedidosConsulta);
+  Application.CreateForm(TfrmProdutos,FrmProdutos);
+  Application.CreateForm(TFrmLancPedidos,FrmLancPedidos);
+  try
+    FrmLancPedidos.ShowModal;
+  finally
+    FrmLancPedidos.Destroy;
+    FrmProdutos.Destroy;
+    FrmPedidosConsulta.Destroy;
+    FrmCadFormapag.Destroy;
+    FrmCadClassPedido.Destroy;
+    FrmClientes.Destroy;
+  end;
+
+end;
+
+procedure TFrmMenu.Button8Click(Sender: TObject);
+begin
+  // Lancamento de Compras de mercadorias
+  Application.CreateForm(TFrmLancCompras,FrmLancCompras);
+  Application.CreateForm(TFrmClientes,FrmClientes);
+  Application.CreateForm(TFrmCadClassPedido,FrmCadClassPedido);
+  Application.CreateForm(TFrmCadFormaPag,FrmCadFormaPag);
+  Application.CreateForm(TFrmLancItensCompra,FrmLancItensCompra);
+  Application.CreateForm(TFrmComprasConsulta,FrmComprasConsulta);
+  Application.CreateForm(TfrmProdutos,FrmProdutos);
+  try
+    FrmLancCompras.ShowModal;
+  finally
+    FrmProdutos.Destroy;
+    FrmComprasConsulta.Destroy;
+    FrmLancItensCompra.Destroy;
+    FrmCadClassPedido.Destroy;
+    FrmCadFormaPag.Destroy;
+    FrmClientes.Destroy;
+    FrmLancCompras.Destroy;
+  end;
+
+end;
+
+
+procedure TFrmMenu.Button9Click(Sender: TObject);
+begin
+  ActContasPgExecute(Sender);
+
+end;
+
+procedure TFrmMenu.Emissodeboletos1Click(Sender: TObject);
+begin
+  AbreForm(TFrmGerarFaturas,FrmGerarFaturas);
+end;
+
+procedure TFrmMenu.EmissodeNotaFiscal1Click(Sender: TObject);
+begin
+AbreForm(TFrmGeraNFe,FrmGeraNFe);
+end;
+
+procedure TFrmMenu.EmissoSrieD11Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadReg61,FrmCadReg61);
+end;
+
+procedure TFrmMenu.Etiquetasdepostagem1Click(Sender: TObject);
+begin
+  AbreForm(TFrmEtiquetas,FrmEtiquetas);
+
+end;
+
+procedure TFrmMenu.Button10Click(Sender: TObject);
+begin
+  ActContasRcExecute(Sender);
+
+end;
+
+procedure TFrmMenu.Button11Click(Sender: TObject);
+begin
+  AbreForm(TFrmCaixaDiario,FrmCaixaDiario);
+
+end;
+
+procedure TFrmMenu.Button12Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadCheques,FrmCadCheques);
+
+end;
+
+procedure TFrmMenu.Button13Click(Sender: TObject);
+begin
+  try
+    Application.CreateForm(TFrmClientes,FrmClientes);
+    Application.CreateForm(TFrmCadOS,FrmCadOS);
+    FrmCadOS.ShowModal;
+  finally
+    FrmCadOS.Free;
+    FrmClientes.Free;
+  end;
+
+end;
+
+procedure TFrmMenu.Button14Click(Sender: TObject);
+begin
+  // chama o gerador de relatorio
+  try
+    DmWorkCom.Dados_Config(sIDEmpresa);
+    Executa_Scribes(DmWorkCom.CdsConfigSCIP_SRV.AsString,
+                    DmWorkCom.CdsConfigSCPATH_REL.AsString,'','');
+  except
+    MessageDlg('Erro ao abrir relatorios. Chame o suporte técnico!!!', mtInformation, [mbOK], 0);
+  end;
+
+end;
+
+procedure TFrmMenu.Button15Click(Sender: TObject);
+begin
+  Application.CreateForm(TFrmConfiguracoes,FrmConfiguracoes);
+  try
+    FrmConfiguracoes.sControle := 0;
+    FrmConfiguracoes.ShowModal;
+  finally
+    FrmConfiguracoes.Destroy;
+    DmWorkCom.Dados_Empresa(sIDEmpresa);
+    CarregarConfiguracao;
+    StatusBar1.Panels.Items[3].Text := DmWorkCom.CdsEmpresaRAZAO_SOCIAL.AsString;
+    DmWorkCom.CarregaDadosEmpresa;
+  end;
+
+end;
+
+procedure TFrmMenu.Button16Click(Sender: TObject);
+begin
+  ActAgendaExecute(Sender);
+
+end;
+
+procedure TFrmMenu.Button20Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadRegistro60,FrmCadRegistro60);
+
+end;
+
+procedure TFrmMenu.Button18Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadUsuarios,FrmCadUsuarios);
+
+end;
+
+procedure TFrmMenu.Button19Click(Sender: TObject);
+begin
+  Timer1.Enabled := true;
+
+end;
+
+procedure TFrmMenu.Button26Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadPDV,FrmCadPDV);
+
+end;
+
+procedure TFrmMenu.Button28Click(Sender: TObject);
+begin
+  Application.Terminate;
+
+end;
+
+
+procedure TFrmMenu.Button29Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadReg61,FrmCadReg61);
+
+end;
+
+procedure TFrmMenu.Button30Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadCCusto,FrmCadCCusto);
+
+end;
+
+procedure TFrmMenu.Button31Click(Sender: TObject);
+begin
+  AbreForm(TFrmCadPlanoConta,FrmCadPlanoConta);
+
+end;
+
+procedure TFrmMenu.Button33Click(Sender: TObject);
+begin
+  AbreForm(TFrmSintegra,FrmSintegra);
+end;
+
+procedure TFrmMenu.Button34Click(Sender: TObject);
+begin
+  AbreForm(TFrmSEF2,FrmSEF2);
+end;
+
+end.

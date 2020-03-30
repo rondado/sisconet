@@ -1,0 +1,41 @@
+object ServerMethods1: TServerMethods1
+  OldCreateOrder = False
+  Height = 205
+  Width = 367
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 56
+    Top = 24
+  end
+  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+    Left = 176
+    Top = 32
+  end
+  object ConexaoDadosFD: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Programas\Projetos Pessoais\Comercial\Exec\Dados\DAD' +
+        'OS.FDB'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'CharacterSet=WIN1252'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 48
+    Top = 96
+  end
+  object QryGeral: TFDQuery
+    Connection = ConexaoDadosFD
+    SQL.Strings = (
+      'select * from produtos')
+    Left = 168
+    Top = 104
+  end
+  object DspGeral: TDataSetProvider
+    DataSet = QryGeral
+    Options = [poAllowCommandText, poUseQuoteChar]
+    Left = 264
+    Top = 104
+  end
+end

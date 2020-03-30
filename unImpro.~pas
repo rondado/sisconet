@@ -1,0 +1,79 @@
+unit unImpro;
+
+interface
+
+uses
+  SysUtils, Windows, Messages, Classes, Graphics, Controls,
+  StdCtrls, ExtCtrls, Forms, QuickRpt, QRCtrls, Db, DBTables, jpeg,
+  Wwtable, Wwdatsrc;
+
+type
+  TfrmImpro = class(TForm)
+    QuickRep1 : TQuickRep;
+    wwdsimpnota: TwwDataSource;
+    tabimpnota: TwwTable;
+    tabimpnotaCod: TStringField;
+    tabimpnotaNome: TStringField;
+    tabimpnotaRG: TStringField;
+    tabimpnotaCPF: TStringField;
+    tabimpnotaValor: TFloatField;
+    tabimpnotaVencimento: TDateField;
+    tabimpnotaVencexten: TStringField;
+    tabimpnotaValorexten: TStringField;
+    tabimpnotaSeq: TStringField;
+    tabimpnotaPraca: TStringField;
+    tabimpnotaTomador: TStringField;
+    tabimpnotaTomadorcpf: TStringField;
+    tabimpnotaAvalista: TStringField;
+    tabimpnotaAvalistacpf: TStringField;
+    tabimpnotaVenccurto: TStringField;
+    QRBand2: TQRBand;
+    QRLabel11: TQRLabel;
+    QRLabel24: TQRLabel;
+    QRLabel25: TQRLabel;
+    QRLabel26: TQRLabel;
+    QRLabel27: TQRLabel;
+    QRLabel29: TQRLabel;
+    QRLabel30: TQRLabel;
+    QRLabel31: TQRLabel;
+    QRLabel32: TQRLabel;
+    QRLabel33: TQRLabel;
+    QRLabel34: TQRLabel;
+    QRLabel35: TQRLabel;
+    QRLabel36: TQRLabel;
+    QRLabel37: TQRLabel;
+    QRLabel38: TQRLabel;
+    QRLabel39: TQRLabel;
+    QRLabel40: TQRLabel;
+    QRLabel41: TQRLabel;
+    QRLabel42: TQRLabel;
+    QRLabel43: TQRLabel;
+    QRImage1: TQRImage;
+    QRDBText14: TQRDBText;
+    QRDBText15: TQRDBText;
+    QRDBText16: TQRDBText;
+    QRDBText17: TQRDBText;
+    QRDBText18: TQRDBText;
+    QRDBText19: TQRDBText;
+    QRDBText20: TQRDBText;
+    QRDBText21: TQRDBText;
+    QRDBText22: TQRDBText;
+    QRDBText23: TQRDBText;
+    QRDBText24: TQRDBText;
+    QRDBText25: TQRDBText;
+    QRDBText26: TQRDBText;
+    QRLabel23: TQRLabel;
+    QRSysData1: TQRSysData;
+    QRLabel1: TQRLabel;
+    QRLabel2: TQRLabel;
+  private
+  end;
+
+var
+  frmImpro: TfrmImpro;
+
+implementation
+    
+{$R *.DFM}
+
+end.

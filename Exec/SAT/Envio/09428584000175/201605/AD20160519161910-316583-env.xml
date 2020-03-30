@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CFe>
+   <infCFe versaoDadosEnt="0.06">
+      <ide>
+         <CNPJ>22222222222222</CNPJ>
+         <signAC>KiVwJVKCp6woB2jbmhnZsSBuWOTQL0S0nd4JDew/o6SykmspkLZNzf/KXNyu+WCu83hyo99Fq3Jx/9kFIVWmq+ZCNEfV1+l2UjSBScvpaCiB7e8Y9gxcXTnUauFjA6kOSP0pb72QeVzetpHnPLSkftXg4jRzqjbAWSTycxUAvIguABhx290HVZzJPMFHrJW2jKXaL16JWoIVJVZdftEs1sCbKsp7FekuhqdGmbz7bLcNan9N/8PeOKN59XMT+wLVtH1mXq10PnJwjFRvp/6SpgQ7MilXvid0gKQHj1X0/DmG0013EJumCfAETm9GvZEcDLTVeOQnPh1VD7uKe4QFTQ==</signAC>
+         <numeroCaixa>001</numeroCaixa>
+      </ide>
+      <emit>
+         <CNPJ>09428584000175</CNPJ>
+         <IE>283468068</IE>
+         <IM>0</IM>
+         <cRegTribISSQN>1</cRegTribISSQN>
+         <indRatISSQN>N</indRatISSQN>
+      </emit>
+      <dest>
+         <xNome>CONSUMIDOR</xNome>
+      </dest>
+      <det nItem="1">
+         <prod>
+            <cProd>3</cProd>
+            <cEAN>7893333333333</cEAN>
+            <xProd>PRODUTO TRIBUTADO 18%</xProd>
+            <NCM>90318040</NCM>
+            <CFOP>5102</CFOP>
+            <uCom>VD</uCom>
+            <qCom>1.0000</qCom>
+            <vUnCom>18.35</vUnCom>
+            <indRegra>A</indRegra>
+         </prod>
+         <imposto>
+            <ICMS>
+               <ICMS00>
+                  <Orig>0</Orig>
+                  <CST>00</CST>
+                  <pICMS>18.00</pICMS>
+               </ICMS00>
+            </ICMS>
+            <PIS>
+               <PISAliq>
+                  <CST>01</CST>
+                  <vBC>0.00</vBC>
+                  <pPIS>0.0000</pPIS>
+               </PISAliq>
+            </PIS>
+            <COFINS>
+               <COFINSAliq>
+                  <CST>01</CST>
+                  <vBC>0.00</vBC>
+                  <pCOFINS>0.0000</pCOFINS>
+               </COFINSAliq>
+            </COFINS>
+         </imposto>
+      </det>
+      <total>
+         <vCFeLei12741>3.44</vCFeLei12741>
+      </total>
+      <pgto>
+         <MP>
+            <cMP>01</cMP>
+            <vMP>18.35</vMP>
+         </MP>
+      </pgto>
+      <infAdic>
+         <infCpl>OPERADOR:  - Caixa: 001</infCpl>
+      </infAdic>
+   </infCFe>
+</CFe>

@@ -1,0 +1,1060 @@
+unit uFrmCadProdutos;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, uFrmCadPadrao, StdCtrls, DBCtrls, ExtCtrls, Mask, Buttons, inifiles,
+  uFrameBotaoVertical, ComCtrls, ActnList, DB, Grids, DBGrids, Menus,
+  uFrameBotaoHorizontal, System.Actions, System.UITypes, ACBrBase, ACBrValidador;
+
+type
+  TFrmCadProdutos = class(TFrmCadPadrao)
+    PageControl1: TPageControl;
+    TbsGeral: TTabSheet;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    DbID: TDBEdit;
+    DbDescricao: TDBEdit;
+    DbReferencia: TDBEdit;
+    DbEan13: TDBEdit;
+    DbDum14: TDBEdit;
+    ComboUnidade: TDBComboBox;
+    ComboGrupo: TDBLookupComboBox;
+    ComboSubGrupo1: TDBLookupComboBox;
+    DbQuantCx: TDBEdit;
+    DbRadioTipoProd: TDBRadioGroup;
+    DataGrupo: TDataSource;
+    DataSubGrupo1: TDataSource;
+    DataSubGrupo2: TDataSource;
+    ActProdComposto: TAction;
+    ActGrupo: TAction;
+    ActClassifica: TAction;
+    ActFornecedor: TAction;
+    Label7: TLabel;
+    GrpComissao: TGroupBox;
+    DataComissao: TDataSource;
+    GridComissao: TDBGrid;
+    PopupMenu1: TPopupMenu;
+    AcertarEstoqueManual1: TMenuItem;
+    Label21: TLabel;
+    DataEstoque: TDataSource;
+    ActGerarDadosEstoque: TAction;
+    GerarDadosdoEstoque1: TMenuItem;
+    TbsAliquota: TTabSheet;
+    GroupBox2: TGroupBox;
+    PnCadAliquota: TPanel;
+    DataProdAliq: TDataSource;
+    DataCFOP: TDataSource;
+    DataCST: TDataSource;
+    PopupMenu2: TPopupMenu;
+    InserirAliquotaparaoproduto1: TMenuItem;
+    DeletarAliquotadoproduto1: TMenuItem;
+    Label23: TLabel;
+    Label24: TLabel;
+    Label25: TLabel;
+    Label26: TLabel;
+    DBEdit6: TDBEdit;
+    Label27: TLabel;
+    DBEdit7: TDBEdit;
+    DataUF: TDataSource;
+    ComboUF: TDBLookupComboBox;
+    ComboCST: TDBLookupComboBox;
+    ComboCFOP: TDBLookupComboBox;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    Bevel1: TBevel;
+    GridAliquota: TDBGrid;
+    DataNCM: TDataSource;
+    DBEdit1: TDBEdit;
+    RadioTribucacao: TDBRadioGroup;
+    GroupBox4: TGroupBox;
+    Label15: TLabel;
+    DbInficeA: TDBEdit;
+    DBEdit8: TDBEdit;
+    Label32: TLabel;
+    Label31: TLabel;
+    GrpAtivoPermanente: TGroupBox;
+    Label35: TLabel;
+    DBEdit11: TDBEdit;
+    Label36: TLabel;
+    Label37: TLabel;
+    DBEdit13: TDBEdit;
+    MemoFinalidade: TMemo;
+    DbCodNCM: TDBEdit;
+    Label22: TLabel;
+    ImgProduto: TImage;
+    BtnImagem: TButton;
+    ACBrValidador1: TACBrValidador;
+    OpenDialog1: TOpenDialog;
+    Panel1: TPanel;
+    BitBtn4: TBitBtn;
+    BitBtn5: TBitBtn;
+    BitBtn1: TBitBtn;
+    SpBtnGrupo: TBitBtn;
+    SpBtnComposicao: TBitBtn;
+    DBLookupComboBox2: TDBLookupComboBox;
+    DBLookupComboBox3: TDBLookupComboBox;
+    Label20: TLabel;
+    DBLookupComboBox1: TDBLookupComboBox;
+    Label33: TLabel;
+    Label34: TLabel;
+    DataCest: TDataSource;
+    DataCSTPis: TDataSource;
+    DataCSTCofins: TDataSource;
+    GroupBox6: TGroupBox;
+    GroupBox7: TGroupBox;
+    DataProdCor: TDataSource;
+    DataProdTamanho: TDataSource;
+    DBLookupComboBox4: TDBLookupComboBox;
+    DBLookupComboBox5: TDBLookupComboBox;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    DBEdit9: TDBEdit;
+    DataCSOSN: TDataSource;
+    DBLookupComboBox6: TDBLookupComboBox;
+    Label38: TLabel;
+    Label39: TLabel;
+    DBLookupComboBox7: TDBLookupComboBox;
+    DBLookupComboBox8: TDBLookupComboBox;
+    DBEdit2: TDBEdit;
+    Label40: TLabel;
+    DBCheckBox9: TDBCheckBox;
+    GroupBox5: TGroupBox;
+    DbChAtivo: TDBCheckBox;
+    DBCheckBox1: TDBCheckBox;
+    DBCheckBox2: TDBCheckBox;
+    DBCheckBox3: TDBCheckBox;
+    DBCheckBox4: TDBCheckBox;
+    DBCheckBox5: TDBCheckBox;
+    DBCheckBox6: TDBCheckBox;
+    DBCheckBox7: TDBCheckBox;
+    DbChEstoque: TDBCheckBox;
+    DBCheckBox8: TDBCheckBox;
+    GroupBox3: TGroupBox;
+    Label17: TLabel;
+    Label12: TLabel;
+    Label18: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label16: TLabel;
+    Label41: TLabel;
+    Label42: TLabel;
+    Label43: TLabel;
+    Label46: TLabel;
+    DbPrecoCompra: TDBEdit;
+    DbMargem: TDBEdit;
+    DbPrecoVenda: TDBEdit;
+    DbDesconto: TDBEdit;
+    DbComissao: TDBEdit;
+    DbEstoque: TDBEdit;
+    DbFrete: TDBEdit;
+    DbCustOp: TDBEdit;
+    DbOutrDesp: TDBEdit;
+    DbAliqssimples: TDBEdit;
+    BitBtn8: TBitBtn;
+    GrpDados: TGroupBox;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label28: TLabel;
+    Label29: TLabel;
+    Label30: TLabel;
+    Label19: TLabel;
+    DbIcms: TDBEdit;
+    DbIpi: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBEdit4: TDBEdit;
+    DBEdit5: TDBEdit;
+    DbReducaoBase: TDBEdit;
+    BitBtn7: TBitBtn;
+    procedure ActProdCompostoExecute(Sender: TObject);
+    procedure ActGrupoExecute(Sender: TObject);
+    procedure ActIncluirExecute(Sender: TObject);
+    procedure ActPesquisarExecute(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure DbIDKeyPress(Sender: TObject; var Key: Char);
+    procedure ActionList1Update(Action: TBasicAction;
+      var Handled: Boolean);
+    procedure DbRadioTipoProdChange(Sender: TObject);
+    procedure ActFornecedorExecute(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure GridComissaoKeyPress(Sender: TObject; var Key: Char);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure AcertarEstoqueManual1Click(Sender: TObject);
+    procedure ActGerarDadosEstoqueExecute(Sender: TObject);
+    procedure InserirAliquotaparaoproduto1Click(Sender: TObject);
+    procedure DeletarAliquotadoproduto1Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn3Click(Sender: TObject);
+    procedure GridAliquotaDblClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure ActConfirmarExecute(Sender: TObject);
+    procedure DataWorkDataChange(Sender: TObject; Field: TField);
+    procedure MemoFinalidadeExit(Sender: TObject);
+    procedure DbCodNCMExit(Sender: TObject);
+    procedure BtnImagemClick(Sender: TObject);
+    procedure DbEan13Exit(Sender: TObject);
+    procedure DbDum14Exit(Sender: TObject);
+    procedure ActCancelarExecute(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure BitBtn8Click(Sender: TObject);
+    procedure BitBtn7Click(Sender: TObject);
+  private
+    { Private declarations }
+    procedure PreencheUnidades;
+  public
+    { Public declarations }
+    sIDProduto : Integer;
+    sCadNFe : Boolean;
+    xDESCRICAO,xREFERENCIA,xEAN13,xUNIDADE,xCODIGO_NCM,xCODIGO_CEST,
+    xCST_INTERNO,xCFOP_INTERNO,xUF_Fornec:String;
+    xALIQUOTA_ICMS,xALIQUOTA_IPI,xPRECO_COMPRA,xREDUCAO_BASE,xMVA,
+    xALIQUOTA_PIS,xALIQUOTA_COFINS, xQuantCompra:Double
+  end;
+
+var
+  FrmCadProdutos: TFrmCadProdutos;
+traliquota_icms, traliquota_ipi, trtributacao,traliquota_pis, traliquota_cofins, trcst_interno,
+trcfop_interno, trsct_pis, trcst_cofins, trcsosn_interno, traliquotauf, traliquotacst,
+traliquotacfop, traliquotaaliquota,traliquotareducao_base, traliquotacson: string;
+
+implementation
+
+Uses uLibrary, uDmWorkCom, uFrmCadGrupo, uFrmProdutos, uFrmProdComposto,
+  uFrmClientes, uFrmCadProdFornecedor, uFrmTabNCM, uDMClientes, uDmProdutos,
+  uDmAcBr, uFrmProdutoCores, uFrmProdutoTamanho;
+
+{$R *.dfm}
+
+procedure TFrmCadProdutos.ActProdCompostoExecute(Sender: TObject);
+var aValorCusto:Double;
+begin
+  inherited;
+  aValorCusto := 0;
+  if DataWork.DataSet.State in [dsInsert,dsEdit] then
+  begin
+    Grava_Dados(DataWork.DataSet);
+  end;
+  //
+  Application.CreateForm(TFrmProdComposto,FrmProdComposto);
+  try
+    FrmProdComposto.sIdProduto := DataWork.DataSet.fieldByname('ID').AsInteger;
+    FrmProdComposto.ShowModal;
+    aValorCusto := Retorna_Valor_Custo_ProdComposto(DataWork.DataSet.FieldByName('ID').AsInteger);
+    if aValorCusto > 0 then
+    begin
+      if not(DataWork.DataSet.State in [dsInsert,dsEdit]) then
+         DataWork.DataSet.Edit;
+      DataWork.DataSet.FieldByName('PRECO_COMPRA').AsFloat := aValorCusto;
+    end;
+  finally
+    FreeAndNil(FrmProdComposto);
+  end;
+
+end;
+
+procedure TFrmCadProdutos.ActGrupoExecute(Sender: TObject);
+begin
+  inherited;
+  AbreForm(TFrmCadGrupo,FrmCadGrupo);
+  DmProdutos.Dados_Grupo;
+
+end;
+
+procedure TFrmCadProdutos.ActIncluirExecute(Sender: TObject);
+begin
+  PageControl1.TabIndex := 0;
+  inherited;
+  DmWorkCom.Dados_TabelaComissao(DataWork.DataSet.FieldByName('ID').AsInteger);
+  DbDescricao.SetFocus;
+
+end;
+
+procedure TFrmCadProdutos.ActPesquisarExecute(Sender: TObject);
+var aTotalComposto : Double;
+begin
+  inherited;
+  Application.CreateForm(TfrmProdutos,FrmProdutos);
+  try
+    FrmProdutos.sIDProd := 0;
+    FrmProdutos.ShowModal;
+    if FrmProdutos.sIDProd > 0 then
+    begin
+      if DmProdutos.Dados_Produto(FrmProdutos.sIDProd) then
+      begin
+        DmProdutos.Dados_Estoque(FrmProdutos.sIDProd,sIDEmpresa);
+        DmProdutos.Dados_Produto_Aliquota(FrmProdutos.sIDProd);
+        if DataWork.DataSet.FieldByName('TIPOPROD').AsInteger = 1 then // produto composto
+        begin
+          aTotalComposto := Retorna_Valor_Custo_ProdComposto(DataWork.DataSet.FieldByName('ID').AsInteger);
+          if aTotalComposto > 0 then
+          begin
+            if not(DataWork.DataSet.State in [dsInsert,dsEdit]) then
+               DataWork.DataSet.Edit;
+            DataWork.DataSet.FieldByName('PRECO_COMPRA').AsFloat := aTotalComposto;
+          end
+        end;
+        DmWorkCom.Dados_TabelaComissao(DataWork.DataSet.FieldByName('ID').AsInteger);
+        // carrega a imagem do produto
+        if DataWork.DataSet.FieldByName('PATH_IMAGEM').AsString <> '' then
+        begin
+          if FileExists(DataWork.DataSet.FieldByName('PATH_IMAGEM').AsString) then
+             ImgProduto.Picture.LoadFromFile(DataWork.DataSet.FieldByName('PATH_IMAGEM').AsString);
+        end
+        else
+          ImgProduto.Picture := nil;
+      end;
+      DbDescricao.SetFocus;
+    end;
+    DmProdutos.Dados_Grupo;
+  finally
+    FrmProdutos.Destroy;
+  end;
+
+end;
+
+procedure TFrmCadProdutos.PreencheUnidades;
+var aArquivo : TextFile;
+    aNomeArq, Linha : string;
+begin
+  aNomeArq := ExtractFilePath(Application.ExeName)+'Unid.txt';
+  if FileExists(aNomeArq) then
+  begin
+    AssignFile(aArquivo,aNomeArq);
+    Reset(aArquivo);
+    While not Eof(aArquivo) do
+    begin
+      ReadLn(aArquivo,Linha);
+      ComboUnidade.Items.Add(Linha);
+    end;
+    CloseFile(aArquivo);
+  end
+  else
+  begin
+    AssignFile(aArquivo,aNomeArq);
+    Rewrite(aArquivo);
+    Writeln(aArquivo,'UN');
+    Writeln(aArquivo,'CX');
+    Writeln(aArquivo,'DZ');
+    Writeln(aArquivo,'PR');
+    Writeln(aArquivo,'FD');
+    Writeln(aArquivo,'PC');
+    Writeln(aArquivo,'LT');
+    Writeln(aArquivo,'VD');
+    Writeln(aArquivo,'M2');
+    Writeln(aArquivo,'M3');
+    Writeln(aArquivo,'CM');
+    Writeln(aArquivo,'MM');
+    Writeln(aArquivo,'PA');
+    Writeln(aArquivo,'MT');
+    Writeln(aArquivo,'GG');
+    CloseFile(aArquivo);
+    PreencheUnidades
+  end;
+
+end;
+
+procedure TFrmCadProdutos.SpeedButton1Click(Sender: TObject);
+begin
+  inherited;
+  try
+    Application.CreateForm(TFrmProdutoCores,FrmProdutoCores);
+    FrmProdutoCores.sApenasConsulta := false;
+    FrmProdutoCores.ShowModal;
+    DmProdutos.Dados_ProdCor;
+  finally
+    FreeAndNil(FrmProdutoCores);
+  end;
+end;
+
+procedure TFrmCadProdutos.SpeedButton2Click(Sender: TObject);
+begin
+  inherited;
+  try
+    Application.CreateForm(TFrmProdutoTamanho,FrmProdutoTamanho);
+    FrmProdutoTamanho.sApenasConsulta := false;
+    FrmProdutoTamanho.ShowModal;
+    DmProdutos.Dados_ProdTamanho;
+  finally
+    FreeAndNil(FrmProdutoTamanho);
+  end;
+
+end;
+
+procedure TFrmCadProdutos.FormShow(Sender: TObject);
+begin
+  inherited;
+  DataWork.DataSet          := DmProdutos.CdsProdutos;
+  DataEstoque.DataSet       := DmProdutos.CdsEstoque;
+  DataGrupo.DataSet         := DmProdutos.CdsGrupo;
+  DataSubGrupo1.DataSet     := DmProdutos.CdsSubGrupo;
+  DataSubGrupo2.DataSet     := DmProdutos.CdsSubGrupo;
+  DataComissao.DataSet      := DmWorkCom.CdsTabelaComissao;
+  DataProdAliq.DataSet      := DmProdutos.CdsProduto_Aliquota;
+  DataCFOP.DataSet          := DmWorkCom.CdsCFOP;
+  DataCST.DataSet           := DmWorkCom.CdsCST;
+  DataCSOSN.DataSet         := DmWorkCom.CdsCSOSN;
+  DataCSTPis.DataSet        := DmProdutos.CdsCSTPisCofins;
+  DataCSTCofins.DataSet     := DmProdutos.CdsCSTPisCofins;
+  DataCest.DataSet          := DmProdutos.CdsCest;
+  DataUF.DataSet            := DmClientes.CdsUF;
+  DataNCM.DataSet           := DmProdutos.CdsNCM;
+  DataProdCor.DataSet       := DmProdutos.CdsProdutoCor;
+  DataProdTamanho.DataSet   := DmProdutos.CdsProdutoTamanho;
+  PreencheUnidades;
+  PageControl1.TabIndex := 0;
+  DmProdutos.Dados_Produto(sIDProduto);
+  DmProdutos.Dados_Estoque(sIDProduto,sIDEmpresa);
+  DmProdutos.Dados_Grupo;
+  DmWorkCom.Dados_TabelaComissao(sIDProduto);
+  DmWorkCom.Dados_CFOP;
+  DmWorkCom.Dados_CST;
+  DmWorkCom.Dados_CSOSN;
+  DmProdutos.Dados_CST_Pis_Cofins;
+  DmProdutos.Dados_NCM;
+  DmProdutos.Dados_Cest('');
+  DmProdutos.Dados_ProdCor;
+  DmProdutos.Dados_ProdTamanho;
+  DataUF.DataSet.Open;
+  DmProdutos.Dados_Produto_Aliquota(sIDProduto);
+  PnCadAliquota.Enabled := false;
+  DbRadioTipoProdChange(Sender);
+  DbEan13.SetFocus;
+  GrpComissao.Enabled := False;
+  if sTipoComissao = 2 then
+     GrpComissao.Enabled := True;
+  //RadioTipoProd.Enabled := false;
+    if sTipoEmp = 2 then
+    //   RadioTipoProd.Enabled := true;
+  if DataWork.DataSet.FieldByName('PATH_IMAGEM').AsString <> '' then
+  begin
+    if FileExists(DataWork.DataSet.FieldByName('PATH_IMAGEM').AsString) then
+       ImgProduto.Picture.LoadFromFile(DataWork.DataSet.FieldByName('PATH_IMAGEM').AsString);
+  end;
+  // verifica os dados
+  if DataWork.DataSet.RecordCount > 0 then
+  begin
+    DataWork.DataSet.Edit
+  end
+  else
+  begin
+    DataWork.DataSet.Append;
+    ComboUnidade.ItemIndex := 0;
+    DataWork.DataSet.FieldByName('UNIDADE').AsString := ComboUnidade.Text;
+  end;
+  if sCadNFe then
+  begin
+    DataWork.DataSet.FieldByName('DESCRICAO').AsString      := xDESCRICAO;
+    DataWork.DataSet.FieldByName('REFERENCIA').AsString     := xREFERENCIA ;
+    DataWork.DataSet.FieldByName('EAN13').AsString          := xEAN13;
+    DataWork.DataSet.FieldByName('UNIDADE').AsString        := xUNIDADE;
+    DataWork.DataSet.FieldByName('CODIGO_NCM').AsString     := xCODIGO_NCM;
+    DataWork.DataSet.FieldByName('COD_CEST').AsString       := xCODIGO_CEST;
+    DataWork.DataSet.FieldByName('CST_INTERNO').AsString    := xCST_INTERNO;
+    DataWork.DataSet.FieldByName('CFOP_INTERNO').AsString   := xCFOP_INTERNO;
+    DataWork.DataSet.FieldByName('ALIQUOTA_ICMS').AsFloat   := xALIQUOTA_ICMS;
+    DataWork.DataSet.FieldByName('ALIQUOTA_IPI').AsFloat    := xALIQUOTA_IPI;
+    DataWork.DataSet.FieldByName('PRECO_COMPRA').AsFloat    := xPRECO_COMPRA;
+    DataWork.DataSet.FieldByName('REDUCAO_BASE').AsFloat    := xREDUCAO_BASE;
+    DataWork.DataSet.FieldByName('MVA').AsFloat             := xMVA;
+    DataWork.DataSet.FieldByName('ALIQUOTA_PIS').AsFloat    := xALIQUOTA_PIS;
+    DataWork.DataSet.FieldByName('ALIQUOTA_COFINS').AsFloat := xALIQUOTA_COFINS;
+    // verifica a tributação
+    if Copy(xCST_INTERNO,2,2)  = '00' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 2
+    else if Copy(xCST_INTERNO,2,2)  = '10' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 1
+    else if Copy(xCST_INTERNO,2,2)  = '20' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 2
+    else if Copy(xCST_INTERNO,2,2)  = '30' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 0
+    else if Copy(xCST_INTERNO,2,2)  = '40' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 0
+    else if Copy(xCST_INTERNO,2,2)  = '41' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 3
+    else if Copy(xCST_INTERNO,2,2)  = '50' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 2
+    else if Copy(xCST_INTERNO,2,2)  = '51' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 2
+    else if Copy(xCST_INTERNO,2,2)  = '60' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 1
+    else if Copy(xCST_INTERNO,2,2)  = '70' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 1
+    else if Copy(xCST_INTERNO,2,2)  = '90' then
+       DataWork.DataSet.FieldByName('TRIBUTACAO').AsInteger := 2;
+  end;
+
+end;
+
+procedure TFrmCadProdutos.DbIDKeyPress(Sender: TObject; var Key: Char);
+begin
+  inherited;
+  TabEnter(Self,Key);
+
+end;
+
+procedure TFrmCadProdutos.ActionList1Update(Action: TBasicAction;
+  var Handled: Boolean);
+begin
+  inherited;
+//  AbilitaFrame(frame,DataWork.DataSet);
+
+end;
+
+procedure TFrmCadProdutos.DbRadioTipoProdChange(Sender: TObject);
+begin
+  inherited;
+  SpBtnComposicao.Enabled := false;
+  if DbRadioTipoProd.ItemIndex = 1 then
+  begin
+    SpBtnComposicao.Enabled := true;
+  end;
+
+
+end;
+
+procedure TFrmCadProdutos.ActFornecedorExecute(Sender: TObject);
+begin
+  inherited;
+  if DataWork.DataSet.RecordCount > 0 then
+  begin
+    Application.CreateForm(TFrmCadProdFornecedor,FrmCadProdFornecedor);
+    try
+      FrmCadProdFornecedor.sIDProduto := DataWork.DataSet.FieldByName('ID').AsInteger;
+      FrmCadProdFornecedor.ShowModal;
+    finally
+      FrmCadProdFornecedor.Destroy;
+    end;  
+  end;
+end;
+
+procedure TFrmCadProdutos.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  inherited;
+  if DataWork.DataSet.RecordCount > 0 then
+     sIDProduto := DataWork.DataSet.FieldByName('ID').AsInteger;
+  // fecha tabelas
+  DataWork.DataSet.Close;
+  DataGrupo.DataSet.Close;
+  DataSubGrupo1.DataSet.Close;
+  DataSubGrupo2.DataSet.Close;
+  DataComissao.DataSet.Close;
+  DataProdAliq.DataSet.Close;
+  DataCFOP.DataSet.Close;
+  DataCST.DataSet.Close;
+  DataUF.DataSet.Close;
+  DataNCM.DataSet.Close;
+
+  
+end;
+
+procedure TFrmCadProdutos.GridComissaoKeyPress(Sender: TObject;
+  var Key: Char);
+begin
+  inherited;
+  if (Key = #13) then
+     Grava_Dados(DataComissao.DataSet);
+end;
+
+procedure TFrmCadProdutos.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+  inherited;
+  AlterVirgulaPonto(Self,Key);
+
+end;
+
+procedure TFrmCadProdutos.AcertarEstoqueManual1Click(Sender: TObject);
+var aux : String;
+    estoque : Double;
+begin
+  inherited;
+  if DataWork.DataSet.RecordCount = 0 then
+  begin
+    MessageDlg('É necessário selecionar um produto para atualizar os dados!', mtWarning, [mbOK], 0);
+    Abort;
+  end;
+  //
+  estoque := 0;
+  aux := '0';
+  if InputQuery('Acerto Manual de Estoque','Estoque Atual',aux) then
+  begin
+    try
+      estoque := StrToFloat(aux);
+      if estoque > 0 then
+      begin
+        if DmProdutos.Dados_Estoque(DataWork.DataSet.FieldByname('ID').AsInteger,sIDEmpresa) then
+        begin
+          if not(DataEstoque.DataSet.State in [dsInsert,dsedit]) then
+             DataEstoque.DataSet.Edit;
+          DataEstoque.DataSet.FieldByName('QUANTIDADE').AsFloat := estoque;
+          Grava_Dados(DataEstoque.DataSet);
+          // atualiza os dados na tela
+          DmProdutos.Dados_Produto(DataWork.DataSet.FieldByname('ID').AsInteger);
+          DmProdutos.Dados_Estoque(DataWork.DataSet.FieldByname('ID').AsInteger,sIDEmpresa)
+        end;
+      end;
+    except
+      MessageDlg('Erro ao executar comando!!!', mtWarning, [mbOK], 0);
+    end;
+  end;
+end;
+
+procedure TFrmCadProdutos.ActGerarDadosEstoqueExecute(Sender: TObject);
+var aIDProduto : Integer;
+begin
+  inherited;
+  if DataEstoque.DataSet.RecordCount > 0 then
+  begin
+    MessageDlg('Já existe a informação de estoque do produto nesta filial!!', mtInformation, [mbOK], 0);
+    Abort;
+  end;
+  aIDProduto := 0;
+  if DataWork.DataSet.RecordCount = 0 then
+  begin
+    if MessageDlg('Será Gerado Informação de estoque para todos os produtos. Interromper?', mtConfirmation, [mbYes, mbNo], 0) = mryes then
+    begin
+      Abort;
+    end;
+  end
+  else
+    aIDProduto := DataWork.DataSet.FieldByName('ID').AsInteger;
+  // processa os dados
+  GeraEstoqueProduto(aIDProduto,sIDEmpresa);
+  DmProdutos.Dados_Produto(aIDProduto);
+  DmProdutos.Dados_Estoque(aIDProduto,sIDEmpresa);
+
+end;
+
+procedure TFrmCadProdutos.InserirAliquotaparaoproduto1Click(
+  Sender: TObject);
+begin
+  inherited;
+  PnCadAliquota.Enabled := true;
+  ComboUF.SetFocus;
+  DataProdAliq.DataSet.Append;
+
+end;
+
+procedure TFrmCadProdutos.DeletarAliquotadoproduto1Click(Sender: TObject);
+begin
+  inherited;
+  if Confirmacao('Confirma a exclusão desta aliquota?') then
+  begin
+    DataProdAliq.DataSet.Delete;
+    GridAliquota.SetFocus;
+  end;
+    
+end;
+
+procedure TFrmCadProdutos.BitBtn2Click(Sender: TObject);
+begin
+  inherited;
+  Grava_Dados(DataProdAliq.DataSet);
+  PnCadAliquota.Enabled := false;
+  GridAliquota.SetFocus;
+
+end;
+
+procedure TFrmCadProdutos.BitBtn3Click(Sender: TObject);
+begin
+  inherited;
+  if Confirmacao('Confirma o cancelamento deste registro?') then
+  begin
+    DataProdAliq.DataSet.Cancel;
+    PnCadAliquota.Enabled := false;
+    GridAliquota.SetFocus;
+  end;
+  
+end;
+//fabricio inicio - isentar impostos
+procedure TFrmCadProdutos.BitBtn7Click(Sender: TObject);
+{
+criar um arquivo tributos.ini... coolocar o INIFILES lá em cima no uses
+
+colocar as variaveis lá em cima
+traliquota_icms, traliquota_ipi, trtributacao,traliquota_pis, traliquota_cofins, trcst_interno,
+trcfop_interno, trsct_pis, trcst_cofins, trcsosn_interno, traliquotauf, traliquotacst,
+traliquotacfop, traliquotaaliquota,traliquotareducao_base, traliquotacson: string;
+}
+
+var
+LArqIni: TInifile;
+achei: boolean;
+begin
+  inherited;
+
+  achei:=false;
+  LArqIni      := TIniFile.Create(ExtractFilePath(Application.ExeName)+'tributos.ini');
+  traliquota_icms       := LArqINI.ReadString('TRIBUTOS','ALIQUOTA_ICMS','');
+  traliquota_ipi       := LArqINI.ReadString('TRIBUTOS','ALIQUOTA_IPI','');
+  trtributacao       := LArqINI.ReadString('TRIBUTOS','TRIBUTACAO','');
+  traliquota_pis       := LArqINI.ReadString('TRIBUTOS','ALIQUOTA_PIS','');
+  traliquota_cofins       := LArqINI.ReadString('TRIBUTOS','ALIQUOTA_COFINS','');
+  trcst_interno       := LArqINI.ReadString('TRIBUTOS','CST_INTERNO','');
+  trcfop_interno       := LArqINI.ReadString('TRIBUTOS','CFOP_INTERNO','');
+  trsct_pis       := LArqINI.ReadString('TRIBUTOS','CST_PIS','');
+  trcst_cofins       := LArqINI.ReadString('TRIBUTOS','CST_COFINS','');
+  trcsosn_interno       := LArqINI.ReadString('TRIBUTOS','CSOSN_INTERNO','');
+  traliquotauf       := LArqINI.ReadString('TRIBUTOS','AliquotaUF','');
+  traliquotacst       := LArqINI.ReadString('TRIBUTOS','AliquotaCST','');
+  traliquotacfop       := LArqINI.ReadString('TRIBUTOS','AliquotaCFOP','');
+  traliquotaaliquota       := LArqINI.ReadString('TRIBUTOS','AliquotaALIQUOTA','');
+  traliquotareducao_base       := LArqINI.ReadString('TRIBUTOS','REDUCAO_BASE','');
+  traliquotacson       := LArqINI.ReadString('TRIBUTOS','AliquotaCSOSN','');
+  LArqIni.Free;
+
+  if not (dmprodutos.CdsProdutos.State in [dsEdit,dsInsert]) then
+    dmprodutos.CdsProdutos.Edit;
+    DmProdutos.CdsProdutosALIQUOTA_ICMS.AsString:= traliquota_icms;
+    DmProdutos.CdsProdutosALIQUOTA_IPI.AsString:= traliquota_ipi;
+    DmProdutos.CdsProdutosTRIBUTACAO.AsString:= trtributacao;
+    DmProdutos.CdsProdutosALIQUOTA_PIS.AsString:= traliquota_pis;
+    DmProdutos.CdsProdutosALIQUOTA_COFINS.AsString:= traliquota_cofins;
+    DmProdutos.CdsProdutosCST_INTERNO.AsString:= trcst_interno;
+    DmProdutos.CdsProdutosCFOP_INTERNO.AsString:= trcfop_interno;
+    DmProdutos.CdsProdutosCST_PIS.AsString:= trsct_pis;
+    DmProdutos.CdsProdutosCST_COFINS.AsString:= trcst_cofins;
+    DmProdutos.CdsProdutosCSOSN_INTERNO.AsString:= trcsosn_interno;
+
+    DmProdutos.CdsProduto_Aliquota.First;
+    while not DmProdutos.CdsProduto_Aliquota.Eof do
+    begin
+       if DmProdutos.CdsProduto_AliquotaUF.AsString = traliquotauf then
+       begin
+        DmProdutos.CdsProduto_Aliquota.Edit;
+//        DmProdutos.CdsProduto_AliquotaUF.AsString          := traliquotauf;
+        DmProdutos.CdsProduto_AliquotaCST.AsString         := traliquotacst;
+        DmProdutos.CdsProduto_AliquotaCFOP.AsString        := traliquotacfop;
+        DmProdutos.CdsProduto_AliquotaALIQUOTA.AsString     := traliquotaaliquota;
+        DmProdutos.CdsProduto_AliquotaREDUCAO_BASE.AsString:= traliquotareducao_base;
+        DmProdutos.CdsProduto_AliquotaCSOSN.AsString:= traliquotacson;
+        Grava_Dados(DataProdAliq.DataSet);
+        achei:=true;
+       end;
+       DmProdutos.CdsProduto_Aliquota.Next;
+    end;
+    if not achei then
+    begin
+        DataProdAliq.DataSet.Append;
+        DmProdutos.CdsProduto_AliquotaUF.AsString          := traliquotauf;
+        DmProdutos.CdsProduto_AliquotaCST.AsString         := traliquotacst;
+        DmProdutos.CdsProduto_AliquotaCFOP.AsString        := traliquotacfop;
+        DmProdutos.CdsProduto_AliquotaALIQUOTA.AsString     := traliquotaaliquota;
+        DmProdutos.CdsProduto_AliquotaREDUCAO_BASE.AsString:= traliquotareducao_base;
+        DmProdutos.CdsProduto_AliquotaCSOSN.AsString:= traliquotacson;
+        Grava_Dados(DataProdAliq.DataSet);
+    end;
+
+    Grava_Dados(DataWork.DataSet);
+end;
+//fabricio fim
+//fabricio - calcula preco de venda
+procedure TFrmCadProdutos.BitBtn8Click(Sender: TObject);
+var
+aliqsSimples: string;
+begin
+  inherited;
+if DmProdutos.CdsProdutosPRECO_COMPRA.IsNull then
+begin
+   ShowMessage ('É necessário informar um valor para o preço de compra');
+   exit;
+end;
+if DmProdutos.CdsProdutosMARGEM_LUCRO.IsNull then
+   DmProdutos.CdsProdutosMARGEM_LUCRO.AsCurrency :=0;
+
+if DmProdutos.CdsProdutosFRETE.IsNull then
+   DmProdutos.CdsProdutosFRETE.AsCurrency := 0;
+
+if DmProdutos.CdsProdutosOUTRAS_DESP.IsNull then
+   DmProdutos.CdsProdutosOUTRAS_DESP.AsCurrency := 0;
+
+if DmProdutos.CdsProdutosCUSTO_OPER.IsNull then
+   DmProdutos.CdsProdutosCUSTO_OPER.AsCurrency := 0;
+
+if DmProdutos.CdsProdutosALIQ_SSIMPLES.IsNull then
+   DmProdutos.CdsProdutosALIQ_SSIMPLES.AsCurrency := 0;
+
+if DmWorkCom.CdsEmpresaRAZAO_SOCIAL.AsString = 'CELSO SOUZA MARQUES ME' then
+begin
+      DmProdutos.CdsProdutosCUSTO_OPER.AsCurrency := 15;
+      DmProdutos.CdsProdutosALIQ_SSIMPLES.AsCurrency := 5;
+end;
+
+
+
+
+DbPrecoVenda.Text:=FloatToStr((DmProdutos.CdsProdutosPRECO_COMPRA.AsFloat * DmProdutos.CdsProdutosMARGEM_LUCRO.AsFloat /100));
+
+aliqsSimples:= FloatToStr(((DmProdutos.CdsProdutosPRECO_COMPRA.AsFloat
+                                   + (DmProdutos.CdsProdutosPRECO_COMPRA.AsFloat * DmProdutos.CdsProdutosMARGEM_LUCRO.AsFloat /100))
+                                   * ((1 +(DmProdutos.CdsProdutosFRETE.AsFloat
+                                   +  DmProdutos.CdsProdutosOUTRAS_DESP.AsFloat
+                                   +  DmProdutos.CdsProdutosCUSTO_OPER.AsFloat) /100)))
+                                   *  (DmProdutos.CdsProdutosALIQ_SSIMPLES.AsFloat / 100));
+
+DbPrecoVenda.Text:= (FormatFloat('0.000',(((DmProdutos.CdsProdutosPRECO_COMPRA.AsFloat
+                                   + StrToFloat(DbPrecoVenda.Text))
+                                   * ((1 +(DmProdutos.CdsProdutosFRETE.AsFloat
+                                   +  DmProdutos.CdsProdutosOUTRAS_DESP.AsFloat
+                                   +  DmProdutos.CdsProdutosCUSTO_OPER.AsFloat) /100)))
+                                   +  (StrToFloat(aliqsSimples)))));
+
+
+
+//        DbPrecoVenda.Text := FormatFloat('0,000',StrToFloat(DbPrecoVenda.Text));
+BitBtn4.SetFocus;
+end;
+//fabricio fim
+
+procedure TFrmCadProdutos.BtnImagemClick(Sender: TObject);
+begin
+  inherited;
+  if not(DataWork.DataSet.State in [dsInsert,dsEdit]) then
+    DataWork.DataSet.Edit;
+  OpenDialog1.Execute;
+  if OpenDialog1.FileName <> '' then
+  begin
+    DataWork.DataSet.FieldByName('PATH_IMAGEM').AsString := OpenDialog1.FileName;
+    if FileExists(OpenDialog1.FileName) then
+       ImgProduto.Picture.LoadFromFile(OpenDialog1.FileName);
+  end;
+
+end;
+
+procedure TFrmCadProdutos.GridAliquotaDblClick(Sender: TObject);
+begin
+  inherited;
+  PnCadAliquota.Enabled := true;
+  ComboUF.SetFocus;
+
+end;
+
+procedure TFrmCadProdutos.FormCreate(Sender: TObject);
+begin
+  inherited;
+  sIDProduto := 0;
+  sCadNFe := false;
+  
+end;
+
+procedure TFrmCadProdutos.ActCancelarExecute(Sender: TObject);
+begin
+  inherited;
+  Close;
+
+end;
+
+procedure TFrmCadProdutos.ActConfirmarExecute(Sender: TObject);
+begin
+  inherited;
+
+  if DmProdutos.CdsProdutosPRECO_COMPRA.IsNull then
+begin
+   ShowMessage ('É necessário informar um valor para o preço de compra');
+   exit;
+end;
+
+//if not (DmProdutos.CdsProdutos.State in [dsInsert,dsEdit]) then
+//   DmProdutos.CdsProdutos.Edit;
+
+if DmProdutos.CdsProdutosMARGEM_LUCRO.IsNull then
+   dbmargem.Text:='0';
+//   DmProdutos.CdsProdutosMARGEM_LUCRO.AsCurrency :=0;
+
+if DmProdutos.CdsProdutosFRETE.IsNull then
+   dbfrete.Text:='0';
+//   DmProdutos.CdsProdutosFRETE.AsCurrency := 0;
+
+if DmProdutos.CdsProdutosOUTRAS_DESP.IsNull then
+   dboutrdesp.Text:='0';
+//   DmProdutos.CdsProdutosOUTRAS_DESP.AsCurrency := 0;
+
+if DmProdutos.CdsProdutosCUSTO_OPER.IsNull then
+   dbcustop.Text:='0';
+//   DmProdutos.CdsProdutosCUSTO_OPER.AsCurrency := 0;
+
+if DmProdutos.CdsProdutosALIQ_SSIMPLES.IsNull then
+   dbaliqssimples.Text:='0';
+
+
+  // grava tabela de PDV como não sincronizado
+  DmWorkCom.GravaPDVNaoSincronizado;
+  // se não tiver estoque ele gera
+  if DataEstoque.DataSet.RecordCount = 0 then
+  begin
+    // processa os dados
+    GeraEstoqueProduto(DataWork.DataSet.FieldByName('ID').AsInteger,sIDEmpresa);
+    DmProdutos.Dados_Produto(DataWork.DataSet.FieldByName('ID').AsInteger);
+    DmProdutos.Dados_Estoque(DataWork.DataSet.FieldByName('ID').AsInteger,sIDEmpresa);
+  end;
+  // grava a aliquota para o produto caso seja cadastro de NFe
+  if sCadNFe then
+  begin
+    DataProdAliq.DataSet.Append;
+    DmProdutos.CdsProduto_AliquotaUF.AsString          := xUF_Fornec;
+    DmProdutos.CdsProduto_AliquotaCST.AsString         := xCST_INTERNO;
+    DmProdutos.CdsProduto_AliquotaCFOP.AsString        := xCFOP_INTERNO;
+    DmProdutos.CdsProduto_AliquotaALIQUOTA.AsFloat     := xALIQUOTA_ICMS;
+    DmProdutos.CdsProduto_AliquotaREDUCAO_BASE.AsFloat := xREDUCAO_BASE;
+    Grava_Dados(DataProdAliq.DataSet);
+  end;
+//  if (DmProdutos.CdsProdutosCFOP_INTERNO.AsString = '')
+//  and(DmProdutos.CdsProdutosCST_PIS.AsString = '')
+//  and(DmProdutos.CdsProdutosCST_COFINS.AsString = '') then
+//  Begin
+    if MessageDlg('Deseja Cadastrar Tributos?', mtConfirmation, [mbYes, mbNo], 0) = mryes then
+    begin
+       BitBtn7.Click;
+    end;
+//  End;
+  Close;
+
+end;
+
+procedure TFrmCadProdutos.DataWorkDataChange(Sender: TObject;
+  Field: TField);
+begin
+  inherited;
+  MemoFinalidade.Text := DataWork.DataSet.FieldByName('PROD_FINALIDADE').AsString;
+  GrpAtivoPermanente.Enabled := false;
+  if DataWork.DataSet.FieldByName('BENS_CONSUMO').AsString = 'T' then
+  begin
+    GrpAtivoPermanente.Enabled := true;
+  end;
+
+end;
+
+procedure TFrmCadProdutos.MemoFinalidadeExit(Sender: TObject);
+begin
+  inherited;
+  DataWork.DataSet.FieldByName('PROD_FINALIDADE').AsString := MemoFinalidade.Text;
+end;
+
+procedure TFrmCadProdutos.DbCodNCMExit(Sender: TObject);
+begin
+  inherited;
+  if (DataWork.DataSet.FieldByName('CODIGO_NCM').AsString = '') or
+     (DataWork.DataSet.FieldByName('CODIGO_NCM').IsNull) then
+  begin
+    if DataWork.DataSet.State in [dsInsert,dsEdit] then
+    begin
+      Application.CreateForm(TFrmTabNCM,FrmTabNCM);
+      try
+        FrmTabNCM.ShowModal;
+        DataWork.DataSet.FieldByName('CODIGO_NCM').AsString   := FrmTabNCM.sCodigo;
+        DataWork.DataSet.FieldByName('EXCECAO_NCM').AsInteger := FrmTabNCM.sExcecao;
+      finally
+        FreeAndNil(FrmTabNCM);
+      end;
+    end;
+  // verifica se possio NCM informado no cadastro
+  if DataWork.DataSet.FieldByName('CODIGO_NCM').AsString <> '' then
+  begin
+    if not DmAcbr.ACBrNcms1.validar(DataWork.DataSet.FieldByName('CODIGO_NCM').AsString) then
+    begin
+      MessageDlg('O código NCM informação não possui no cadastro. Verifique!',mtWarning,[mbOK],0);
+//      DbCodNCM.SetFocus;
+    end
+    else
+    begin
+      if not DmProdutos.Dados_Cest(DataWork.DataSet.FieldByName('CODIGO_NCM').AsString) then
+         DmProdutos.Dados_Cest('');
+    end;
+  end;
+
+  end;
+  // verifica se possio NCM informado no cadastro
+  if DataWork.DataSet.FieldByName('CODIGO_NCM').AsString <> '' then
+  begin
+    if not DmProdutos.Dados_NCM(DataWork.DataSet.FieldByName('CODIGO_NCM').AsString,
+                               DataWork.DataSet.FieldByName('EXCECAO_NCM').AsInteger) then
+    begin
+      MessageDlg('O código NCM informação não possui no cadastro. Verifique!',mtWarning,[mbOK],0);
+//      DbCodNCM.SetFocus;
+    end;
+  end;
+end;
+
+procedure TFrmCadProdutos.DbDum14Exit(Sender: TObject);
+begin
+  inherited;
+  // verifica preenchimento do EAN
+{  if DataWork.DataSet.State in [dsInsert,dsEdit] then
+  begin
+    if DataWork.DataSet.FieldByname('DUN14').AsString = '' then
+    begin
+      if sGerarGTIN = 'S' then
+         DataWork.DataSet.FieldByname('DUN14').AsString := ZeroEsquerda(IntToStr(DataWork.DataSet.FieldByName('ID').AsInteger),14);
+    end
+    else
+    begin
+      if (sVerificaGTIN = 'S') and
+         (DataWork.DataSet.FieldByname('PESAVEL').AsString = 'N') then
+      begin
+        ACBrValidador1.Documento   := DataWork.DataSet.FieldByname('DUN14').AsString;
+        ACBrValidador1.Complemento := '';
+        ACBrValidador1.IgnorarChar := '';
+        // realiza a validação
+        if not ACBrValidador1.Validar then
+        begin
+          MessageDlg(ACBrValidador1.MsgErro,mtError,[mbOK],0);
+          DbDum14.SelectAll;
+          DbDum14.SetFocus;
+        end;
+      end;
+    end;
+  end;
+}
+end;
+
+procedure TFrmCadProdutos.DbEan13Exit(Sender: TObject);
+begin
+  inherited;
+  // verifica preenchimento do EAN
+  if DataWork.DataSet.State in [dsInsert,dsEdit] then
+  begin
+    if DataWork.DataSet.FieldByname('EAN13').AsString = '' then
+    begin
+      if sGerarGTIN = 'S' then
+         DataWork.DataSet.FieldByname('EAN13').AsString := ZeroEsquerda(IntToStr(DataWork.DataSet.FieldByName('ID').AsInteger),13);
+    end
+    else
+    begin
+      if (sVerificaGTIN = 'S') and
+         (DataWork.DataSet.FieldByname('PESAVEL').AsString = 'N') then
+      begin
+        if FiltraNumero(DataWork.DataSet.FieldByname('EAN13').AsString) <> '' then
+        begin
+          if StrToInt64(DataWork.DataSet.FieldByname('EAN13').AsString) <> DataWork.DataSet.FieldByname('ID').AsInteger then
+          begin
+            if Length(IntToStr(StrToInt64(DataWork.DataSet.FieldByname('EAN13').AsString))) > 5 then
+            begin
+              ACBrValidador1.Documento   := DataWork.DataSet.FieldByname('EAN13').AsString;
+              ACBrValidador1.Complemento := '';
+              ACBrValidador1.IgnorarChar := '';
+              // realiza a validação
+              if not ACBrValidador1.Validar then
+              begin
+                MessageDlg(ACBrValidador1.MsgErro,mtError,[mbOK],0);
+                DbEan13.SelectAll;
+                DbEan13.SetFocus;
+              end;
+            end;
+          end;
+        end;
+      end;
+    end;
+  end;
+
+end;
+
+end.

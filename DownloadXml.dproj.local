@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/06/21 20:57:41.000.833,C:\Sisconet18\dXML.pas=</Transaction>
+    <Transaction>2018/06/21 20:58:03.000.053,=C:\Sisconet18\DM\uDmAcBr.pas</Transaction>
+    <Transaction>2018/06/21 20:58:14.000.150,=C:\Sisconet18\DM\uDmWorkCom.pas</Transaction>
+    <Transaction>2018/06/21 20:59:43.000.389,=C:\Sisconet18\Funcoes\uLibrary.pas</Transaction>
+    <Transaction>2018/06/21 21:00:29.000.806,=C:\Sisconet18\Funcoes\uFuncoesPAFECF.pas</Transaction>
+    <Transaction>2018/06/21 21:01:06.000.097,=C:\Sisconet18\Funcoes\uMensagem.pas</Transaction>
+    <Transaction>2018/06/21 21:01:26.000.536,=C:\Sisconet18\uFrmFecharCupom.pas</Transaction>
+    <Transaction>2018/06/21 21:01:44.000.258,=C:\Sisconet18\Funcoes\CharPrinter.pas</Transaction>
+    <Transaction>2018/06/21 21:02:05.000.303,=C:\Sisconet18\DM\uDmPosto.pas</Transaction>
+    <Transaction>2018/06/21 21:02:36.000.603,=C:\Sisconet18\DM\uDmConexao.pas</Transaction>
+    <Transaction>2018/06/21 21:02:59.000.288,=C:\Sisconet18\DM\uDMClientes.pas</Transaction>
+    <Transaction>2018/06/21 21:03:21.000.664,=C:\Sisconet18\DM\uDmAuxiliar.pas</Transaction>
+    <Transaction>2018/06/21 21:03:40.000.264,=C:\Sisconet18\DM\uDmProdutos.pas</Transaction>
+    <Transaction>2018/06/21 21:04:00.000.388,=C:\Sisconet18\Funcoes\uFuncoesPosto.pas</Transaction>
+    <Transaction>2018/06/21 21:04:29.000.972,=C:\Sisconet18\Funcoes\ICEP1.pas</Transaction>
+    <Transaction>2018/06/21 21:04:54.000.940,=C:\Sisconet18\Funcoes\MD5.pas</Transaction>
+    <Transaction>2018/06/21 21:05:18.000.511,=C:\Sisconet18\DM\uDmSPED.pas</Transaction>
+    <Transaction>2018/06/22 08:01:48.000.687,=C:\Sisconet18\uFrmConfiguracoes.pas</Transaction>
+    <Transaction>2018/06/22 08:01:56.000.082,=C:\Sisconet18\uFrmCadPadrao.pas</Transaction>
+    <Transaction>2018/06/22 18:53:32.000.547,=C:\Sisconet18\uFrmLancCompras.pas</Transaction>
+    <Transaction>2018/06/22 18:54:03.000.803,=C:\Sisconet18\uFrameBotaoVertical.pas</Transaction>
+    <Transaction>2018/06/22 18:54:15.000.110,=C:\Sisconet18\uFrameBotaoHorizontal.pas</Transaction>
+    <Transaction>2018/06/22 19:32:17.000.632,=C:\Sisconet18\uFrmCadastroCliente.pas</Transaction>
+    <Transaction>2018/06/22 19:32:33.000.272,=C:\Sisconet18\uFrmClientes.pas</Transaction>
+    <Transaction>2018/06/22 19:32:51.000.230,=C:\Sisconet18\uFrmConsPadrao.pas</Transaction>
+    <Transaction>2018/06/22 19:36:43.000.355,=C:\Sisconet18\uFrmSelEndereco.pas</Transaction>
+    <Transaction>2018/06/22 19:36:52.000.336,=C:\Sisconet18\uFrmPadrao.pas</Transaction>
+    <Transaction>2018/06/22 19:37:14.000.646,=C:\Sisconet18\uFrmContatosADC.pas</Transaction>
+    <Transaction>2018/06/22 19:50:58.000.507,=C:\Sisconet18\uFrmProdutos.pas</Transaction>
+    <Transaction>2018/06/22 19:52:47.000.402,=C:\Sisconet18\uFrmCadProdutos.pas</Transaction>
+    <Transaction>2018/06/22 20:08:52.000.382,C:\Sisconet18\uFrmLancCompras.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

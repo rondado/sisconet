@@ -1,0 +1,100 @@
+unit uDmConexao;
+
+interface
+
+uses
+  Windows, SysUtils, Classes, DB, SqlExpr, Messages, Variants,
+  Graphics, Controls, Forms, Dialogs, StdCtrls, Mask, DBCtrls,
+  ExtCtrls, ComCtrls, IniFiles, Data.DBXFirebird, Datasnap.DBClient,
+  Datasnap.DSConnect, Data.DBXDataSnap, IPPeerClient, Data.DBXCommon; // uFrmPadrao,
+
+
+type
+  TDmConexao = class(TDataModule)
+    ConexaoDBX: TSQLConnection;
+    ConexaoServer: TSQLConnection;
+    DspServer: TDSProviderConnection;
+    procedure DataModuleCreate(Sender: TObject);
+    procedure DataModuleDestroy(Sender: TObject);
+  private
+    ArqIni : TIniFile;
+    sPath, sUser, sPass : String;
+    procedure CriaArqIni;
+    procedure LeArqIni;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DmConexao: TDmConexao;
+
+implementation
+
+Uses uLibrary;
+
+{$R *.dfm}
+
+procedure TDmConexao.DataModuleCreate(Sender: TObject);
+var aux : String;
+begin
+  //
+  try
+    // verifica arquivo de configuração de acesso aos dados
+    aux := ExtractFilePath(Application.ExeName)+'config.ini';
+    if not FileExists(aux) then
+       CriaArqIni;
+    LeArqIni;
+    // realiza conexao com o banco de dados
+    ConexaoDBX.Connected := false;
+    ConexaoDBX.Params.Values['Database']  := sPath;
+    ConexaoDBX.Params.Values['User_Name'] := sUser;
+    ConexaoDBX.Params.Values['Password']  := sPass;
+    ConexaoDBX.Connected := true;
+    // atribui variavel de controle
+    ConexaoDados := ConexaoDBX;
+  except
+    on Exc: Exception do
+    begin
+      MessageDlg('Erro: '+Exc.Message, mtWarning, [mbOK], 0);
+      Application.Terminate;
+    end;
+  end;
+
+end;
+
+procedure TDmConexao.CriaArqIni;
+var AuxChave : String;
+begin
+  AuxChave := Criptografa('198208',23);
+  ArqIni := TIniFile.Create(ExtractFilePath(Application.ExeName)+'config.ini');
+  ArqINI.WriteString('DADOS','PATH',ExtractFilePath(Application.ExeName)+'Dados\DADOS.GDB');
+  ArqINI.WriteString('DADOS','USUARIO','SYSDBA');
+  ArqINI.WriteString('DADOS','SENHA','masterkey');
+  ArqINI.WriteString('DADOS','DRVCVE',AuxChave);
+  ArqINI.WriteInteger('DADOS','DRVBAT',0);
+  ArqIni.Free;
+end;
+
+procedure TDmConexao.LeArqIni;
+var AuxChave : String;
+begin
+  ArqIni      := TIniFile.Create(ExtractFilePath(Application.ExeName)+'config.ini');
+  sPath       := ArqINI.ReadString('DADOS','PATH',ExtractFilePath(Application.ExeName)+'Dados\WORKCOM.GDB');
+  sUser       := ArqINI.ReadString('DADOS','USUARIO','SYSDBA');
+  sPass       := ArqINI.ReadString('DADOS','SENHA','masterkey');
+  AuxChave    := ArqINI.ReadString('DADOS','DRVCVE','');
+  sBloqueio   := ArqINI.ReadInteger('DADOS','DRVBAT',0);
+  ArqIni.Free;
+  //
+  sIDBloqueio := StrToInt(Criptografa(AuxChave,23));
+end;
+
+
+procedure TDmConexao.DataModuleDestroy(Sender: TObject);
+begin
+  ConexaoDBX.Connected := false;
+
+end;
+
+end.

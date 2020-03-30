@@ -1,0 +1,7 @@
+22/06/2018 18:36:35 - WebService Distribuição de DFe:
+- Inativo ou Inoperante tente novamente.
+Erro Interno: 0
+Erro HTTP: 0
+O nome ou o endereço do servidor não pôde ser resolvido - URL:https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx - SOAPAction:http://www.portalfiscal.inf.br/nfe/wsdl/NFeDistribuicaoDFe/nfeDistDFeInteresse
+22/06/2018 21:13:46 - Nenhuma XML de NFe consultada!
+22/06/2018 21:16:57 - Nenhuma XML de NFe consultada!

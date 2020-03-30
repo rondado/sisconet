@@ -1,0 +1,44 @@
+01/02/2014 16:38:39 Iniciando comunicação
+01/02/2014 16:38:39 Host 3100 PortaIP 127001
+01/02/2014 16:38:50 Erro na conexão com host 3100 Windows socket error: O endereço solicitado não é válido no contexto (10049), on API 'connect'
+01/02/2014 16:38:50 Não foi possivel abrir a COM
+01/02/2014 16:38:50 Concentrador Inativo
+01/02/2014 16:39:02 Iniciando comunicação
+01/02/2014 16:39:02 Host 3100 PortaIP 127001
+01/02/2014 16:39:54 Iniciando comunicação
+01/02/2014 16:39:54 Host 3100 PortaIP 127001
+01/02/2014 16:41:49 Iniciando comunicação
+01/02/2014 16:41:49 Host 3100 PortaIP 127001
+01/02/2014 16:47:42 Iniciando comunicação
+01/02/2014 16:47:42 Host localhost PortaIP 3100
+01/02/2014 16:47:42 Conectado ao Host localhost
+01/02/2014 16:47:42 Concentrador Ativo
+01/02/2014 16:47:42 Retorno = 0
+01/02/2014 16:47:44 Iniciando comunicação
+01/02/2014 16:47:44 Host localhost PortaIP 3100
+01/02/2014 16:47:44 Cliente Concentrador desconectado
+01/02/2014 16:47:44 Conectado ao Host localhost
+01/02/2014 16:47:44 Concentrador Ativo
+01/02/2014 16:47:44 Retorno = 0
+01/02/2014 16:47:45 > {100W66} < [] Time Out
+01/02/2014 16:47:45 > {100W66} < {101wx3F}(0)
+01/02/2014 16:47:45 W x Err 0
+01/02/2014 16:47:57 > {100W66} < [] Time Out
+01/02/2014 16:47:57 > {100W66} < {101wx3F}(0)
+01/02/2014 16:47:57 W x Err 0
+01/02/2014 17:34:40 Iniciando comunicação
+01/02/2014 17:34:40 Host localhost PortaIP 3100
+01/02/2014 17:34:40 Conectado ao Host localhost
+01/02/2014 17:34:40 Concentrador Ativo
+01/02/2014 17:34:40 Retorno = 0
+01/02/2014 17:34:42 > {100W66} < [] Time Out
+01/02/2014 17:34:42 > {100W66} < {119wo640x33A00000000A000000006B}(0)
+01/02/2014 17:34:42 W o640x33A00000000A00000000 Err 0
+01/02/2014 17:35:38 Iniciando comunicação
+01/02/2014 17:35:38 Host localhost PortaIP 3100
+01/02/2014 17:35:38 Conectado ao Host localhost
+01/02/2014 17:35:38 Concentrador Ativo
+01/02/2014 17:35:38 Retorno = 0
+01/02/2014 17:35:40 > {100W66} < [] Time Out
+01/02/2014 17:35:40 > {100W66} < {119wo640x33A00000000A000000006B}(0)
+01/02/2014 17:35:40 W o640x33A00000000A00000000 Err 0

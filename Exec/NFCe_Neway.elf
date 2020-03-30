@@ -1,0 +1,769 @@
+EurekaLog 6.1.01 RC 1
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Mon, 13 Mar 2017 09:43:13 -0300
+  1.2 Name/Description: NFCe_Neway.exe
+  1.3 Version Number  : 1.0.0.1390
+  1.4 Parameters      : 
+  1.5 Compilation Date: Mon, 13 Mar 2017 09:38:50 -0300
+  1.6 Up Time         : 0 second
+
+Exception:
+-----------------------------------------------------------------------------------------------------------------
+  2.1 Date          : Mon, 13 Mar 2017 09:43:13 -0300
+  2.2 Address       : 75399612
+  2.3 Module Name   : KERNELBASE.dll - (DLL cliente da API BASE do Windows NT)
+  2.4 Module Version: 6.1.7600.16385
+  2.5 Type          : TDBXError
+  2.6 Message       : I/O error during "CreateFile (open)" operation for file "127.0.0.1/db\db.fdb:"
+                      Error while trying to open file
+                      A sintaxe do nome do arquivo, do nome do diretório ou do rótulo do volume está incorreta. .
+  2.7 ID            : C365
+  2.8 Count         : 1
+  2.9 Status        : New
+  2.10 Note         : 
+
+User:
+-------------------------------------------------------
+  3.1 ID        : W7_XE8
+  3.2 Name      : Usuário do Windows
+  3.3 Email     : 
+  3.4 Company   : 
+  3.5 Privileges: SeShutdownPrivilege             - OFF
+                  SeChangeNotifyPrivilege         - ON
+                  SeUndockPrivilege               - OFF
+                  SeIncreaseWorkingSetPrivilege   - OFF
+                  SeTimeZonePrivilege             - OFF
+
+Active Controls:
+----------------------------------
+  4.1 Form Class   : CabinetWClass
+  4.2 Form Text    : Exec
+  4.3 Control Class: 
+  4.4 Control Text : 
+
+Computer:
+---------------------------------------------------------------------
+  5.1 Name          : WIN-TU1EA8SBB12
+  5.2 Total Memory  : 3071 Mb
+  5.3 Free Memory   : 1863 Mb
+  5.4 Total Disk    : 200 Gb
+  5.5 Free Disk     : 102,7 Gb
+  5.6 System Up Time: 1 hour, 14 minutes, 36 seconds
+  5.7 Processor     : Intel(R) Core(TM) i5-3317U CPU @ 1.70GHz
+  5.8 Display Mode  : 1366 x 768, 32 bit
+  5.9 Display DPI   : 96
+  5.10 Video Card   : VMware SVGA 3D (driver 8.15.1.33 - RAM 1024 MB)
+  5.11 Printer      : PDFCreator (driver 6.1.7600.16385)
+
+Operating System:
+-----------------------------------
+  6.1 Type    : Microsoft Windows 7
+  6.2 Build # : 7600
+  6.3 Update  : 
+  6.4 Language: Portuguese
+  6.5 Charset : 0
+
+Network:
+---------------------------------------------------
+  7.1 IP Address: 000.000.000.000 - 192.168.040.129
+  7.2 Submask   : 000.000.000.000 - 255.255.255.000
+  7.3 Gateway   : 000.000.000.000 - 192.168.040.002
+  7.4 DNS 1     : 000.000.000.000 - 192.168.040.002
+  7.5 DNS 2     : 000.000.000.000 - 000.000.000.000
+  7.6 DHCP      : ON              - ON             
+
+Call Stack Information:
+--------------------------------------------------------------------
+|Address |Module        |Unit    |Class|Procedure/Method   |Line   |
+--------------------------------------------------------------------
+|Running Thread: ID=2512; Priority=0; Class=; [Main]               |
+|------------------------------------------------------------------|
+|0138B9C3|NFCe_Neway.exe|NFCe.dpr|     |                   |152[50]|
+|768C1172|kernel32.dll  |        |     |BaseThreadInitThunk|       |
+--------------------------------------------------------------------
+
+Modules Information:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name             |Description                                                |Version         |Size    |Modified           |Path                                                                                                         |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|001D0000|libxslt.dll      |                                                           |                |166912  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|00200000|libxmlsec.dll    |                                                           |                |307712  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|00400000|NFCe_Neway.exe   |                                                           |1.0.0.1390      |37113344|2017-03-13 09:38:52|C:\Programas\Projetos Pessoais\Comercial\Exec                                                                |
+|02930000|libxml2.dll      |                                                           |                |987136  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|02A30000|iconv.dll        |LGPLed libiconv for Windows NT/2000/XP and Windows 95/98/ME|1.9.0.0         |888832  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|02B10000|ControlTech32.dll|Dll de acesso ao concentrador ControlTech                  |1.0.3.1         |653312  |2012-04-30 15:51:56|C:\Programas\Projetos Pessoais\Comercial\Exec                                                                |
+|02CA0000|ssleay32.dll     |OpenSSL Shared Library                                     |0.9.8.14        |221184  |2016-06-25 18:36:24|C:\Windows\system32                                                                                          |
+|02CE0000|dbxfb.dll        |Embarcadero dbExpress FIREBIRD driver                      |23.0.20618.2753 |284032  |2015-08-26 19:55:00|C:\Program Files\Embarcadero\Studio\17.0\bin                                                                 |
+|05030000|fbclient.dll     |Firebird SQL Server                                        |2.5.3.26778     |552960  |2014-07-09 07:49:26|C:\Windows\system32                                                                                          |
+|10000000|libeay32.dll     |OpenSSL Shared Library                                     |0.9.8.14        |1069056 |2016-06-25 18:36:24|C:\Windows\system32                                                                                          |
+|50030000|borlndmm.dll     |Embarcadero Memory Manager                                 |23.0.20618.2753 |51072   |2015-08-26 19:55:00|C:\Program Files\Embarcadero\Studio\17.0\bin                                                                 |
+|62E80000|zlib1.dll        |zlib data compression library                              |1.2.8.0         |107520  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|6A810000|HHCtrl.OCX       |Controle de Ajuda em HTML da Microsoft®                    |6.1.7600.16385  |523776  |2009-07-13 22:14:12|C:\Windows\system32                                                                                          |
+|6ABC0000|olepro32.dll     |                                                           |6.1.7600.16385  |90112   |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|6E330000|Msftedit.DLL     |Rich Text Edit Control, v4.1                               |5.41.21.2509    |592384  |2009-07-13 22:15:46|C:\Windows\system32                                                                                          |
+|6E8E0000|BROWCLI.DLL      |Browser Service Client DLL                                 |6.1.7600.16385  |41472   |2009-07-13 22:15:02|C:\Windows\system32                                                                                          |
+|70600000|winmm.dll        |MCI API DLL                                                |6.1.7600.16385  |194048  |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|70BC0000|MSVCR80.dll      |Microsoft® C Runtime Library                               |8.0.50727.4927  |632656  |2009-06-10 18:23:12|C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.4927_none_d08a205e442db5b5               |
+|711D0000|winspool.drv     |Driver de spooler do Windows                               |6.1.7600.16385  |319488  |2009-07-13 22:14:10|C:\Windows\system32                                                                                          |
+|71930000|MPR.dll          |DLL do roteador provedor múltiplo                          |6.1.7600.16385  |64000   |2009-07-13 22:15:42|C:\Windows\system32                                                                                          |
+|732C0000|msimg32.dll      |GDIEXT Client DLL                                          |6.1.7600.16385  |4608    |2009-07-13 22:15:46|C:\Windows\system32                                                                                          |
+|734A0000|oleacc.dll       |Active Accessibility Core Component                        |7.0.0.0         |233472  |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|73610000|ntmarta.dll      |Provedor MARTA do Windows NT                               |6.1.7600.16385  |121856  |2009-07-13 22:16:12|C:\Windows\system32                                                                                          |
+|73790000|wkscli.dll       |Workstation Service Client DLL                             |6.1.7600.16385  |47104   |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|737A0000|netutils.dll     |Net Win32 API Helpers DLL                                  |6.1.7600.16385  |22016   |2009-07-13 22:16:04|C:\Windows\system32                                                                                          |
+|737B0000|netapi32.dll     |Net Win32 API DLL                                          |6.1.7600.16385  |56832   |2009-07-13 22:16:04|C:\Windows\system32                                                                                          |
+|73800000|wsock32.dll      |Windows Socket 32-Bit DLL                                  |6.1.7600.16385  |15360   |2009-07-13 22:16:22|C:\Windows\system32                                                                                          |
+|739E0000|dwmapi.dll       |API do Gerenciador de Janelas da Área de Trabalho Microsoft|6.1.7600.16385  |67072   |2009-07-13 22:15:14|C:\Windows\system32                                                                                          |
+|73C60000|gdiplus.dll      |Microsoft GDI+                                             |6.1.7600.16385  |1624576 |2009-07-13 22:03:52|C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7600.16385_none_72fc7cbf861225ca        |
+|73DF0000|UxTheme.dll      |Biblioteca UxTheme Microsoft                               |6.1.7600.16385  |249856  |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|73F70000|comctl32.dll     |Biblioteca de Controles de Experiência do Usuário          |6.10.7600.16385 |1680896 |2009-07-13 22:03:52|C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc|
+|74510000|version.dll      |Version Checking and File Installation Libraries           |6.1.7600.16385  |21504   |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|748B0000|credssp.dll      |Credential Delegation Security Package                     |6.1.7600.16385  |16896   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|74980000|rsaenh.dll       |Microsoft Enhanced Cryptographic Provider                  |6.1.7600.16385  |242936  |2009-07-13 22:17:56|C:\Windows\system32                                                                                          |
+|74B40000|msv1_0.DLL       |Microsoft Authentication Package v1.0                      |6.1.7600.16385  |257024  |2009-07-13 22:15:50|C:\Windows\system32                                                                                          |
+|74BA0000|mswsock.dll      |Provedor de serviços do Microsoft Windows Sockets 2.0      |6.1.7600.16385  |232448  |2009-07-13 22:15:52|C:\Windows\system32                                                                                          |
+|74BE0000|CRYPTSP.dll      |Cryptographic Service Provider API                         |6.1.7600.16385  |78848   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|74D10000|srvcli.dll       |Server Service Client DLL                                  |6.1.7600.16385  |90112   |2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|74E40000|cryptdll.dll     |Cryptography Manager                                       |6.1.7600.16385  |58880   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|74F00000|secur32.dll      |Security Support Provider Interface                        |6.1.7600.16385  |22016   |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|75040000|SspiCli.dll      |Security Support Provider Interface                        |6.1.7600.16385  |99840   |2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|750B0000|CRYPTBASE.dll    |Base cryptographic API DLL                                 |6.1.7600.16385  |36864   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|75160000|profapi.dll      |User Profile Basic API                                     |6.1.7600.16385  |31744   |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|751D0000|MSASN1.dll       |ASN.1 Runtime APIs                                         |6.1.7600.16385  |33280   |2009-07-13 22:15:44|C:\Windows\system32                                                                                          |
+|75270000|CRYPT32.dll      |Crypto API32                                               |6.1.7600.16385  |1151488 |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|75390000|KERNELBASE.dll   |DLL cliente da API BASE do Windows NT                      |6.1.7600.16385  |288256  |2009-07-13 22:15:36|C:\Windows\system32                                                                                          |
+|75460000|NSI.dll          |NSI User-mode interface DLL                                |6.1.7600.16385  |8704    |2009-07-13 22:16:12|C:\Windows\system32                                                                                          |
+|75470000|IMM32.DLL        |Multi-User Windows IMM32 API Client DLL                    |6.1.7600.16385  |118272  |2009-07-13 22:15:34|C:\Windows\system32                                                                                          |
+|75490000|comdlg32.dll     |DLL de diálogos comuns                                     |6.1.7600.16385  |486912  |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|75510000|msvcrt.dll       |Windows NT CRT DLL                                         |7.0.7600.16385  |690688  |2009-07-13 22:15:52|C:\Windows\system32                                                                                          |
+|755C0000|WS2_32.dll       |DLL de 32 bits do Windows Socket 2.0                       |6.1.7600.16385  |206336  |2009-07-13 22:16:22|C:\Windows\system32                                                                                          |
+|75600000|urlmon.dll       |Extensões OLE32 para Win32                                 |8.0.7600.16385  |1224704 |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|75740000|advapi32.dll     |API de base do Windows 32 avançada                         |6.1.7600.16385  |640000  |2009-07-13 22:14:54|C:\Windows\system32                                                                                          |
+|757E0000|oleaut32.dll     |                                                           |6.1.7600.16385  |571904  |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|75870000|RPCRT4.dll       |Tempo de Execução da Chamada de Procedimento Remoto        |6.1.7600.16385  |652288  |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|75920000|iertutil.dll     |Run time utility for Internet Explorer                     |8.0.7600.16385  |2058240 |2009-07-13 22:15:30|C:\Windows\system32                                                                                          |
+|75B20000|shell32.dll      |DLL comum do Shell do Windows                              |6.1.7600.16385  |12866560|2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|76770000|wininet.dll      |Internet Extensions para Win32                             |8.0.7600.16385  |977920  |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|76870000|kernel32.dll     |DLL cliente da API BASE do Windows NT                      |6.1.7600.16385  |857088  |2009-07-13 22:15:36|C:\Windows\system32                                                                                          |
+|76950000|sechost.dll      |Host for SCM/SDDL/LSA Lookup APIs                          |6.1.7600.16385  |92160   |2009-07-13 22:16:14|C:\Windows\SYSTEM32                                                                                          |
+|76970000|USP10.dll        |Uniscribe Unicode script processor                         |1.626.7600.16385|627200  |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|76A10000|GDI32.dll        |GDI Client DLL                                             |6.1.7600.16385  |304640  |2009-07-13 22:15:24|C:\Windows\system32                                                                                          |
+|76A60000|MSCTF.dll        |DLL de servidor MSCTF                                      |6.1.7600.16385  |828928  |2009-07-13 22:15:44|C:\Windows\system32                                                                                          |
+|76B30000|WLDAP32.dll      |DLL da API LDAP Win32                                      |6.1.7600.16385  |268800  |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|76B80000|ole32.dll        |Microsoft OLE para Windows e Windows NT                    |6.1.7600.16385  |1412608 |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|76CE0000|SHLWAPI.dll      |Biblioteca de utilitário abreviado para Shell              |6.1.7600.16385  |350208  |2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|76D40000|USER32.dll       |DLL de cliente API de usuário Windows para multiusuários   |6.1.7600.16385  |811520  |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|77010000|ntdll.dll        |DLL de nível do NT                                         |6.1.7600.16385  |1286144 |2009-07-13 22:17:52|C:\Windows\SYSTEM32                                                                                          |
+|77150000|LPK.dll          |Language Pack                                              |6.1.7600.16385  |26624   |2009-07-13 22:15:38|C:\Windows\system32                                                                                          |
+|77160000|PSAPI.DLL        |Process Status Helper                                      |6.1.7600.16385  |6144    |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|77230000|Normaliz.dll     |Unicode Normalization DLL                                  |6.1.7600.16385  |2048    |2009-07-13 22:09:02|C:\Windows\system32                                                                                          |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Processes Information:
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|ID  |Name               |Description                                                   |Version           |Memory|Priority    |Threads|Path                                          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|0   |[System Process]   |                                                              |                  |0     |            |1      |                                              |
+|4   |System             |                                                              |                  |0     |Normal      |91     |                                              |
+|276 |smss.exe           |Gerenciador de Sessão do Windows                              |6.1.7600.16385    |0     |Above-Normal|2      |                                              |
+|368 |csrss.exe          |Processo do tempo de Execução do Servidor do Cliente          |6.1.7600.16385    |0     |High        |9      |                                              |
+|372 |fbguard.exe        |                                                              |                  |0     |Normal      |5      |                                              |
+|420 |wininit.exe        |Aplicativo de Inicialização do Windows                        |6.1.7600.16385    |0     |High        |3      |                                              |
+|432 |csrss.exe          |Processo do tempo de Execução do Servidor do Cliente          |6.1.7600.16385    |0     |High        |11     |                                              |
+|480 |winlogon.exe       |Aplicativo de Logon do Windows                                |6.1.7600.16385    |0     |High        |3      |                                              |
+|524 |services.exe       |Aplicativo de serviços e controle                             |6.1.7600.16385    |0     |Normal      |8      |                                              |
+|540 |lsass.exe          |Local Security Authority Process                              |6.1.7600.16385    |0     |Normal      |7      |                                              |
+|548 |lsm.exe            |Serviço do Gerenciador de Sessão Local                        |6.1.7600.16385    |0     |Normal      |9      |                                              |
+|648 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |10     |                                              |
+|680 |TSVNCache.exe      |TortoiseSVN status cache                                      |1.8.4.24972       |0     |Normal      |9      |                                              |
+|708 |vmacthlp.exe       |                                                              |                  |0     |Normal      |3      |                                              |
+|752 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |8      |                                              |
+|824 |ibguard.exe        |                                                              |                  |0     |Normal      |6      |                                              |
+|832 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |20     |                                              |
+|892 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |19     |                                              |
+|920 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |34     |                                              |
+|984 |TSVNCache.exe      |TortoiseSVN status cache                                      |1.8.4.24972       |0     |Normal      |9      |C:\Program Files\TortoiseSVN\bin              |
+|1000|VGAuthService.exe  |                                                              |                  |0     |Normal      |3      |                                              |
+|1112|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |9      |                                              |
+|1132|PGTerm.exe         |Emulador de terminal virtual Pay&Go / Plug&Pay                |2.12.0.0          |0     |Normal      |4      |C:\Program Files\SETIS\Plug&Pay               |
+|1172|DllHost.exe        |COM Surrogate                                                 |6.1.7600.16385    |0     |Normal      |6      |C:\Windows\system32                           |
+|1232|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |14     |                                              |
+|1332|spoolsv.exe        |Aplicativo de subsistema de spooler                           |6.1.7600.16385    |0     |Normal      |13     |                                              |
+|1368|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |12     |                                              |
+|1392|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |17     |                                              |
+|1512|taskhost.exe       |Processo de Host para Tarefas do Windows                      |6.1.7600.16385    |0     |Normal      |9      |C:\Windows\system32                           |
+|1584|Dwm.exe            |Gerenciador de Janelas da Área de Trabalho                    |6.1.7600.16385    |0     |Normal      |3      |C:\Windows\system32                           |
+|1596|Explorer.EXE       |Windows Explorer                                              |6.1.7600.16385    |0     |Normal      |39     |C:\Windows                                    |
+|1612|LogWatNT.exe       |                                                              |                  |0     |Normal      |3      |                                              |
+|1684|NetBusiness_srv.exe|                                                              |                  |0     |Normal      |9      |                                              |
+|1704|armsvc.exe         |                                                              |                  |0     |Normal      |4      |                                              |
+|1740|AnyDesk.exe        |                                                              |                  |0     |High        |4      |                                              |
+|1756|mysqld.exe         |                                                              |                  |0     |Normal      |22     |                                              |
+|1900|vmtoolsd.exe       |VMware Tools Core Service                                     |10.0.5.520        |0     |Normal      |7      |C:\Program Files\VMware\VMware Tools          |
+|1936|jusched.exe        |Java(TM) Update Scheduler                                     |2.1.71.14         |0     |Normal      |5      |C:\Program Files\Common Files\Java\Java Update|
+|1956|GrooveMonitor.exe  |GrooveMonitor Utility                                         |12.0.4518.1014    |0     |Normal      |1      |C:\Program Files\Microsoft Office\Office12    |
+|1964|AnyDesk.exe        |                                                              |2.3.4.0           |0     |Normal      |5      |C:\Program Files\AnyDesk                      |
+|1972|PlugPay.exe        |Gerenciador Plug&&Pay                                         |2.10.0.0          |0     |Normal      |1      |C:\Program Files\SETIS\Plug&Pay               |
+|2076|vmtoolsd.exe       |                                                              |                  |0     |High        |9      |                                              |
+|2260|SearchIndexer.exe  |Indexador do Microsoft Windows Search                         |7.0.7600.16385    |0     |Normal      |11     |                                              |
+|2292|jucheck.exe        |                                                              |                  |0     |Normal      |6      |                                              |
+|2384|ibserver.exe       |                                                              |                  |0     |Normal      |7      |                                              |
+|2424|WmiPrvSE.exe       |WMI Provider Host                                             |6.1.7600.16385    |0     |Normal      |9      |                                              |
+|2568|fbserver.exe       |                                                              |                  |0     |Normal      |9      |                                              |
+|2636|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |6      |                                              |
+|2880|dllhost.exe        |COM Surrogate                                                 |6.1.7600.16385    |0     |Normal      |13     |                                              |
+|2904|audiodg.exe        |Isolamento de Gráfico de Dispositivo de Áudio do Windows      |6.1.7600.16385    |0     |Normal      |6      |                                              |
+|2980|msdtc.exe          |Serviço de Coordenador de Transações Distribuídas da Microsoft|2001.12.8530.16385|0     |Normal      |12     |                                              |
+|3148|NFCe_Neway.exe     |                                                              |1.0.0.1390        |0     |Normal      |5      |C:\Programas\Projetos Pessoais\Comercial\Exec |
+|3516|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |13     |                                              |
+|3724|bds.exe            |Embarcadero RAD Studio for Windows                            |23.0.20618.2753   |0     |Normal      |20     |                                              |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Assembler Information:
+-----------------------------------------------------------------------------------------------------------------------------------------------
+7539960B  DB      $C4, $0C, $8D, $45, $B0, $50, $FF  //les     ecx, [$FF50B045+ecx*4]
+75399612  adc     eax, $7539116C                                                       ; '.e.wàL.wpU.w°Z.w°V.wàO.wà].wõ:.w'...  ; <-- EXCEPTION
+75399617  leave
+
+Registers:
+-----------------------------
+EAX: 03FAB1E0   EDI: 03F4FEF0
+EBX: 03F72818   ESI: 03FAB1E0
+ECX: 00634500   ESP: 0012FCE4
+EDX: 00652BAA   EIP: 00652BA5
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FCE4: 0012FD04   75399612: 15 6C 11 39 75 C9 C2 10 00 89 45 C0 EB ED 90 90  .l.9u.....E.....
+0012FCE8: 00406FE8   75399622: 90 90 90 8B FF 55 8B EC 83 EC 1C 6A 00 6A 1C 8D  .....U.....j.j..
+0012FCEC: 0012FCFC   75399632: 45 E4 50 6A 00 FF 75 08 FF 15 30 13 39 75 85 C0  E.Pj..u...0.9u..
+0012FCF0: 04FE2E34   75399642: 0F 8C 4A FD 01 00 8B 45 0C 8B 4D E4 89 08 33 C0  ..J....E..M...3.
+0012FCF4: 049969C0   75399652: 40 C9 C2 08 00 85 C0 0F 8C 32 F9 FF FF 33 C0 40  @........2...3.@
+0012FCF8: 00000000   75399662: E9 32 F9 FF FF A1 70 49 3D 75 85 C0 0F 85 FB F8  .2....pI=u......
+0012FCFC: 0012FD48   75399672: FF FF E9 67 DD 01 00 89 45 D8 8B 45 B8 89 45 DC  ...g....E..E..E.
+0012FD00: 007F93E9   75399682: E9 F7 04 00 00 39 05 70 49 3D 75 0F 84 01 08 01  .....9.pI=u.....
+0012FD04: 0012FD5C   75399692: 00 A1 70 49 3D 75 E9 1C F9 FF FF 90 90 90 43 00  ..pI=u........C.
+0012FD08: 00406FE8   753996A2: 72 00 65 00 61 00 74 00 65 00 46 00 69 00 6C 00  r.e.a.t.e.F.i.l.
+0012FD0C: 0012FD48   753996B2: 65 00 44 00 6F 00 77 00 6E 00 67 00 72 00 61 00  e.D.o.w.n.g.r.a.
+0012FD10: 00000017   753996C2: 64 00 65 00 5F 00 56 00 69 00 73 00 74 00 61 00  d.e._.V.i.s.t.a.
+0012FD14: 03F97D48   753996D2: 00 00 90 90 90 90 41 00 6C 00 6C 00 6F 00 77 00  ......A.l.l.o.w.
+0012FD18: 03F5005C   753996E2: 20 00 66 00 6C 00 61 00 67 00 20 00 74 00 6F 00   .f.l.a.g. .t.o.
+0012FD1C: 00000000   753996F2: 20 00 62 00 65 00 20 00 70 00 61 00 73 00 73 00   .b.e. .p.a.s.s.
+0012FD20: 03FAB14C   75399702: 65 00 64 00 20 00 77 00 69 00 74 00 68 00 20 00  e.d. .w.i.t.h. .
+
+
+
+EurekaLog 6.1.01 RC 1
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Mon, 13 Mar 2017 09:43:41 -0300
+  1.2 Name/Description: NFCe_Neway.exe
+  1.3 Version Number  : 1.0.0.1390
+  1.4 Parameters      : 
+  1.5 Compilation Date: Mon, 13 Mar 2017 09:38:50 -0300
+  1.6 Up Time         : 0 second
+
+Exception:
+-----------------------------------------------------------------------------------------------------------------
+  2.1 Date          : Mon, 13 Mar 2017 09:43:42 -0300
+  2.2 Address       : 75399612
+  2.3 Module Name   : KERNELBASE.dll - (DLL cliente da API BASE do Windows NT)
+  2.4 Module Version: 6.1.7600.16385
+  2.5 Type          : TDBXError
+  2.6 Message       : I/O error during "CreateFile (open)" operation for file "127.0.0.1/db\db.fdb:"
+                      Error while trying to open file
+                      A sintaxe do nome do arquivo, do nome do diretório ou do rótulo do volume está incorreta. .
+  2.7 ID            : C365
+  2.8 Count         : 1
+  2.9 Status        : New
+  2.10 Note         : 
+
+User:
+-------------------------------------------------------
+  3.1 ID        : W7_XE8
+  3.2 Name      : Usuário do Windows
+  3.3 Email     : 
+  3.4 Company   : 
+  3.5 Privileges: SeShutdownPrivilege             - OFF
+                  SeChangeNotifyPrivilege         - ON
+                  SeUndockPrivilege               - OFF
+                  SeIncreaseWorkingSetPrivilege   - OFF
+                  SeTimeZonePrivilege             - OFF
+
+Active Controls:
+----------------------------------
+  4.1 Form Class   : CabinetWClass
+  4.2 Form Text    : Exec
+  4.3 Control Class: 
+  4.4 Control Text : 
+
+Computer:
+---------------------------------------------------------------------
+  5.1 Name          : WIN-TU1EA8SBB12
+  5.2 Total Memory  : 3071 Mb
+  5.3 Free Memory   : 1874 Mb
+  5.4 Total Disk    : 200 Gb
+  5.5 Free Disk     : 102,7 Gb
+  5.6 System Up Time: 1 hour, 15 minutes, 3 seconds
+  5.7 Processor     : Intel(R) Core(TM) i5-3317U CPU @ 1.70GHz
+  5.8 Display Mode  : 1366 x 768, 32 bit
+  5.9 Display DPI   : 96
+  5.10 Video Card   : VMware SVGA 3D (driver 8.15.1.33 - RAM 1024 MB)
+  5.11 Printer      : PDFCreator (driver 6.1.7600.16385)
+
+Operating System:
+-----------------------------------
+  6.1 Type    : Microsoft Windows 7
+  6.2 Build # : 7600
+  6.3 Update  : 
+  6.4 Language: Portuguese
+  6.5 Charset : 0
+
+Network:
+---------------------------------------------------
+  7.1 IP Address: 000.000.000.000 - 192.168.040.129
+  7.2 Submask   : 000.000.000.000 - 255.255.255.000
+  7.3 Gateway   : 000.000.000.000 - 192.168.040.002
+  7.4 DNS 1     : 000.000.000.000 - 192.168.040.002
+  7.5 DNS 2     : 000.000.000.000 - 000.000.000.000
+  7.6 DHCP      : ON              - ON             
+
+Call Stack Information:
+--------------------------------------------------------------------
+|Address |Module        |Unit    |Class|Procedure/Method   |Line   |
+--------------------------------------------------------------------
+|Running Thread: ID=2660; Priority=0; Class=; [Main]               |
+|------------------------------------------------------------------|
+|0138B9C3|NFCe_Neway.exe|NFCe.dpr|     |                   |152[50]|
+|768C1172|kernel32.dll  |        |     |BaseThreadInitThunk|       |
+--------------------------------------------------------------------
+
+Modules Information:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name             |Description                                                |Version         |Size    |Modified           |Path                                                                                                         |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|001D0000|libxslt.dll      |                                                           |                |166912  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|00300000|libxml2.dll      |                                                           |                |987136  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|00400000|NFCe_Neway.exe   |                                                           |1.0.0.1390      |37113344|2017-03-13 09:38:52|C:\Programas\Projetos Pessoais\Comercial\Exec                                                                |
+|02930000|iconv.dll        |LGPLed libiconv for Windows NT/2000/XP and Windows 95/98/ME|1.9.0.0         |888832  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|02A10000|libxmlsec.dll    |                                                           |                |307712  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|02A60000|ControlTech32.dll|Dll de acesso ao concentrador ControlTech                  |1.0.3.1         |653312  |2012-04-30 15:51:56|C:\Programas\Projetos Pessoais\Comercial\Exec                                                                |
+|03B00000|ssleay32.dll     |OpenSSL Shared Library                                     |0.9.8.14        |221184  |2016-06-25 18:36:24|C:\Windows\system32                                                                                          |
+|04820000|dbxfb.dll        |Embarcadero dbExpress FIREBIRD driver                      |23.0.20618.2753 |284032  |2015-08-26 19:55:00|C:\Program Files\Embarcadero\Studio\17.0\bin                                                                 |
+|04E70000|fbclient.dll     |Firebird SQL Server                                        |2.5.3.26778     |552960  |2014-07-09 07:49:26|C:\Windows\system32                                                                                          |
+|10000000|libeay32.dll     |OpenSSL Shared Library                                     |0.9.8.14        |1069056 |2016-06-25 18:36:24|C:\Windows\system32                                                                                          |
+|50030000|borlndmm.dll     |Embarcadero Memory Manager                                 |23.0.20618.2753 |51072   |2015-08-26 19:55:00|C:\Program Files\Embarcadero\Studio\17.0\bin                                                                 |
+|62E80000|zlib1.dll        |zlib data compression library                              |1.2.8.0         |107520  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|6A810000|HHCtrl.OCX       |Controle de Ajuda em HTML da Microsoft®                    |6.1.7600.16385  |523776  |2009-07-13 22:14:12|C:\Windows\system32                                                                                          |
+|6ABC0000|olepro32.dll     |                                                           |6.1.7600.16385  |90112   |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|6E330000|Msftedit.DLL     |Rich Text Edit Control, v4.1                               |5.41.21.2509    |592384  |2009-07-13 22:15:46|C:\Windows\system32                                                                                          |
+|6E8E0000|BROWCLI.DLL      |Browser Service Client DLL                                 |6.1.7600.16385  |41472   |2009-07-13 22:15:02|C:\Windows\system32                                                                                          |
+|70600000|winmm.dll        |MCI API DLL                                                |6.1.7600.16385  |194048  |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|70BC0000|MSVCR80.dll      |Microsoft® C Runtime Library                               |8.0.50727.4927  |632656  |2009-06-10 18:23:12|C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.4927_none_d08a205e442db5b5               |
+|711D0000|winspool.drv     |Driver de spooler do Windows                               |6.1.7600.16385  |319488  |2009-07-13 22:14:10|C:\Windows\system32                                                                                          |
+|71930000|MPR.dll          |DLL do roteador provedor múltiplo                          |6.1.7600.16385  |64000   |2009-07-13 22:15:42|C:\Windows\system32                                                                                          |
+|732C0000|msimg32.dll      |GDIEXT Client DLL                                          |6.1.7600.16385  |4608    |2009-07-13 22:15:46|C:\Windows\system32                                                                                          |
+|734A0000|oleacc.dll       |Active Accessibility Core Component                        |7.0.0.0         |233472  |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|73610000|ntmarta.dll      |Provedor MARTA do Windows NT                               |6.1.7600.16385  |121856  |2009-07-13 22:16:12|C:\Windows\system32                                                                                          |
+|73790000|wkscli.dll       |Workstation Service Client DLL                             |6.1.7600.16385  |47104   |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|737A0000|netutils.dll     |Net Win32 API Helpers DLL                                  |6.1.7600.16385  |22016   |2009-07-13 22:16:04|C:\Windows\system32                                                                                          |
+|737B0000|netapi32.dll     |Net Win32 API DLL                                          |6.1.7600.16385  |56832   |2009-07-13 22:16:04|C:\Windows\system32                                                                                          |
+|73800000|wsock32.dll      |Windows Socket 32-Bit DLL                                  |6.1.7600.16385  |15360   |2009-07-13 22:16:22|C:\Windows\system32                                                                                          |
+|739E0000|dwmapi.dll       |API do Gerenciador de Janelas da Área de Trabalho Microsoft|6.1.7600.16385  |67072   |2009-07-13 22:15:14|C:\Windows\system32                                                                                          |
+|73C60000|gdiplus.dll      |Microsoft GDI+                                             |6.1.7600.16385  |1624576 |2009-07-13 22:03:52|C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7600.16385_none_72fc7cbf861225ca        |
+|73DF0000|UxTheme.dll      |Biblioteca UxTheme Microsoft                               |6.1.7600.16385  |249856  |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|73F70000|comctl32.dll     |Biblioteca de Controles de Experiência do Usuário          |6.10.7600.16385 |1680896 |2009-07-13 22:03:52|C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc|
+|74510000|version.dll      |Version Checking and File Installation Libraries           |6.1.7600.16385  |21504   |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|748B0000|credssp.dll      |Credential Delegation Security Package                     |6.1.7600.16385  |16896   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|74980000|rsaenh.dll       |Microsoft Enhanced Cryptographic Provider                  |6.1.7600.16385  |242936  |2009-07-13 22:17:56|C:\Windows\system32                                                                                          |
+|74B40000|msv1_0.DLL       |Microsoft Authentication Package v1.0                      |6.1.7600.16385  |257024  |2009-07-13 22:15:50|C:\Windows\system32                                                                                          |
+|74BA0000|mswsock.dll      |Provedor de serviços do Microsoft Windows Sockets 2.0      |6.1.7600.16385  |232448  |2009-07-13 22:15:52|C:\Windows\system32                                                                                          |
+|74BE0000|CRYPTSP.dll      |Cryptographic Service Provider API                         |6.1.7600.16385  |78848   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|74D10000|srvcli.dll       |Server Service Client DLL                                  |6.1.7600.16385  |90112   |2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|74E40000|cryptdll.dll     |Cryptography Manager                                       |6.1.7600.16385  |58880   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|74F00000|secur32.dll      |Security Support Provider Interface                        |6.1.7600.16385  |22016   |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|75040000|SspiCli.dll      |Security Support Provider Interface                        |6.1.7600.16385  |99840   |2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|750B0000|CRYPTBASE.dll    |Base cryptographic API DLL                                 |6.1.7600.16385  |36864   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|75160000|profapi.dll      |User Profile Basic API                                     |6.1.7600.16385  |31744   |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|751D0000|MSASN1.dll       |ASN.1 Runtime APIs                                         |6.1.7600.16385  |33280   |2009-07-13 22:15:44|C:\Windows\system32                                                                                          |
+|75270000|CRYPT32.dll      |Crypto API32                                               |6.1.7600.16385  |1151488 |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|75390000|KERNELBASE.dll   |DLL cliente da API BASE do Windows NT                      |6.1.7600.16385  |288256  |2009-07-13 22:15:36|C:\Windows\system32                                                                                          |
+|75460000|NSI.dll          |NSI User-mode interface DLL                                |6.1.7600.16385  |8704    |2009-07-13 22:16:12|C:\Windows\system32                                                                                          |
+|75470000|IMM32.DLL        |Multi-User Windows IMM32 API Client DLL                    |6.1.7600.16385  |118272  |2009-07-13 22:15:34|C:\Windows\system32                                                                                          |
+|75490000|comdlg32.dll     |DLL de diálogos comuns                                     |6.1.7600.16385  |486912  |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|75510000|msvcrt.dll       |Windows NT CRT DLL                                         |7.0.7600.16385  |690688  |2009-07-13 22:15:52|C:\Windows\system32                                                                                          |
+|755C0000|WS2_32.dll       |DLL de 32 bits do Windows Socket 2.0                       |6.1.7600.16385  |206336  |2009-07-13 22:16:22|C:\Windows\system32                                                                                          |
+|75600000|urlmon.dll       |Extensões OLE32 para Win32                                 |8.0.7600.16385  |1224704 |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|75740000|advapi32.dll     |API de base do Windows 32 avançada                         |6.1.7600.16385  |640000  |2009-07-13 22:14:54|C:\Windows\system32                                                                                          |
+|757E0000|oleaut32.dll     |                                                           |6.1.7600.16385  |571904  |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|75870000|RPCRT4.dll       |Tempo de Execução da Chamada de Procedimento Remoto        |6.1.7600.16385  |652288  |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|75920000|iertutil.dll     |Run time utility for Internet Explorer                     |8.0.7600.16385  |2058240 |2009-07-13 22:15:30|C:\Windows\system32                                                                                          |
+|75B20000|shell32.dll      |DLL comum do Shell do Windows                              |6.1.7600.16385  |12866560|2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|76770000|wininet.dll      |Internet Extensions para Win32                             |8.0.7600.16385  |977920  |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|76870000|kernel32.dll     |DLL cliente da API BASE do Windows NT                      |6.1.7600.16385  |857088  |2009-07-13 22:15:36|C:\Windows\system32                                                                                          |
+|76950000|sechost.dll      |Host for SCM/SDDL/LSA Lookup APIs                          |6.1.7600.16385  |92160   |2009-07-13 22:16:14|C:\Windows\SYSTEM32                                                                                          |
+|76970000|USP10.dll        |Uniscribe Unicode script processor                         |1.626.7600.16385|627200  |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|76A10000|GDI32.dll        |GDI Client DLL                                             |6.1.7600.16385  |304640  |2009-07-13 22:15:24|C:\Windows\system32                                                                                          |
+|76A60000|MSCTF.dll        |DLL de servidor MSCTF                                      |6.1.7600.16385  |828928  |2009-07-13 22:15:44|C:\Windows\system32                                                                                          |
+|76B30000|WLDAP32.dll      |DLL da API LDAP Win32                                      |6.1.7600.16385  |268800  |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|76B80000|ole32.dll        |Microsoft OLE para Windows e Windows NT                    |6.1.7600.16385  |1412608 |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|76CE0000|SHLWAPI.dll      |Biblioteca de utilitário abreviado para Shell              |6.1.7600.16385  |350208  |2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|76D40000|USER32.dll       |DLL de cliente API de usuário Windows para multiusuários   |6.1.7600.16385  |811520  |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|77010000|ntdll.dll        |DLL de nível do NT                                         |6.1.7600.16385  |1286144 |2009-07-13 22:17:52|C:\Windows\SYSTEM32                                                                                          |
+|77150000|LPK.dll          |Language Pack                                              |6.1.7600.16385  |26624   |2009-07-13 22:15:38|C:\Windows\system32                                                                                          |
+|77160000|PSAPI.DLL        |Process Status Helper                                      |6.1.7600.16385  |6144    |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|77230000|Normaliz.dll     |Unicode Normalization DLL                                  |6.1.7600.16385  |2048    |2009-07-13 22:09:02|C:\Windows\system32                                                                                          |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Processes Information:
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|ID  |Name               |Description                                                   |Version           |Memory|Priority    |Threads|Path                                          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|0   |[System Process]   |                                                              |                  |0     |            |1      |                                              |
+|4   |System             |                                                              |                  |0     |Normal      |91     |                                              |
+|276 |smss.exe           |Gerenciador de Sessão do Windows                              |6.1.7600.16385    |0     |Above-Normal|2      |                                              |
+|368 |csrss.exe          |Processo do tempo de Execução do Servidor do Cliente          |6.1.7600.16385    |0     |High        |9      |                                              |
+|372 |fbguard.exe        |                                                              |                  |0     |Normal      |5      |                                              |
+|420 |wininit.exe        |Aplicativo de Inicialização do Windows                        |6.1.7600.16385    |0     |High        |3      |                                              |
+|432 |csrss.exe          |Processo do tempo de Execução do Servidor do Cliente          |6.1.7600.16385    |0     |High        |11     |                                              |
+|480 |winlogon.exe       |Aplicativo de Logon do Windows                                |6.1.7600.16385    |0     |High        |3      |                                              |
+|524 |services.exe       |Aplicativo de serviços e controle                             |6.1.7600.16385    |0     |Normal      |7      |                                              |
+|540 |lsass.exe          |Local Security Authority Process                              |6.1.7600.16385    |0     |Normal      |6      |                                              |
+|548 |lsm.exe            |Serviço do Gerenciador de Sessão Local                        |6.1.7600.16385    |0     |Normal      |9      |                                              |
+|648 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |10     |                                              |
+|680 |TSVNCache.exe      |TortoiseSVN status cache                                      |1.8.4.24972       |0     |Normal      |9      |                                              |
+|708 |vmacthlp.exe       |                                                              |                  |0     |Normal      |3      |                                              |
+|752 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |8      |                                              |
+|824 |ibguard.exe        |                                                              |                  |0     |Normal      |6      |                                              |
+|832 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |20     |                                              |
+|892 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |19     |                                              |
+|920 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |41     |                                              |
+|984 |TSVNCache.exe      |TortoiseSVN status cache                                      |1.8.4.24972       |0     |Normal      |9      |C:\Program Files\TortoiseSVN\bin              |
+|1000|VGAuthService.exe  |                                                              |                  |0     |Normal      |3      |                                              |
+|1112|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |10     |                                              |
+|1132|PGTerm.exe         |Emulador de terminal virtual Pay&Go / Plug&Pay                |2.12.0.0          |0     |Normal      |4      |C:\Program Files\SETIS\Plug&Pay               |
+|1232|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |14     |                                              |
+|1332|spoolsv.exe        |Aplicativo de subsistema de spooler                           |6.1.7600.16385    |0     |Normal      |14     |                                              |
+|1368|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |12     |                                              |
+|1392|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |19     |                                              |
+|1512|taskhost.exe       |Processo de Host para Tarefas do Windows                      |6.1.7600.16385    |0     |Normal      |9      |C:\Windows\system32                           |
+|1584|Dwm.exe            |Gerenciador de Janelas da Área de Trabalho                    |6.1.7600.16385    |0     |Normal      |3      |C:\Windows\system32                           |
+|1596|Explorer.EXE       |Windows Explorer                                              |6.1.7600.16385    |0     |Normal      |38     |C:\Windows                                    |
+|1612|LogWatNT.exe       |                                                              |                  |0     |Normal      |3      |                                              |
+|1684|NetBusiness_srv.exe|                                                              |                  |0     |Normal      |9      |                                              |
+|1704|armsvc.exe         |                                                              |                  |0     |Normal      |4      |                                              |
+|1740|AnyDesk.exe        |                                                              |                  |0     |High        |4      |                                              |
+|1756|mysqld.exe         |                                                              |                  |0     |Normal      |22     |                                              |
+|1900|vmtoolsd.exe       |VMware Tools Core Service                                     |10.0.5.520        |0     |Normal      |6      |C:\Program Files\VMware\VMware Tools          |
+|1936|jusched.exe        |Java(TM) Update Scheduler                                     |2.1.71.14         |0     |Normal      |8      |C:\Program Files\Common Files\Java\Java Update|
+|1956|GrooveMonitor.exe  |GrooveMonitor Utility                                         |12.0.4518.1014    |0     |Normal      |1      |C:\Program Files\Microsoft Office\Office12    |
+|1964|AnyDesk.exe        |                                                              |2.3.4.0           |0     |Normal      |5      |C:\Program Files\AnyDesk                      |
+|1972|PlugPay.exe        |Gerenciador Plug&&Pay                                         |2.10.0.0          |0     |Normal      |1      |C:\Program Files\SETIS\Plug&Pay               |
+|2076|vmtoolsd.exe       |                                                              |                  |0     |High        |9      |                                              |
+|2260|SearchIndexer.exe  |Indexador do Microsoft Windows Search                         |7.0.7600.16385    |0     |Normal      |11     |                                              |
+|2292|jucheck.exe        |                                                              |                  |0     |Normal      |9      |                                              |
+|2384|ibserver.exe       |                                                              |                  |0     |Normal      |7      |                                              |
+|2424|WmiPrvSE.exe       |WMI Provider Host                                             |6.1.7600.16385    |0     |Normal      |10     |                                              |
+|2568|fbserver.exe       |                                                              |                  |0     |Normal      |9      |                                              |
+|2600|NFCe_Neway.exe     |                                                              |1.0.0.1390        |0     |Normal      |5      |C:\Programas\Projetos Pessoais\Comercial\Exec |
+|2636|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |6      |                                              |
+|2880|dllhost.exe        |COM Surrogate                                                 |6.1.7600.16385    |0     |Normal      |13     |                                              |
+|2904|audiodg.exe        |Isolamento de Gráfico de Dispositivo de Áudio do Windows      |6.1.7600.16385    |0     |Normal      |5      |                                              |
+|2980|msdtc.exe          |Serviço de Coordenador de Transações Distribuídas da Microsoft|2001.12.8530.16385|0     |Normal      |12     |                                              |
+|3096|DllHost.exe        |COM Surrogate                                                 |6.1.7600.16385    |0     |Normal      |6      |C:\Windows\system32                           |
+|3516|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |13     |                                              |
+|3724|bds.exe            |Embarcadero RAD Studio for Windows                            |23.0.20618.2753   |0     |Normal      |21     |                                              |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Assembler Information:
+-----------------------------------------------------------------------------------------------------------------------------------------------
+7539960B  DB      $C4, $0C, $8D, $45, $B0, $50, $FF  //les     ecx, [$FF50B045+ecx*4]
+75399612  adc     eax, $7539116C                                                       ; '.e.wàL.wpU.w°Z.w°V.wàO.wà].wõ:.w'...  ; <-- EXCEPTION
+75399617  leave
+
+Registers:
+-----------------------------
+EAX: 03F9B1E0   EDI: 03F3FEF0
+EBX: 03F62818   ESI: 03F9B1E0
+ECX: 00634500   ESP: 0012FCE4
+EDX: 00652BAA   EIP: 00652BA5
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FCE4: 0012FD04   75399612: 15 6C 11 39 75 C9 C2 10 00 89 45 C0 EB ED 90 90  .l.9u.....E.....
+0012FCE8: 00406FE8   75399622: 90 90 90 8B FF 55 8B EC 83 EC 1C 6A 00 6A 1C 8D  .....U.....j.j..
+0012FCEC: 0012FCFC   75399632: 45 E4 50 6A 00 FF 75 08 FF 15 30 13 39 75 85 C0  E.Pj..u...0.9u..
+0012FCF0: 05062E34   75399642: 0F 8C 4A FD 01 00 8B 45 0C 8B 4D E4 89 08 33 C0  ..J....E..M...3.
+0012FCF4: 04A269C0   75399652: 40 C9 C2 08 00 85 C0 0F 8C 32 F9 FF FF 33 C0 40  @........2...3.@
+0012FCF8: 00000000   75399662: E9 32 F9 FF FF A1 70 49 3D 75 85 C0 0F 85 FB F8  .2....pI=u......
+0012FCFC: 0012FD48   75399672: FF FF E9 67 DD 01 00 89 45 D8 8B 45 B8 89 45 DC  ...g....E..E..E.
+0012FD00: 007F93E9   75399682: E9 F7 04 00 00 39 05 70 49 3D 75 0F 84 01 08 01  .....9.pI=u.....
+0012FD04: 0012FD5C   75399692: 00 A1 70 49 3D 75 E9 1C F9 FF FF 90 90 90 43 00  ..pI=u........C.
+0012FD08: 00406FE8   753996A2: 72 00 65 00 61 00 74 00 65 00 46 00 69 00 6C 00  r.e.a.t.e.F.i.l.
+0012FD0C: 0012FD48   753996B2: 65 00 44 00 6F 00 77 00 6E 00 67 00 72 00 61 00  e.D.o.w.n.g.r.a.
+0012FD10: 00000017   753996C2: 64 00 65 00 5F 00 56 00 69 00 73 00 74 00 61 00  d.e._.V.i.s.t.a.
+0012FD14: 03F87D48   753996D2: 00 00 90 90 90 90 41 00 6C 00 6C 00 6F 00 77 00  ......A.l.l.o.w.
+0012FD18: 03F4005C   753996E2: 20 00 66 00 6C 00 61 00 67 00 20 00 74 00 6F 00   .f.l.a.g. .t.o.
+0012FD1C: 00000000   753996F2: 20 00 62 00 65 00 20 00 70 00 61 00 73 00 73 00   .b.e. .p.a.s.s.
+0012FD20: 03F9B14C   75399702: 65 00 64 00 20 00 77 00 69 00 74 00 68 00 20 00  e.d. .w.i.t.h. .
+
+
+
+EurekaLog 6.1.01 RC 1
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Mon, 13 Mar 2017 09:57:00 -0300
+  1.2 Name/Description: NFCe_Neway.exe
+  1.3 Version Number  : 1.0.0.1390
+  1.4 Parameters      : 
+  1.5 Compilation Date: Mon, 13 Mar 2017 09:38:50 -0300
+  1.6 Up Time         : 0 second
+
+Exception:
+-----------------------------------------------------------------------------------------------------------------
+  2.1 Date          : Mon, 13 Mar 2017 09:57:01 -0300
+  2.2 Address       : 75399612
+  2.3 Module Name   : KERNELBASE.dll - (DLL cliente da API BASE do Windows NT)
+  2.4 Module Version: 6.1.7600.16385
+  2.5 Type          : TDBXError
+  2.6 Message       : I/O error during "CreateFile (open)" operation for file "127.0.0.1/db\db.fdb:"
+                      Error while trying to open file
+                      A sintaxe do nome do arquivo, do nome do diretório ou do rótulo do volume está incorreta. .
+  2.7 ID            : C365
+  2.8 Count         : 1
+  2.9 Status        : New
+  2.10 Note         : 
+
+User:
+-------------------------------------------------------
+  3.1 ID        : W7_XE8
+  3.2 Name      : Usuário do Windows
+  3.3 Email     : 
+  3.4 Company   : 
+  3.5 Privileges: SeShutdownPrivilege             - OFF
+                  SeChangeNotifyPrivilege         - ON
+                  SeUndockPrivilege               - OFF
+                  SeIncreaseWorkingSetPrivilege   - OFF
+                  SeTimeZonePrivilege             - OFF
+
+Active Controls:
+----------------------------------
+  4.1 Form Class   : CabinetWClass
+  4.2 Form Text    : Exec
+  4.3 Control Class: 
+  4.4 Control Text : 
+
+Computer:
+---------------------------------------------------------------------
+  5.1 Name          : WIN-TU1EA8SBB12
+  5.2 Total Memory  : 3071 Mb
+  5.3 Free Memory   : 1896 Mb
+  5.4 Total Disk    : 200 Gb
+  5.5 Free Disk     : 102,7 Gb
+  5.6 System Up Time: 1 hour, 28 minutes, 22 seconds
+  5.7 Processor     : Intel(R) Core(TM) i5-3317U CPU @ 1.70GHz
+  5.8 Display Mode  : 1366 x 768, 32 bit
+  5.9 Display DPI   : 96
+  5.10 Video Card   : VMware SVGA 3D (driver 8.15.1.33 - RAM 1024 MB)
+  5.11 Printer      : PDFCreator (driver 6.1.7600.16385)
+
+Operating System:
+-----------------------------------
+  6.1 Type    : Microsoft Windows 7
+  6.2 Build # : 7600
+  6.3 Update  : 
+  6.4 Language: Portuguese
+  6.5 Charset : 0
+
+Network:
+---------------------------------------------------
+  7.1 IP Address: 000.000.000.000 - 192.168.040.129
+  7.2 Submask   : 000.000.000.000 - 255.255.255.000
+  7.3 Gateway   : 000.000.000.000 - 192.168.040.002
+  7.4 DNS 1     : 000.000.000.000 - 192.168.040.002
+  7.5 DNS 2     : 000.000.000.000 - 000.000.000.000
+  7.6 DHCP      : ON              - ON             
+
+Call Stack Information:
+--------------------------------------------------------------------
+|Address |Module        |Unit    |Class|Procedure/Method   |Line   |
+--------------------------------------------------------------------
+|Running Thread: ID=2760; Priority=0; Class=; [Main]               |
+|------------------------------------------------------------------|
+|0138B9C3|NFCe_Neway.exe|NFCe.dpr|     |                   |152[50]|
+|768C1172|kernel32.dll  |        |     |BaseThreadInitThunk|       |
+--------------------------------------------------------------------
+
+Modules Information:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name             |Description                                                |Version         |Size    |Modified           |Path                                                                                                         |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|002D0000|libxml2.dll      |                                                           |                |987136  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|003D0000|libxslt.dll      |                                                           |                |166912  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|00400000|NFCe_Neway.exe   |                                                           |1.0.0.1390      |37113344|2017-03-13 09:38:52|C:\Programas\Projetos Pessoais\Comercial\Exec                                                                |
+|02930000|iconv.dll        |LGPLed libiconv for Windows NT/2000/XP and Windows 95/98/ME|1.9.0.0         |888832  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|02A10000|libxmlsec.dll    |                                                           |                |307712  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|02A60000|ControlTech32.dll|Dll de acesso ao concentrador ControlTech                  |1.0.3.1         |653312  |2012-04-30 15:51:56|C:\Programas\Projetos Pessoais\Comercial\Exec                                                                |
+|039C0000|ssleay32.dll     |OpenSSL Shared Library                                     |0.9.8.14        |221184  |2016-06-25 18:36:24|C:\Windows\system32                                                                                          |
+|03A00000|dbxfb.dll        |Embarcadero dbExpress FIREBIRD driver                      |23.0.20618.2753 |284032  |2015-08-26 19:55:00|C:\Program Files\Embarcadero\Studio\17.0\bin                                                                 |
+|04DF0000|fbclient.dll     |Firebird SQL Server                                        |2.5.3.26778     |552960  |2014-07-09 07:49:26|C:\Windows\system32                                                                                          |
+|10000000|libeay32.dll     |OpenSSL Shared Library                                     |0.9.8.14        |1069056 |2016-06-25 18:36:24|C:\Windows\system32                                                                                          |
+|50030000|borlndmm.dll     |Embarcadero Memory Manager                                 |23.0.20618.2753 |51072   |2015-08-26 19:55:00|C:\Program Files\Embarcadero\Studio\17.0\bin                                                                 |
+|62E80000|zlib1.dll        |zlib data compression library                              |1.2.8.0         |107520  |2016-06-25 18:36:28|C:\Windows\system32                                                                                          |
+|6A810000|HHCtrl.OCX       |Controle de Ajuda em HTML da Microsoft®                    |6.1.7600.16385  |523776  |2009-07-13 22:14:12|C:\Windows\system32                                                                                          |
+|6ABC0000|olepro32.dll     |                                                           |6.1.7600.16385  |90112   |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|6E330000|Msftedit.DLL     |Rich Text Edit Control, v4.1                               |5.41.21.2509    |592384  |2009-07-13 22:15:46|C:\Windows\system32                                                                                          |
+|6E8E0000|BROWCLI.DLL      |Browser Service Client DLL                                 |6.1.7600.16385  |41472   |2009-07-13 22:15:02|C:\Windows\system32                                                                                          |
+|70600000|winmm.dll        |MCI API DLL                                                |6.1.7600.16385  |194048  |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|70BC0000|MSVCR80.dll      |Microsoft® C Runtime Library                               |8.0.50727.4927  |632656  |2009-06-10 18:23:12|C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.4927_none_d08a205e442db5b5               |
+|711D0000|winspool.drv     |Driver de spooler do Windows                               |6.1.7600.16385  |319488  |2009-07-13 22:14:10|C:\Windows\system32                                                                                          |
+|71930000|MPR.dll          |DLL do roteador provedor múltiplo                          |6.1.7600.16385  |64000   |2009-07-13 22:15:42|C:\Windows\system32                                                                                          |
+|732C0000|msimg32.dll      |GDIEXT Client DLL                                          |6.1.7600.16385  |4608    |2009-07-13 22:15:46|C:\Windows\system32                                                                                          |
+|734A0000|oleacc.dll       |Active Accessibility Core Component                        |7.0.0.0         |233472  |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|73610000|ntmarta.dll      |Provedor MARTA do Windows NT                               |6.1.7600.16385  |121856  |2009-07-13 22:16:12|C:\Windows\system32                                                                                          |
+|73790000|wkscli.dll       |Workstation Service Client DLL                             |6.1.7600.16385  |47104   |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|737A0000|netutils.dll     |Net Win32 API Helpers DLL                                  |6.1.7600.16385  |22016   |2009-07-13 22:16:04|C:\Windows\system32                                                                                          |
+|737B0000|netapi32.dll     |Net Win32 API DLL                                          |6.1.7600.16385  |56832   |2009-07-13 22:16:04|C:\Windows\system32                                                                                          |
+|73800000|wsock32.dll      |Windows Socket 32-Bit DLL                                  |6.1.7600.16385  |15360   |2009-07-13 22:16:22|C:\Windows\system32                                                                                          |
+|739E0000|dwmapi.dll       |API do Gerenciador de Janelas da Área de Trabalho Microsoft|6.1.7600.16385  |67072   |2009-07-13 22:15:14|C:\Windows\system32                                                                                          |
+|73C60000|gdiplus.dll      |Microsoft GDI+                                             |6.1.7600.16385  |1624576 |2009-07-13 22:03:52|C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7600.16385_none_72fc7cbf861225ca        |
+|73DF0000|UxTheme.dll      |Biblioteca UxTheme Microsoft                               |6.1.7600.16385  |249856  |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|73F70000|comctl32.dll     |Biblioteca de Controles de Experiência do Usuário          |6.10.7600.16385 |1680896 |2009-07-13 22:03:52|C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc|
+|74510000|version.dll      |Version Checking and File Installation Libraries           |6.1.7600.16385  |21504   |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|748B0000|credssp.dll      |Credential Delegation Security Package                     |6.1.7600.16385  |16896   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|74980000|rsaenh.dll       |Microsoft Enhanced Cryptographic Provider                  |6.1.7600.16385  |242936  |2009-07-13 22:17:56|C:\Windows\system32                                                                                          |
+|74B40000|msv1_0.DLL       |Microsoft Authentication Package v1.0                      |6.1.7600.16385  |257024  |2009-07-13 22:15:50|C:\Windows\system32                                                                                          |
+|74BA0000|mswsock.dll      |Provedor de serviços do Microsoft Windows Sockets 2.0      |6.1.7600.16385  |232448  |2009-07-13 22:15:52|C:\Windows\system32                                                                                          |
+|74BE0000|CRYPTSP.dll      |Cryptographic Service Provider API                         |6.1.7600.16385  |78848   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|74D10000|srvcli.dll       |Server Service Client DLL                                  |6.1.7600.16385  |90112   |2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|74E40000|cryptdll.dll     |Cryptography Manager                                       |6.1.7600.16385  |58880   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|74F00000|secur32.dll      |Security Support Provider Interface                        |6.1.7600.16385  |22016   |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|75040000|SspiCli.dll      |Security Support Provider Interface                        |6.1.7600.16385  |99840   |2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|750B0000|CRYPTBASE.dll    |Base cryptographic API DLL                                 |6.1.7600.16385  |36864   |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|75160000|profapi.dll      |User Profile Basic API                                     |6.1.7600.16385  |31744   |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|751D0000|MSASN1.dll       |ASN.1 Runtime APIs                                         |6.1.7600.16385  |33280   |2009-07-13 22:15:44|C:\Windows\system32                                                                                          |
+|75270000|CRYPT32.dll      |Crypto API32                                               |6.1.7600.16385  |1151488 |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|75390000|KERNELBASE.dll   |DLL cliente da API BASE do Windows NT                      |6.1.7600.16385  |288256  |2009-07-13 22:15:36|C:\Windows\system32                                                                                          |
+|75460000|NSI.dll          |NSI User-mode interface DLL                                |6.1.7600.16385  |8704    |2009-07-13 22:16:12|C:\Windows\system32                                                                                          |
+|75470000|IMM32.DLL        |Multi-User Windows IMM32 API Client DLL                    |6.1.7600.16385  |118272  |2009-07-13 22:15:34|C:\Windows\system32                                                                                          |
+|75490000|comdlg32.dll     |DLL de diálogos comuns                                     |6.1.7600.16385  |486912  |2009-07-13 22:15:08|C:\Windows\system32                                                                                          |
+|75510000|msvcrt.dll       |Windows NT CRT DLL                                         |7.0.7600.16385  |690688  |2009-07-13 22:15:52|C:\Windows\system32                                                                                          |
+|755C0000|WS2_32.dll       |DLL de 32 bits do Windows Socket 2.0                       |6.1.7600.16385  |206336  |2009-07-13 22:16:22|C:\Windows\system32                                                                                          |
+|75600000|urlmon.dll       |Extensões OLE32 para Win32                                 |8.0.7600.16385  |1224704 |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|75740000|advapi32.dll     |API de base do Windows 32 avançada                         |6.1.7600.16385  |640000  |2009-07-13 22:14:54|C:\Windows\system32                                                                                          |
+|757E0000|oleaut32.dll     |                                                           |6.1.7600.16385  |571904  |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|75870000|RPCRT4.dll       |Tempo de Execução da Chamada de Procedimento Remoto        |6.1.7600.16385  |652288  |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|75920000|iertutil.dll     |Run time utility for Internet Explorer                     |8.0.7600.16385  |2058240 |2009-07-13 22:15:30|C:\Windows\system32                                                                                          |
+|75B20000|shell32.dll      |DLL comum do Shell do Windows                              |6.1.7600.16385  |12866560|2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|76770000|wininet.dll      |Internet Extensions para Win32                             |8.0.7600.16385  |977920  |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|76870000|kernel32.dll     |DLL cliente da API BASE do Windows NT                      |6.1.7600.16385  |857088  |2009-07-13 22:15:36|C:\Windows\system32                                                                                          |
+|76950000|sechost.dll      |Host for SCM/SDDL/LSA Lookup APIs                          |6.1.7600.16385  |92160   |2009-07-13 22:16:14|C:\Windows\SYSTEM32                                                                                          |
+|76970000|USP10.dll        |Uniscribe Unicode script processor                         |1.626.7600.16385|627200  |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|76A10000|GDI32.dll        |GDI Client DLL                                             |6.1.7600.16385  |304640  |2009-07-13 22:15:24|C:\Windows\system32                                                                                          |
+|76A60000|MSCTF.dll        |DLL de servidor MSCTF                                      |6.1.7600.16385  |828928  |2009-07-13 22:15:44|C:\Windows\system32                                                                                          |
+|76B30000|WLDAP32.dll      |DLL da API LDAP Win32                                      |6.1.7600.16385  |268800  |2009-07-13 22:16:20|C:\Windows\system32                                                                                          |
+|76B80000|ole32.dll        |Microsoft OLE para Windows e Windows NT                    |6.1.7600.16385  |1412608 |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|76CE0000|SHLWAPI.dll      |Biblioteca de utilitário abreviado para Shell              |6.1.7600.16385  |350208  |2009-07-13 22:16:16|C:\Windows\system32                                                                                          |
+|76D40000|USER32.dll       |DLL de cliente API de usuário Windows para multiusuários   |6.1.7600.16385  |811520  |2009-07-13 22:16:18|C:\Windows\system32                                                                                          |
+|77010000|ntdll.dll        |DLL de nível do NT                                         |6.1.7600.16385  |1286144 |2009-07-13 22:17:52|C:\Windows\SYSTEM32                                                                                          |
+|77150000|LPK.dll          |Language Pack                                              |6.1.7600.16385  |26624   |2009-07-13 22:15:38|C:\Windows\system32                                                                                          |
+|77160000|PSAPI.DLL        |Process Status Helper                                      |6.1.7600.16385  |6144    |2009-07-13 22:16:14|C:\Windows\system32                                                                                          |
+|77230000|Normaliz.dll     |Unicode Normalization DLL                                  |6.1.7600.16385  |2048    |2009-07-13 22:09:02|C:\Windows\system32                                                                                          |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Processes Information:
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|ID  |Name               |Description                                                   |Version           |Memory|Priority    |Threads|Path                                          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|0   |[System Process]   |                                                              |                  |0     |            |1      |                                              |
+|4   |System             |                                                              |                  |0     |Normal      |91     |                                              |
+|276 |smss.exe           |Gerenciador de Sessão do Windows                              |6.1.7600.16385    |0     |Above-Normal|2      |                                              |
+|368 |csrss.exe          |Processo do tempo de Execução do Servidor do Cliente          |6.1.7600.16385    |0     |High        |9      |                                              |
+|372 |fbguard.exe        |                                                              |                  |0     |Normal      |5      |                                              |
+|420 |wininit.exe        |Aplicativo de Inicialização do Windows                        |6.1.7600.16385    |0     |High        |3      |                                              |
+|432 |csrss.exe          |Processo do tempo de Execução do Servidor do Cliente          |6.1.7600.16385    |0     |High        |11     |                                              |
+|480 |winlogon.exe       |Aplicativo de Logon do Windows                                |6.1.7600.16385    |0     |High        |3      |                                              |
+|524 |services.exe       |Aplicativo de serviços e controle                             |6.1.7600.16385    |0     |Normal      |7      |                                              |
+|540 |lsass.exe          |Local Security Authority Process                              |6.1.7600.16385    |0     |Normal      |6      |                                              |
+|548 |lsm.exe            |Serviço do Gerenciador de Sessão Local                        |6.1.7600.16385    |0     |Normal      |10     |                                              |
+|644 |NFCe_Neway.exe     |                                                              |1.0.0.1390        |0     |Normal      |5      |C:\Programas\Projetos Pessoais\Comercial\Exec |
+|648 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |9      |                                              |
+|680 |TSVNCache.exe      |TortoiseSVN status cache                                      |1.8.4.24972       |0     |Normal      |9      |                                              |
+|708 |vmacthlp.exe       |                                                              |                  |0     |Normal      |3      |                                              |
+|752 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |7      |                                              |
+|824 |ibguard.exe        |                                                              |                  |0     |Normal      |6      |                                              |
+|832 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |18     |                                              |
+|892 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |18     |                                              |
+|920 |svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |34     |                                              |
+|984 |TSVNCache.exe      |TortoiseSVN status cache                                      |1.8.4.24972       |0     |Normal      |9      |C:\Program Files\TortoiseSVN\bin              |
+|1000|VGAuthService.exe  |                                                              |                  |0     |Normal      |3      |                                              |
+|1112|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |10     |                                              |
+|1132|PGTerm.exe         |Emulador de terminal virtual Pay&Go / Plug&Pay                |2.12.0.0          |0     |Normal      |4      |C:\Program Files\SETIS\Plug&Pay               |
+|1232|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |14     |                                              |
+|1332|spoolsv.exe        |Aplicativo de subsistema de spooler                           |6.1.7600.16385    |0     |Normal      |13     |                                              |
+|1368|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |12     |                                              |
+|1392|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |17     |                                              |
+|1512|taskhost.exe       |Processo de Host para Tarefas do Windows                      |6.1.7600.16385    |0     |Normal      |9      |C:\Windows\system32                           |
+|1584|Dwm.exe            |Gerenciador de Janelas da Área de Trabalho                    |6.1.7600.16385    |0     |Normal      |3      |C:\Windows\system32                           |
+|1596|Explorer.EXE       |Windows Explorer                                              |6.1.7600.16385    |0     |Normal      |36     |C:\Windows                                    |
+|1612|LogWatNT.exe       |                                                              |                  |0     |Normal      |3      |                                              |
+|1684|NetBusiness_srv.exe|                                                              |                  |0     |Normal      |9      |                                              |
+|1704|armsvc.exe         |                                                              |                  |0     |Normal      |4      |                                              |
+|1740|AnyDesk.exe        |                                                              |                  |0     |High        |4      |                                              |
+|1756|mysqld.exe         |                                                              |                  |0     |Normal      |22     |                                              |
+|1900|vmtoolsd.exe       |VMware Tools Core Service                                     |10.0.5.520        |0     |Normal      |6      |C:\Program Files\VMware\VMware Tools          |
+|1936|jusched.exe        |Java(TM) Update Scheduler                                     |2.1.71.14         |0     |Normal      |8      |C:\Program Files\Common Files\Java\Java Update|
+|1956|GrooveMonitor.exe  |GrooveMonitor Utility                                         |12.0.4518.1014    |0     |Normal      |1      |C:\Program Files\Microsoft Office\Office12    |
+|1964|AnyDesk.exe        |                                                              |2.3.4.0           |0     |Normal      |5      |C:\Program Files\AnyDesk                      |
+|1972|PlugPay.exe        |Gerenciador Plug&&Pay                                         |2.10.0.0          |0     |Normal      |1      |C:\Program Files\SETIS\Plug&Pay               |
+|2076|vmtoolsd.exe       |                                                              |                  |0     |High        |9      |                                              |
+|2260|SearchIndexer.exe  |Indexador do Microsoft Windows Search                         |7.0.7600.16385    |0     |Normal      |11     |                                              |
+|2292|jucheck.exe        |                                                              |                  |0     |Normal      |9      |                                              |
+|2384|ibserver.exe       |                                                              |                  |0     |Normal      |7      |                                              |
+|2424|WmiPrvSE.exe       |WMI Provider Host                                             |6.1.7600.16385    |0     |Normal      |10     |                                              |
+|2568|fbserver.exe       |                                                              |                  |0     |Normal      |9      |                                              |
+|2636|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |6      |                                              |
+|2880|dllhost.exe        |COM Surrogate                                                 |6.1.7600.16385    |0     |Normal      |13     |                                              |
+|2980|msdtc.exe          |Serviço de Coordenador de Transações Distribuídas da Microsoft|2001.12.8530.16385|0     |Normal      |12     |                                              |
+|3516|svchost.exe        |Processo de Host para Serviços do Windows                     |6.1.7600.16385    |0     |Normal      |13     |                                              |
+|3724|bds.exe            |Embarcadero RAD Studio for Windows                            |23.0.20618.2753   |0     |Normal      |20     |                                              |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Assembler Information:
+-----------------------------------------------------------------------------------------------------------------------------------------------
+7539960B  DB      $C4, $0C, $8D, $45, $B0, $50, $FF  //les     ecx, [$FF50B045+ecx*4]
+75399612  adc     eax, $7539116C                                                       ; '.e.wàL.wpU.w°Z.w°V.wàO.wà].wõ:.w'...  ; <-- EXCEPTION
+75399617  leave
+
+Registers:
+-----------------------------
+EAX: 03FFB1E0   EDI: 03F9FEF0
+EBX: 03FC2818   ESI: 03FFB1E0
+ECX: 00634500   ESP: 0012FCE4
+EDX: 00652BAA   EIP: 00652BA5
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FCE4: 0012FD04   75399612: 15 6C 11 39 75 C9 C2 10 00 89 45 C0 EB ED 90 90  .l.9u.....E.....
+0012FCE8: 00406FE8   75399622: 90 90 90 8B FF 55 8B EC 83 EC 1C 6A 00 6A 1C 8D  .....U.....j.j..
+0012FCEC: 0012FCFC   75399632: 45 E4 50 6A 00 FF 75 08 FF 15 30 13 39 75 85 C0  E.Pj..u...0.9u..
+0012FCF0: 05002E34   75399642: 0F 8C 4A FD 01 00 8B 45 0C 8B 4D E4 89 08 33 C0  ..J....E..M...3.
+0012FCF4: 048E69C0   75399652: 40 C9 C2 08 00 85 C0 0F 8C 32 F9 FF FF 33 C0 40  @........2...3.@
+0012FCF8: 00000000   75399662: E9 32 F9 FF FF A1 70 49 3D 75 85 C0 0F 85 FB F8  .2....pI=u......
+0012FCFC: 0012FD48   75399672: FF FF E9 67 DD 01 00 89 45 D8 8B 45 B8 89 45 DC  ...g....E..E..E.
+0012FD00: 007F93E9   75399682: E9 F7 04 00 00 39 05 70 49 3D 75 0F 84 01 08 01  .....9.pI=u.....
+0012FD04: 0012FD5C   75399692: 00 A1 70 49 3D 75 E9 1C F9 FF FF 90 90 90 43 00  ..pI=u........C.
+0012FD08: 00406FE8   753996A2: 72 00 65 00 61 00 74 00 65 00 46 00 69 00 6C 00  r.e.a.t.e.F.i.l.
+0012FD0C: 0012FD48   753996B2: 65 00 44 00 6F 00 77 00 6E 00 67 00 72 00 61 00  e.D.o.w.n.g.r.a.
+0012FD10: 00000017   753996C2: 64 00 65 00 5F 00 56 00 69 00 73 00 74 00 61 00  d.e._.V.i.s.t.a.
+0012FD14: 03FE7D90   753996D2: 00 00 90 90 90 90 41 00 6C 00 6C 00 6F 00 77 00  ......A.l.l.o.w.
+0012FD18: 03FA005C   753996E2: 20 00 66 00 6C 00 61 00 67 00 20 00 74 00 6F 00   .f.l.a.g. .t.o.
+0012FD1C: 00000000   753996F2: 20 00 62 00 65 00 20 00 70 00 61 00 73 00 73 00   .b.e. .p.a.s.s.
+0012FD20: 03FFB14C   75399702: 65 00 64 00 20 00 77 00 69 00 74 00 68 00 20 00  e.d. .w.i.t.h. .
+
+
+

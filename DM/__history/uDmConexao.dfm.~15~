@@ -1,0 +1,55 @@
+object DmConexao: TDmConexao
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
+  Height = 265
+  Width = 425
+  object ConexaoDBX: TSQLConnection
+    ConnectionName = 'FBConnection'
+    DriverName = 'Firebird'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverName=Firebird'
+      
+        'Database=C:\Programas\Projetos Pessoais\Comercial\Exec\Dados\DAD' +
+        'OS.FDB'
+      'RoleName=RoleName'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'ServerCharSet='
+      'SQLDialect=3'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'BlobSize=-1'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'IsolationLevel=ReadCommitted'
+      'Trim Char=False')
+    Left = 48
+    Top = 24
+  end
+  object ConexaoServer: TSQLConnection
+    ConnectionName = 'DataSnapCONNECTION'
+    DriverName = 'DataSnap'
+    Params.Strings = (
+      'DriverUnit=Data.DBXDataSnap'
+      'CommunicationProtocol=tcp/ip'
+      'DatasnapContext=datasnap/'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXClientDriverLoader,Borland' +
+        '.Data.DbxClientDriver,Version=23.0.0.0,Culture=neutral,PublicKey' +
+        'Token=91d62ebb5b0d1b1b'
+      'DriverName=DataSnap'
+      'HostName=localhost'
+      'port=211'
+      'Filters={}')
+    Left = 176
+    Top = 56
+  end
+  object DspServer: TDSProviderConnection
+    ServerClassName = 'TServerMethods1'
+    SQLConnection = ConexaoServer
+    Left = 296
+    Top = 56
+  end
+end

@@ -1,0 +1,3 @@
+19/06/2018 20:14:25 - Erro Interno: 0
+Erro HTTP: 0
+O tempo limite da operação foi atingido - URL:https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx - SOAPAction:http://www.portalfiscal.inf.br/nfe/wsdl/NFeRecepcaoEvento4/nfeRecepcaoEvento

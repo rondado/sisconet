@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42313,4030343982" ReportOptions.Description.Text="" ReportOptions.LastChange="42688,5889007639" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="frxDBDataset1"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="216" PaperHeight="279" PaperSize="121" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="Titulo" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="45,35436" Left="0" Top="18,89765" Width="740,78788">
+      <TfrxShapeView Name="Shape1" Left="1" Top="0" Width="737,00835" Height="45,35436"/>
+      <TfrxMemoView Name="Memo2" Left="3,77953" Top="5,55906" Width="729,44929" Height="30,23624" Font.Charset="1" Font.Color="0" Font.Height="-24" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Relatorio de Clientes"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="170,07885" Width="740,78788" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" RowCount="0">
+      <TfrxMemoView Name="frxDBDataset1PRECO_VENDA" Left="650,07916" Top="3,77953" Width="79,37013" Height="18,89765" DataField="TELEFONE" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBDataset1.&#34;TELEFONE&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1ID" Left="3,77953" Top="3,77953" Width="79,37013" Height="18,89765" DataField="ID" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;ID&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1NOME" Left="75,5906" Top="3,77953" Width="385,51206" Height="18,89765" DataField="NOME" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1CNPJ_CPF" Left="473,64595" Top="3,77953" Width="158,74026" Height="18,89765" DataField="CNPJ_CPF" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;CNPJ_CPF&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="253,22851" Width="740,78788">
+      <TfrxMemoView Name="Memo1" Left="665,19728" Top="0" Width="75,5906" Height="18,89765" HAlign="haRight" Text="Página: [Page#]"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="86,92919" Width="740,78788">
+      <TfrxMemoView Name="Memo3" Left="9,77953" Top="1" Width="52,91342" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Código"/>
+      <TfrxMemoView Name="Memo4" Left="70,25201" Top="1" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Nome do Cliente"/>
+      <TfrxMemoView Name="Memo5" Left="477,08689" Top="1" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Documento"/>
+      <TfrxMemoView Name="Memo9" Left="647,74057" Top="1" Width="90,70872" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Telefone"/>
+    </TfrxPageHeader>
+  </TfrxReportPage>
+</TfrxReport>

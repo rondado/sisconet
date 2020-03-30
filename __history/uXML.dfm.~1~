@@ -1,0 +1,543 @@
+object frmxml: Tfrmxml
+  Left = 393
+  Top = 163
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  BorderWidth = 1
+  Caption = 'Manifesta'#231#227'o e Download de XML'
+  ClientHeight = 551
+  ClientWidth = 1013
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = True
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PanelLeft: TPanel
+    Left = 0
+    Top = 0
+    Width = 177
+    Height = 528
+    Align = alLeft
+    BevelOuter = bvNone
+    Color = 14671839
+    ParentBackground = False
+    TabOrder = 0
+    object btnXMLsBaixados: TSpeedButton
+      AlignWithMargins = True
+      Left = 3
+      Top = 129
+      Width = 171
+      Height = 36
+      Align = alTop
+      Caption = 'XML'#39's Baixados'
+      OnClick = btnXMLsBaixadosClick
+      ExplicitWidth = 175
+    end
+    object btnManifestarNotas: TSpeedButton
+      AlignWithMargins = True
+      Left = 3
+      Top = 87
+      Width = 171
+      Height = 36
+      Align = alTop
+      Caption = 'Manifestar Notas'
+      OnClick = btnManifestarNotasClick
+      ExplicitWidth = 175
+    end
+    object btnAtualizarLista: TSpeedButton
+      AlignWithMargins = True
+      Left = 3
+      Top = 45
+      Width = 171
+      Height = 36
+      Align = alTop
+      Caption = 'Atualizar Lista'
+      OnClick = btnAtualizarListaClick
+      ExplicitWidth = 175
+    end
+    object btnConsultarSefaz: TSpeedButton
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Width = 171
+      Height = 36
+      Align = alTop
+      Caption = 'Consultar SEFAZ'
+      Spacing = 1
+      OnClick = btnConsultarSefazClick
+      ExplicitWidth = 175
+    end
+    object Label10: TLabel
+      Left = 2
+      Top = 482
+      Width = 169
+      Height = 13
+      Caption = 'Minutos Totais para Auto Execu'#231#227'o'
+      Color = 16119285
+      ParentColor = False
+    end
+    object Label8: TLabel
+      Left = 3
+      Top = 215
+      Width = 91
+      Height = 13
+      Caption = #218'ltimo AutoInc ID :'
+      Color = 16119285
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 3
+      Top = 278
+      Width = 59
+      Height = 13
+      Caption = #218'ltimo NSU :'
+      Color = 16119285
+      ParentColor = False
+    end
+    object btnLimparBaseDados: TBitBtn
+      Left = 3
+      Top = 171
+      Width = 171
+      Height = 38
+      Caption = 'Limpar base de dados'
+      TabOrder = 4
+      OnClick = btnLimparBaseDadosClick
+    end
+    object edtAutoExecute: TDBCheckBox
+      Left = 3
+      Top = 453
+      Width = 172
+      Height = 23
+      Alignment = taLeftJustify
+      BiDiMode = bdLeftToRight
+      Caption = 'Automatizar Consulta no SEFAZ'
+      DataField = 'AutoExecute'
+      DataSource = dscfg
+      ParentBiDiMode = False
+      TabOrder = 0
+      ValueChecked = '1'
+      ValueUnchecked = '0'
+    end
+    object edtAutoTimer: TDBEdit
+      Left = 3
+      Top = 501
+      Width = 80
+      Height = 21
+      DataField = 'AutoTimer'
+      DataSource = dscfg
+      TabOrder = 1
+    end
+    object edtidDFeAutoInc: TDBEdit
+      Left = 3
+      Top = 234
+      Width = 100
+      Height = 21
+      DataField = 'IDDFEAUTOINC'
+      DataSource = dscfg
+      TabOrder = 2
+    end
+    object edtultNSU: TDBEdit
+      Left = 3
+      Top = 297
+      Width = 100
+      Height = 21
+      DataField = 'ultNSU'
+      DataSource = dscfg
+      TabOrder = 3
+    end
+    object BtnGravar: TBitBtn
+      Left = 89
+      Top = 501
+      Width = 85
+      Height = 22
+      Caption = 'Gravar'
+      TabOrder = 5
+      OnClick = BtnGravarClick
+    end
+  end
+  object PanelNbk: TPanel
+    Left = 177
+    Top = 0
+    Width = 836
+    Height = 528
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'PanelNbk'
+    Color = 16119285
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 1
+    object edtERROR: TLabel
+      Left = 0
+      Top = 398
+      Width = 836
+      Height = 20
+      Align = alBottom
+      Caption = 'Lista de mensagens'
+      Color = 14671839
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Arial Narrow'
+      Font.Pitch = fpVariable
+      Font.Style = []
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      ExplicitWidth = 121
+    end
+    object ListBoxError: TListBox
+      Left = 0
+      Top = 418
+      Width = 836
+      Height = 110
+      Align = alBottom
+      ItemHeight = 13
+      TabOrder = 0
+    end
+    object Notebook1: TNotebook
+      Left = 0
+      Top = 0
+      Width = 836
+      Height = 398
+      Align = alClient
+      PageIndex = 1
+      TabOrder = 1
+      TabStop = True
+      object PageDFe: TPage
+        Left = 0
+        Top = 0
+        Caption = 'Page_1'
+        ExplicitWidth = 0
+        ExplicitHeight = 0
+        object DBGrid2: TDBGrid
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 830
+          Height = 392
+          Align = alClient
+          Ctl3D = True
+          DataSource = dsres
+          Options = [dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+          ParentCtl3D = False
+          ReadOnly = True
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+          Columns = <
+            item
+              Expanded = False
+              FieldName = 'XNUMERONFE'
+              Title.Caption = 'N'#250'mero NFe'
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'TPNF'
+              Title.Caption = 'Tipo'
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'DHEMI'
+              Title.Caption = 'Emiss'#227'o'
+              Width = 75
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'XNOME'
+              Title.Caption = 'Emitente'
+              Width = 260
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'CHNFE'
+              Title.Caption = 'Chave'
+              Width = 300
+              Visible = True
+            end>
+        end
+      end
+      object PageXML: TPage
+        Left = 0
+        Top = 0
+        Caption = 'Page_2'
+        ExplicitWidth = 0
+        ExplicitHeight = 0
+        object DBGrid3: TDBGrid
+          AlignWithMargins = True
+          Left = 3
+          Top = 97
+          Width = 830
+          Height = 298
+          Align = alClient
+          DataSource = dtsXml
+          Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+          ReadOnly = True
+          TabOrder = 1
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+          Columns = <
+            item
+              Expanded = False
+              FieldName = 'xNumeroNFE'
+              Title.Caption = 'N'#250'mero NFe'
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'dhEmi'
+              Title.Caption = 'Emiss'#227'o'
+              Width = 75
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'xNome'
+              Title.Caption = 'Emitente'
+              Width = 260
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'chNFe'
+              Title.Caption = 'Chave'
+              Width = 300
+              Visible = True
+            end>
+        end
+        object GroupBox1: TGroupBox
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 830
+          Height = 88
+          Align = alTop
+          Caption = 'Op'#231#245'es'
+          TabOrder = 0
+          DesignSize = (
+            830
+            88)
+          object Label2: TLabel
+            Left = 13
+            Top = 30
+            Width = 66
+            Height = 13
+            Caption = 'N'#250'mero NFe :'
+            Color = 16119285
+            ParentColor = False
+          end
+          object Label11: TLabel
+            Left = 171
+            Top = 30
+            Width = 60
+            Height = 13
+            Caption = 'Data Inicial :'
+            Color = 16119285
+            ParentColor = False
+          end
+          object Label12: TLabel
+            Left = 352
+            Top = 30
+            Width = 55
+            Height = 13
+            Caption = 'Data Final :'
+            Color = 16119285
+            ParentColor = False
+          end
+          object btnNFePesquisar: TButton
+            Left = 527
+            Top = 24
+            Width = 70
+            Height = 25
+            Caption = 'Pesquisar'
+            TabOrder = 2
+            OnClick = btnNFePesquisarClick
+          end
+          object edtNumeroNFe: TSpinEdit
+            Left = 84
+            Top = 26
+            Width = 80
+            Height = 22
+            Anchors = [akTop, akRight]
+            MaxValue = 999999999
+            MinValue = 0
+            TabOrder = 5
+            Value = 0
+          end
+          object edtDataInicial: TDateTimePicker
+            Left = 235
+            Top = 26
+            Width = 110
+            Height = 21
+            Date = 42463.419280231480000000
+            Time = 42463.419280231480000000
+            TabOrder = 0
+          end
+          object edtDataFinal: TDateTimePicker
+            Left = 410
+            Top = 26
+            Width = 110
+            Height = 21
+            Date = 42463.419569270830000000
+            Time = 42463.419569270830000000
+            TabOrder = 1
+          end
+          object btnNFePreview: TButton
+            Left = 599
+            Top = 24
+            Width = 70
+            Height = 25
+            Caption = 'Visualizar'
+            TabOrder = 3
+            OnClick = btnNFePreviewClick
+          end
+          object btnNFeImprimir: TButton
+            Left = 671
+            Top = 24
+            Width = 70
+            Height = 25
+            Caption = 'Imprimir'
+            TabOrder = 4
+            OnClick = btnNFeImprimirClick
+          end
+          object btnNFeGerarPDF: TButton
+            Left = 527
+            Top = 55
+            Width = 70
+            Height = 25
+            Caption = 'Gerar PDFs'
+            TabOrder = 6
+            OnClick = btnNFeGerarPDFClick
+          end
+        end
+      end
+    end
+  end
+  object StatusShow: TStatusBar
+    Left = 0
+    Top = 528
+    Width = 1013
+    Height = 23
+    Panels = <
+      item
+        Alignment = taCenter
+        Text = 'Certificado :'
+        Width = 75
+      end
+      item
+        Alignment = taCenter
+        Style = psOwnerDraw
+        Width = 30
+      end
+      item
+        Text = 'Empresa :'
+        Width = 60
+      end
+      item
+        Width = 350
+      end
+      item
+        Text = 'CNPJ :'
+        Width = 50
+      end
+      item
+        Width = 150
+      end
+      item
+        Text = 'Validade :'
+        Width = 60
+      end
+      item
+        Width = 100
+      end>
+    SizeGrip = False
+  end
+  object dscfg: TDataSource
+    DataSet = DmWorkCom.XmlCfg
+    OnStateChange = dscfgStateChange
+    Left = 257
+    Top = 458
+  end
+  object dsres: TDataSource
+    AutoEdit = False
+    DataSet = DmWorkCom.XmlDfe
+    Left = 338
+    Top = 458
+  end
+  object dtsXml: TDataSource
+    AutoEdit = False
+    DataSet = DmWorkCom.XmlNfe
+    Left = 297
+    Top = 459
+  end
+  object dtsxml2: TDataSource
+    AutoEdit = False
+    Left = 433
+    Top = 459
+  end
+  object AutoExec: TTimer
+    Enabled = False
+    OnTimer = AutoExecTimer
+    Left = 544
+    Top = 462
+  end
+  object DataWork: TDataSource
+    DataSet = DmWorkCom.CdsCompras
+    Left = 480
+    Top = 280
+  end
+  object DataCST: TDataSource
+    Left = 424
+    Top = 280
+  end
+  object DataCFOP: TDataSource
+    DataSet = DmWorkCom.CdsCFOP
+    Left = 456
+    Top = 320
+  end
+  object DataFornecedor: TDataSource
+    Left = 492
+    Top = 336
+  end
+  object DataItens: TDataSource
+    Left = 572
+    Top = 280
+  end
+  object DataFormaPag: TDataSource
+    DataSet = DmWorkCom.CdsFormaPag
+    Left = 572
+    Top = 336
+  end
+  object DataClassifica: TDataSource
+    Left = 660
+    Top = 288
+  end
+  object DataCtaReceber: TDataSource
+    Left = 662
+    Top = 338
+  end
+  object DataUF: TDataSource
+    Left = 748
+    Top = 288
+  end
+end

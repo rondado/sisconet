@@ -1,0 +1,136 @@
+001BANCO DO BRASIL S.A.                                                                                                    
+003BANCO DA AMAZONIA S.A.                                                                                                  
+004BANCO DO NORDESTE DO BRASIL S.A.                                                                                        
+008BANCO SANTANDER MERIDIONAL S.A.                                                                                         
+021BANESTES S.A BANCO DO ESTADO DO ESPIRITO SANTO                                                                          
+024BANCO DE PERNAMBUCO S.A.-BANDEPE                                                                                        
+025BANCO ALFA S/A                                                                                                          
+027BANCO DO ESTADO DE SANTA CATARINA S.A.                                                                                  
+029BANCO BANERJ S.A.                                                                                                       
+031BANCO BEG S.A.                                                                                                          
+033BANCO DO ESTADO DE SAO PAULO S.A. - BANESPA                                                                             
+035BANCO DO ESTADO DO CEARA S.A. BEC                                                                                       
+036BANCO BEM S.A.                                                                                                          
+037BANCO DO ESTADO DO PARA S.A.                                                                                            
+038BANCO BANESTADO S.A.                                                                                                    
+039BANCO DO ESTADO DO PIAUI S.A.-BEP                                                                                       
+040BANCO CARGILL S.A                                                                                                       
+041BANCO DO ESTADO DO RIO GRANDE DO SUL S.A.                                                                               
+044BANCO BVA SA                                                                                                            
+045BANCO OPPORTUNITY S.A.                                                                                                  
+047BANCO DO ESTADO DE SERGIPE S.A.                                                                                         
+062BANCO1.NET S.A                                                                                                          
+063BANCO IBI S.A - BANCO MULTIPLO                                                                                          
+065LEMON BANK BANCO MULTIPLO S.A                                                                                           
+066BANCO MORGAN STANLEY DEAN WITTER S.A                                                                                    
+070BRB - BANCO DE BRASILIA S.A.                                                                                            
+072BANCO RURAL MAIS S.A                                                                                                    
+073BB BANCO POPULAR DO BRASIL                                                                                              
+074BANCO J. SAFRA S.A.                                                                                                     
+096BANCO BM&F DE SERV. DE LIQUIDACAO E CUSTODIA S.A                                                                        
+104CAIXA ECONOMICA FEDERAL                                                                                                 
+107BANCO BBM S.A                                                                                                           
+116BANCO UNICO S.A.                                                                                                        
+151BANCO NOSSA CAIXA S.A                                                                                                   
+175BANCO FINASA S.A.                                                                                                       
+184BANCO ITAU BBA S.A                                                                                                      
+204AMERICAN EXPRESS BANK(BRASIL) BANCO MULTIPLO S.A                                                                        
+208BANCO PACTUAL S.A.                                                                                                      
+210DRESDNER BANK LATEINAMERIKA AKTIENGESELLSCHAFT                                                                          
+212BANCO MATONE S.A.                                                                                                       
+213BANCO ARBI S.A.                                                                                                         
+214BANCO DIBENS S.A.                                                                                                       
+215BANCO COMERCIAL E DE INVESTIMENTO SUDAMERIS S.A                                                                         
+217BANCO JOHN DEERE S.A.                                                                                                   
+218BANCO BONSUCESSO S.A.                                                                                                   
+222BANCO CALYON BRASIL S/A                                                                                                 
+224BANCO FIBRA S.A.                                                                                                        
+225BANCO BRASCAN S.A.                                                                                                      
+229BANCO CRUZEIRO DO SUL S.A.                                                                                              
+230UNICARD BANCO MULTIPLO S.A                                                                                              
+233BANCO GE CAPITAL S.A                                                                                                    
+237BANCO BRADESCO S.A.                                                                                                     
+241BANCO CLASSICO S.A.                                                                                                     
+243BANCO MAXIMA S.A.                                                                                                       
+244BANCO CIDADE S.A.                                                                                                       
+246BANCO ABC BRASIL S.A.                                                                                                   
+247BANCO UBS S.A                                                                                                           
+248BANCO BOA VISTA INTERATLANTICO S.A                                                                                      
+249BANCO INVESTCRED UNIBANCO S.A                                                                                           
+250BANCO SCHAHIN S.A                                                                                                       
+252BANCO FININVEST S.A.                                                                                                    
+254PARANA BANCO S.A.                                                                                                       
+263BANCO CACIQUE S.A.                                                                                                      
+265BANCO FATOR S.A.                                                                                                        
+266BANCO CEDULA S.A.                                                                                                       
+291BANCO BCN S.A.                                                                                                          
+300BANCO DE LA NACION ARGENTINA                                                                                            
+318BANCO BMG S.A.                                                                                                          
+320BANCO INDUSTRIAL E COMERCIAL S.A.                                                                                       
+341BANCO ITAU S.A.                                                                                                         
+347BANCO SUDAMERIS DO BRASIL S.A                                                                                           
+351BANCO SANTANDER S.A.                                                                                                    
+353BANCO SANTANDER BRASIL S.A.                                                                                             
+356BANCO ABN AMRO S.A.                                                                                                     
+366BANCO SOCIETE GENERALE BRASIL S.A                                                                                       
+370BANCO WESTLB DO BRASIL  S.A.                                                                                            
+376BANCO J.P. MORGAN S.A.                                                                                                  
+389BANCO MERCANTIL DO BRASIL S.A.                                                                                          
+392BANCO MERCANTIL DE SAO PAULO S.A.                                                                                       
+394BANCO BMC S.A.                                                                                                          
+399HSBC BANK BRASIL S.A.-BANCO MULTIPLO                                                                                    
+409UNIBANCO - UNIAO DE BANCOS BRASILEIROS S.A.                                                                             
+412BANCO CAPITAL S.A.                                                                                                      
+422BANCO SAFRA S.A.                                                                                                        
+453BANCO RURAL S.A.                                                                                                        
+456BANCO DE TOKYO MITSUBISHI BRASIL S.A.                                                                                   
+464BANCO SUMITOMO MITSUI BRASILEIRO S.A.                                                                                   
+477CITIBANK N.A.                                                                                                           
+479BANKBOSTON BANCO MULTIPLO S.A.                                                                                          
+487DEUTSCHE BANK S. A. - BANCO ALEMAO                                                                                      
+488JPMORGAN CHASE BANK                                                                                                     
+492ING BANK N.V.                                                                                                           
+494BANCO DE LA REPUBLICA ORIENTAL DEL URUGUAY                                                                              
+495BANCO DE LA PROVINCIA DE BUENOS AIRES                                                                                   
+505BANCO CREDIT SUISSE FIRST BOSTON S.A.                                                                                   
+600BANCO LUSO BRASILEIRO S.A.                                                                                              
+604BANCO INDUSTRIAL DO BRASIL S. A.                                                                                        
+610BANCO VR S.A.                                                                                                           
+611BANCO PAULISTA S.A.                                                                                                     
+612BANCO GUANABARA S.A.                                                                                                    
+613BANCO PECUNIA S.A.                                                                                                      
+623BANCO PANAMERICANO S.A.                                                                                                 
+626BANCO FICSA S.A.                                                                                                        
+630BANCO INTERCAP S.A.                                                                                                     
+633BANCO RENDIMENTO S.A.                                                                                                   
+634BANCO TRIANGULO S.A.                                                                                                    
+637BANCO SOFISA S.A.                                                                                                       
+638BANCO PROSPER S.A.                                                                                                      
+641BANCO ALVORADA S.A.                                                                                                     
+643BANCO PINE S.A.                                                                                                         
+650BANCO PEBB S.A.                                                                                                         
+652BANCO ITAU HOLDING FINANCEIRA S.A                                                                                       
+653BANCO INDUSVAL S.A.                                                                                                     
+654BANCO A.J. RENNER S.A.                                                                                                  
+655BANCO VOTORANTIM S.A.                                                                                                   
+707BANCO DAYCOVAL S.A.                                                                                                     
+719BANIF-BANCO INTERNACIONAL DO FUNCHAL (BRASIL) S.A                                                                       
+721BANCO CREDIBEL S.A.                                                                                                     
+734BANCO GERDAU S.A.                                                                                                       
+735BANCO POTTENCIAL S.A.                                                                                                   
+738BANCO MORADA S.A.                                                                                                       
+739BANCO BGN S.A.                                                                                                          
+740BANCO BARCLAYS S.A.                                                                                                     
+741BANCO RIBEIRAO PRETO S.A.                                                                                               
+743BANCO EMBLEMA S.A.                                                                                                      
+744BANKBOSTON N.A.                                                                                                         
+745BANCO CITIBANK S.A.                                                                                                     
+746BANCO MODAL S.A.                                                                                                        
+747BANCO RABOBANK INTERNATIONAL BRASIL S.A.                                                                                
+748BANCO COOPERATIVO SICREDI S.A.                                                                                          
+749BANCO SIMPLES S.A.                                                                                                      
+751DRESDNER BANK BRASIL S.A. BANCO MULTIPLO.                                                                               
+752BANCO BNP PARIBAS BRASIL S.A                                                                                            
+753BANCO COMERCIAL URUGUAI S.A.                                                                                            
+756BANCO COOPERATIVO DO BRASIL S.A.                                                                                        
+757BANCO KEB DO BRASIL S.A.                                                                                                

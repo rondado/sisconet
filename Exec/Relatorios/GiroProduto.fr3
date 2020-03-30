@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42487,4604959259" ReportOptions.Description.Text="" ReportOptions.LastChange="42742,4695422454" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="DmRelatorios.frxDBEmpresa" DataSetName="frxDBEmpresa"/>
+    <item DataSet="frxDbGiroProd" DataSetName="frxDbGiroProd"/>
+    <item DataSet="DmRelatorios.frxDBPeriodo" DataSetName="frxDBPeriodo"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="297" PaperHeight="210" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="117,16543" Left="0" Top="18,89765" Width="1046,92981">
+      <TfrxMemoView Name="frxDBEmpresaRAZAO_SOCIAL" Left="0" Top="2,77953" Width="400,63018" Height="18,89765" DataField="RAZAO_SOCIAL" DataSet="DmRelatorios.frxDBEmpresa" DataSetName="frxDBEmpresa" Text="[frxDBEmpresa.&#34;RAZAO_SOCIAL&#34;]"/>
+      <TfrxMemoView Name="Memo2" Left="809,24459" Top="2,77953" Width="230,55133" Height="18,89765" DisplayFormat.FormatStr="mmmm dd, yyyy" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[Date]"/>
+      <TfrxMemoView Name="Memo3" Left="3,67718" Top="24,45671" Width="1035,59122" Height="26,45671" Font.Charset="1" Font.Color="0" Font.Height="-24" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Giro de produtos no período"/>
+      <TfrxShapeView Name="Shape1" Left="1,77953" Top="84,03154" Width="1043,15028" Height="30,23624" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo5" Left="478,66172" Top="87,81107" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Estoque Atual"/>
+      <TfrxMemoView Name="Memo4" Left="7,55906" Top="87,81107" Width="56,69295" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Produto"/>
+      <TfrxMemoView Name="Memo6" Left="591,26005" Top="87,81107" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Qtd. Compras"/>
+      <TfrxMemoView Name="Memo7" Left="707,22882" Top="87,81107" Width="90,70872" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Valor compras"/>
+      <TfrxMemoView Name="frxDBPeriododata_inicio" Left="3,55906" Top="60,25201" Width="438,42548" Height="18,89765" DataSet="DmRelatorios.frxDBPeriodo" DataSetName="frxDBPeriodo" Text="Período entre [frxDBPeriodo.&#34;data_inicio&#34;] à [frxDBPeriodo.&#34;data_final&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="818,81942" Top="87,92919" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Qtd. Vendas"/>
+      <TfrxMemoView Name="Memo9" Left="931,00866" Top="87,92919" Width="90,70872" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Valor vendas"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="196,53556" Width="1046,92981" ColumnWidth="0" ColumnGap="0" DataSet="frxDbGiroProd" DataSetName="frxDbGiroProd" RowCount="0">
+      <TfrxMemoView Name="frxDBGeralPEDIDO_NUM" Left="3,77953" Top="0" Width="351,49629" Height="18,89765" DataSet="DmRelatorios.frxDBGeral" DataSetName="frxDBGeral" Text="[frxDbGiroProd.&#34;IDPRODUTO&#34;] - [frxDbGiroProd.&#34;DESCRICAO&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="frxDBGeralDATA_PEDIDO" Left="477,00031" Top="0" Width="90,70872" Height="18,89765" DataSet="DmRelatorios.frxDBGeral" DataSetName="frxDBGeral" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDbGiroProd.&#34;ESTOQUE_ATUAL&#34;]"/>
+      <TfrxMemoView Name="frxDBGeralCLIENTE" Left="593,38621" Top="0" Width="86,92919" Height="18,89765" DataSet="DmRelatorios.frxDBGeral" DataSetName="frxDBGeral" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDbGiroProd.&#34;QTD_COMPRAS&#34;]"/>
+      <TfrxMemoView Name="frxDBGeralVALOR_TOTAL" Left="706,77211" Top="0,77953" Width="90,70872" Height="18,89765" DataSet="DmRelatorios.frxDBGeral" DataSetName="frxDBGeral" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDbGiroProd.&#34;VALOR_COMPRA&#34;]"/>
+      <TfrxMemoView Name="Memo10" Left="820,15801" Top="0" Width="86,92919" Height="18,89765" DataSet="DmRelatorios.frxDBGeral" DataSetName="frxDBGeral" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDbGiroProd.&#34;QTD_VENDA&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="933,54391" Top="0,77953" Width="90,70872" Height="18,89765" DataSet="DmRelatorios.frxDBGeral" DataSetName="frxDBGeral" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDbGiroProd.&#34;VALOR_VENDA&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="279,68522" Width="1046,92981">
+      <TfrxMemoView Name="Memo1" Left="861,73284" Top="0" Width="177,63791" Height="18,89765" HAlign="haRight" Text="Página: [Page#]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

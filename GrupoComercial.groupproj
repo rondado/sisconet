@@ -1,0 +1,132 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{74E0A671-B2D6-42BA-9FC6-23BA14A2DAFE}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Gestor.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Balcao.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ConfigPDV.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Food.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NFe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SPED.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NFCe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SAT.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Frente.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Gestor">
+        <MSBuild Projects="Gestor.dproj"/>
+    </Target>
+    <Target Name="Gestor:Clean">
+        <MSBuild Projects="Gestor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gestor:Make">
+        <MSBuild Projects="Gestor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Balcao">
+        <MSBuild Projects="Balcao.dproj"/>
+    </Target>
+    <Target Name="Balcao:Clean">
+        <MSBuild Projects="Balcao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Balcao:Make">
+        <MSBuild Projects="Balcao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ConfigPDV">
+        <MSBuild Projects="ConfigPDV.dproj"/>
+    </Target>
+    <Target Name="ConfigPDV:Clean">
+        <MSBuild Projects="ConfigPDV.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ConfigPDV:Make">
+        <MSBuild Projects="ConfigPDV.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Food">
+        <MSBuild Projects="Food.dproj"/>
+    </Target>
+    <Target Name="Food:Clean">
+        <MSBuild Projects="Food.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Food:Make">
+        <MSBuild Projects="Food.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NFe">
+        <MSBuild Projects="NFe.dproj"/>
+    </Target>
+    <Target Name="NFe:Clean">
+        <MSBuild Projects="NFe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NFe:Make">
+        <MSBuild Projects="NFe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SPED">
+        <MSBuild Projects="SPED.dproj"/>
+    </Target>
+    <Target Name="SPED:Clean">
+        <MSBuild Projects="SPED.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SPED:Make">
+        <MSBuild Projects="SPED.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NFCe">
+        <MSBuild Projects="NFCe.dproj"/>
+    </Target>
+    <Target Name="NFCe:Clean">
+        <MSBuild Projects="NFCe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NFCe:Make">
+        <MSBuild Projects="NFCe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SAT">
+        <MSBuild Projects="SAT.dproj"/>
+    </Target>
+    <Target Name="SAT:Clean">
+        <MSBuild Projects="SAT.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SAT:Make">
+        <MSBuild Projects="SAT.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Frente">
+        <MSBuild Projects="Frente.dproj"/>
+    </Target>
+    <Target Name="Frente:Clean">
+        <MSBuild Projects="Frente.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Frente:Make">
+        <MSBuild Projects="Frente.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Gestor;Balcao;ConfigPDV;Food;NFe;SPED;NFCe;SAT;Frente"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Gestor:Clean;Balcao:Clean;ConfigPDV:Clean;Food:Clean;NFe:Clean;SPED:Clean;NFCe:Clean;SAT:Clean;Frente:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Gestor:Make;Balcao:Make;ConfigPDV:Make;Food:Make;NFe:Make;SPED:Make;NFCe:Make;SAT:Make;Frente:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

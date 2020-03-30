@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/05/07 19:49:20.000.292,=C:\Sisconet18\Unit3.pas</Transaction>
+    <Transaction>2018/05/07 19:51:42.000.570,C:\Sisconet18\Unit3.pas=C:\Sisconet18\uFrmCFOPPedido.pas</Transaction>
+    <Transaction>2018/05/07 19:51:42.000.570,C:\Sisconet18\Unit3.dfm=C:\Sisconet18\uFrmCFOPPedido.dfm</Transaction>
+    <Transaction>2018/05/07 21:11:47.000.329,=C:\Sisconet18\Unit3.pas</Transaction>
+    <Transaction>2018/05/07 21:12:58.000.516,C:\Sisconet18\Unit3.dfm=C:\Sisconet18\uFrmNfeReferencia.dfm</Transaction>
+    <Transaction>2018/05/07 21:12:58.000.516,C:\Sisconet18\Unit3.pas=C:\Sisconet18\uFrmNfeReferencia.pas</Transaction>
+    <Transaction>2018/05/11 11:12:23.000.419,C:\Sisconet18\uFrmNfeReferencia.pas=</Transaction>
+    <Transaction>2019/01/12 00:22:03.000.616,C:\Users\Developer\Downloads\Areti\Sisconet18 - RondadoJan2019\DM\Unit1.pas=</Transaction>
+    <Transaction>2019/01/12 00:22:08.000.057,C:\Users\Developer\Downloads\Areti\Sisconet18 - RondadoJan2019\DM\unit2.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

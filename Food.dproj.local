@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/04/22 17:06:03.000.111,C:\Programas\Projetos PAF-ECF\PAF-ECF\Mesas.dproj=C:\Programas\Projetos PAF-ECF\PAF-ECF\Food.dproj</Transaction>
+    <Transaction>2017/07/08 09:37:06.000.983,=C:\Programas\Projetos Pessoais\Comercial\uFrmCancItensMesa.pas</Transaction>
+    <Transaction>2017/07/10 18:21:27.000.861,=C:\Programas\Projetos Pessoais\Comercial\Unit1.pas</Transaction>
+    <Transaction>2017/07/10 18:21:59.000.228,C:\Programas\Projetos Pessoais\Comercial\Unit1.pas=C:\Programas\Projetos Pessoais\Comercial\uFrmListaMesas.pas</Transaction>
+    <Transaction>2017/07/10 18:21:59.000.228,C:\Programas\Projetos Pessoais\Comercial\Unit1.dfm=C:\Programas\Projetos Pessoais\Comercial\uFrmListaMesas.dfm</Transaction>
+    <Transaction>2017/07/10 21:23:14.000.981,C:\Programas\Projetos Pessoais\Comercial\uFrmListaMesas.pas=C:\Programas\Projetos Pessoais\Comercial\uFrmFuncionarios.pas</Transaction>
+    <Transaction>2017/07/10 21:23:14.000.981,C:\Programas\Projetos Pessoais\Comercial\uFrmListaMesas.dfm=C:\Programas\Projetos Pessoais\Comercial\uFrmFuncionarios.dfm</Transaction>
+    <Transaction>2017/07/10 21:23:47.000.519,=C:\Programas\Projetos Pessoais\Comercial\uFrmListaMesas.pas</Transaction>
+    <Transaction>2017/07/11 08:23:34.000.490,=C:\Programas\Projetos Pessoais\Comercial\Unit1.pas</Transaction>
+    <Transaction>2017/07/11 08:30:17.000.117,C:\Programas\Projetos Pessoais\Comercial\uFrmSelImpressao.dfm=C:\Programas\Projetos Pessoais\Comercial\Unit1.dfm</Transaction>
+    <Transaction>2017/07/11 08:30:17.000.117,C:\Programas\Projetos Pessoais\Comercial\uFrmSelImpressao.pas=C:\Programas\Projetos Pessoais\Comercial\Unit1.pas</Transaction>
+    <Transaction>2018/05/16 15:26:07.000.013,C:\Sisconet18\uFrmMovMesas2.pas=C:\Sisconet18\uFrmMovMesas.pas</Transaction>
+    <Transaction>2018/05/16 15:26:07.000.013,C:\Sisconet18\uFrmMovMesas2.dfm=C:\Sisconet18\uFrmMovMesas.dfm</Transaction>
+    <Transaction>2018/05/16 15:31:44.000.846,C:\Sisconet18\uFrmAbreRegistra2.dfm=C:\Sisconet18\uFrmAbreRegistra.dfm</Transaction>
+    <Transaction>2018/05/16 15:31:44.000.846,C:\Sisconet18\uFrmAbreRegistra2.pas=C:\Sisconet18\uFrmAbreRegistra.pas</Transaction>
+  </Transactions>
+</BorlandProject>

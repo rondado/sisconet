@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><CFe>
+   <infCFe versaoDadosEnt="0.06">
+      <ide>
+         <CNPJ>22222222222222</CNPJ>
+         <signAC>KiVwJVKCp6woB2jbmhnZsSBuWOTQL0S0nd4JDew/o6SykmspkLZNzf/KXNyu+WCu83hyo99Fq3Jx/9kFIVWmq+ZCNEfV1+l2UjSBScvpaCiB7e8Y9gxcXTnUauFjA6kOSP0pb72QeVzetpHnPLSkftXg4jRzqjbAWSTycxUAvIguABhx290HVZzJPMFHrJW2jKXaL16JWoIVJVZdftEs1sCbKsp7FekuhqdGmbz7bLcNan9N/8PeOKN59XMT+wLVtH1mXq10PnJwjFRvp/6SpgQ7MilXvid0gKQHj1X0/DmG0013EJumCfAETm9GvZEcDLTVeOQnPh1VD7uKe4QFTQ==</signAC>
+         <numeroCaixa>001</numeroCaixa>
+      </ide>
+      <emit>
+         <CNPJ>11111111111111</CNPJ>
+         <IE>111111111111</IE>
+         <IM>0</IM>
+         <cRegTribISSQN>1</cRegTribISSQN>
+         <indRatISSQN>N</indRatISSQN>
+      </emit>
+      <dest>
+         <xNome>CONSUMIDOR</xNome>
+      </dest>
+      <det nItem="1">
+         <prod>
+            <cProd>10</cProd>
+            <cEAN>7895555555555</cEAN>
+            <xProd>PRODUTO SUB. TRIBUTARIA</xProd>
+            <NCM>17011300</NCM>
+            <CFOP>5403</CFOP>
+            <uCom>PC</uCom>
+            <qCom>1.0000</qCom>
+            <vUnCom>19.14</vUnCom>
+            <indRegra>A</indRegra>
+         </prod>
+         <imposto>
+            <ICMS>
+               <ICMS40>
+                  <Orig>0</Orig>
+                  <CST>60</CST>
+               </ICMS40>
+            </ICMS>
+            <PIS>
+               <PISAliq>
+                  <CST>01</CST>
+                  <vBC>0.00</vBC>
+                  <pPIS>0.0000</pPIS>
+               </PISAliq>
+            </PIS>
+            <COFINS>
+               <COFINSAliq>
+                  <CST>01</CST>
+                  <vBC>0.00</vBC>
+                  <pCOFINS>0.0000</pCOFINS>
+               </COFINSAliq>
+            </COFINS>
+         </imposto>
+      </det>
+      <total>
+         <vCFeLei12741>1.53</vCFeLei12741>
+      </total>
+      <pgto>
+         <MP>
+            <cMP>01</cMP>
+            <vMP>19.14</vMP>
+         </MP>
+      </pgto>
+      <infAdic>
+         <infCpl>OPERADOR: - Caixa: 001</infCpl>
+      </infAdic>
+   </infCFe>
+</CFe>
